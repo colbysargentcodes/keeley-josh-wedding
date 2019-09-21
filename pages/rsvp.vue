@@ -9,18 +9,18 @@
     <form name="rsvp" netlify netlify-honeypot="its-a-trap">
       <input name="its-a-trap" type="text" class="hidden" />
 
-      <div>Names: <input name="names" type="text" /></div>
+      <div>Names <input name="names" type="text" /></div>
 
       <div>
         Are you attending?
 
         <label for="attending-yes">
-          <input id="attending-yes" name="attending" type="radio" value="Yes" />
+          <input id="attending-yes" name="attending[]" type="radio" value="Yes" />
           Yes
         </label>
 
         <label for="attending-no">
-          <input id="attending-no" name="attending" type="radio" value="No" />
+          <input id="attending-no" name="attending[]" type="radio" value="No" />
           No
         </label>
       </div>
@@ -31,7 +31,7 @@
         <label for="events-pool-party">
           <input
             id="events-pool-party"
-            name="events"
+            name="events[]"
             type="checkbox"
             value="Pool Party"
           />
@@ -41,7 +41,7 @@
         <label for="events-jet-ski-ing">
           <input
             id="events-jet-ski-ing"
-            name="events"
+            name="events[]"
             type="checkbox"
             value="Jet Ski-ing"
           />
@@ -51,7 +51,7 @@
         <label for="events-boat-party">
           <input
             id="events-boat-party"
-            name="events"
+            name="events[]"
             type="checkbox"
             value="Boat Party"
           />
@@ -61,7 +61,7 @@
         <label for="events-stag-hen">
           <input
             id="events-stag-hen"
-            name="events"
+            name="events[]"
             type="checkbox"
             value="Stag/Hen"
           />
