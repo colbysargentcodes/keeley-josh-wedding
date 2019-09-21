@@ -1,10 +1,10 @@
 <template>
   <div class="page-container">
     <h1>
-      Welcome
+      Events
     </h1>
     <h2>
-      to our wedding website
+      events around the wedding that all are welcome to join
     </h2>
   </div>
 </template>

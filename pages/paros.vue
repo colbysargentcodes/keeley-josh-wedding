@@ -1,10 +1,10 @@
 <template>
   <div class="page-container">
     <h1>
-      Welcome
+      Paros
     </h1>
     <h2>
-      to our wedding website
+      information about the island
     </h2>
   </div>
 </template>
