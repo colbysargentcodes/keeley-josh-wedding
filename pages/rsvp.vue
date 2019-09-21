@@ -14,19 +14,23 @@
       <div>
         Are you attending?
 
+        <input name="attending" type="radio" value="R.S.V.P" />
+
         <label for="attending-yes">
-          <input id="attending-yes" name="attending[]" type="radio" value="Yes" />
+          <input id="attending-yes" name="attending" type="radio" value="Yes" />
           Yes
         </label>
 
         <label for="attending-no">
-          <input id="attending-no" name="attending[]" type="radio" value="No" />
+          <input id="attending-no" name="attending" type="radio" value="No" />
           No
         </label>
       </div>
 
       <div>
         Which events would you like to join?
+
+        <input name="events[]" type="checkbox" value="Events" />
 
         <label for="events-pool-party">
           <input
@@ -78,6 +82,6 @@
 
 <style>
 .hidden {
-  visibility: hidden;
+  display: none;
 }
 </style>
