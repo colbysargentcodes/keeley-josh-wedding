@@ -1,10 +1,10 @@
 <template>
   <div class="page-container">
     <h1>
-      Events
+      Contact
     </h1>
     <h2>
-      events around the wedding that all are welcome to join
+      how to get in touch
     </h2>
   </div>
 </template>
