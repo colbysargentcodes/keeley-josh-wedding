@@ -27,7 +27,10 @@ export default {
   /*
    ** Plugins to load before mounting the App
    */
-  plugins: [{ src: '~/plugins/form-serialize.js', ssr: false }],
+  plugins: [
+    { src: '~/plugins/form-serialize.js', ssr: false },
+    { src: '~/plugins/event-bus.js' }
+  ],
   /*
    ** Nuxt.js dev-modules
    */
