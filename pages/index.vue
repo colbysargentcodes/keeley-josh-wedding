@@ -92,12 +92,12 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss">
 .landing-page-section {
   display: none;
-}
 
-.landing-page-section.show {
-  display: initial;
+  &.show {
+    display: initial;
+  }
 }
 </style>

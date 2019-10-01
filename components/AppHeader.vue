@@ -38,12 +38,12 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss">
 header {
   display: none;
-}
 
-header.show {
-  display: initial;
+  &.show {
+    display: initial;
+  }
 }
 </style>

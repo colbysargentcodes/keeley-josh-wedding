@@ -169,7 +169,7 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss">
 .hidden {
   display: none;
 }
