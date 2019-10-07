@@ -131,6 +131,7 @@ export default {
       this.sendRsvpSubmit().then((response) => {
         this.rsvpFormSubmitting = false
 
+        // Netlify will return response code 200 on a successful form submission
         if (Number(response.status) !== 200) {
           this.rsvpFormResult = {
             success: false,
