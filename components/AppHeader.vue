@@ -53,7 +53,6 @@ export default {
     this.$eventBus.$on('showHeader', this.showHeader)
     this.$eventBus.$on('hideHeader', this.hideHeader)
 
-    // eslint-disable-next-line no-undef
     if ($nuxt.$route.name !== 'index') this.showHeader()
   },
   methods: {

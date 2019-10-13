@@ -15,12 +15,21 @@ html {
 }
 
 main {
-  height: 100vh;
-  padding-top: 100px;
+  min-height: 100vh;
+  padding: 175px 0;
 }
 
 .app-width {
   width: 90%;
   max-width: 1200px;
   margin: 0 auto;
+}
+
+.page-header {
+  width: 75%;
+  margin: 0 auto;
+}
+
+h2.page-header {
+  margin-top: 0.5em;
 }

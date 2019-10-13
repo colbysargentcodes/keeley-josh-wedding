@@ -17,6 +17,9 @@ module.exports = {
   plugins: [
     'prettier'
   ],
+  globals: {
+    $nuxt: true
+  },
   // add your custom rules here
   rules: {
   }
