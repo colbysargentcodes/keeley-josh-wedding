@@ -214,8 +214,7 @@ export default {
       }
 
       .event-background-fade {
-        opacity: 0.6;
-        background-color: $color-gold;
+        opacity: 0;
       }
     }
   }
