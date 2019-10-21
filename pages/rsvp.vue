@@ -8,7 +8,7 @@
     </h2>
     <form
       name="rsvp"
-      action=""
+      action="/rsvp"
       netlify
       netlify-honeypot="its-a-trap"
       @submit="handleRsvpSubmit"
