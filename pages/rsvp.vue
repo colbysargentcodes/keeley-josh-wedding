@@ -481,6 +481,7 @@ form {
   width: 65%;
   margin: 80px auto 0;
   padding: 80px;
+  background-color: $color-white;
   font-size: 24px;
   text-align: left;
   letter-spacing: 0.025em;
