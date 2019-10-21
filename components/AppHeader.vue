@@ -4,7 +4,7 @@
       <nuxt-link id="app-logo" to="/">
         JK
       </nuxt-link>
-      <nav class="text-spaced">
+      <nav class="text-spaced text-upper">
         <nuxt-link
           v-for="(page, index) in pages"
           :key="index"
@@ -102,7 +102,6 @@ header {
       padding: 0.75em 1em;
       color: inherit;
       text-decoration: none;
-      text-transform: uppercase;
       transition: background-color 0.2s, color 0.2s;
 
       &:after {
