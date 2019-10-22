@@ -16,12 +16,12 @@ html {
 
 #background {
   position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
+  top: 35%;
   left: 0;
-  background: $color-white url('/images/background.png') no-repeat fixed -10% 300%;
-  background-size: 150%;
+  width: 120%;
+  height: 100%;
+  background: $color-white url('/images/background.png') no-repeat center center;
+  background-size: 100%;
   z-index: -1;
 }
 
