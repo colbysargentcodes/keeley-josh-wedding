@@ -133,7 +133,7 @@ export default {
     }
 
     .contact-info {
-      min-width: 28%;
+      min-width: 250px;
 
       a {
         color: inherit;
