@@ -121,6 +121,11 @@ export default {
     momentDate(date) {
       return $nuxt.$moment(date)
     }
+  },
+  head() {
+    return {
+      title: 'Meet the McNamaras - Itinerary'
+    }
   }
 }
 </script>

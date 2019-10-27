@@ -8,3 +8,13 @@
     </h2>
   </div>
 </template>
+
+<script>
+export default {
+  head() {
+    return {
+      title: 'Meet the McNamaras - Paros'
+    }
+  }
+}
+</script>

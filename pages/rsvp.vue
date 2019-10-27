@@ -461,6 +461,11 @@ export default {
           })
       })
     }
+  },
+  head() {
+    return {
+      title: 'Meet the McNamaras - R.S.V.P'
+    }
   }
 }
 </script>

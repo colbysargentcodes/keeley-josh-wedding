@@ -55,6 +55,11 @@ export default {
     changeTab(index) {
       this.activeTab = index
     }
+  },
+  head() {
+    return {
+      title: 'Meet the McNamaras - Travel'
+    }
   }
 }
 </script>

@@ -14,6 +14,11 @@ import AppHeader from '~/components/AppHeader.vue'
 export default {
   components: {
     AppHeader
+  },
+  head() {
+    return {
+      title: 'Meet the McNamaras'
+    }
   }
 }
 </script>
