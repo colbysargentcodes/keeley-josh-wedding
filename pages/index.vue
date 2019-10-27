@@ -110,11 +110,9 @@ export default {
 @import '~/assets/scss/variables';
 
 .page-container {
-  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-bottom: 100px;
 }
 
 .landing-page-section {
