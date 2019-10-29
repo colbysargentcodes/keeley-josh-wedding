@@ -45,7 +45,8 @@ export default {
     // Doc: https://axios.nuxtjs.org/usage
     '@nuxtjs/axios',
     '@nuxtjs/pwa',
-    '@nuxtjs/moment'
+    '@nuxtjs/moment',
+    ['vue-scrollto/nuxt', { duration: 1000 }]
   ],
   /*
    ** Axios module configuration
