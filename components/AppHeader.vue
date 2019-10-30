@@ -4,7 +4,7 @@
       <nuxt-link id="app-logo" to="/">
         JK
       </nuxt-link>
-      <nav class="text-spaced text-upper">
+      <nav class="font-heading text-spaced text-upper">
         <nuxt-link
           v-for="(page, index) in pages"
           :key="index"

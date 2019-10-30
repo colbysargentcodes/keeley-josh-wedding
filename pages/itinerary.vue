@@ -15,9 +15,9 @@
         :style="{ background: `url(/images/itinerary/${event.code}.jpg)` }"
       >
         <div class="event-info">
-          <h3>{{ event.title }}</h3>
+          <h2>{{ event.title }}</h2>
           <p class="event-description">{{ event.description }}</p>
-          <p class="text-spaced text-upper event-location">
+          <p class="event-location font-heading text-spaced text-upper">
             {{ event.location }}
           </p>
           <p class="event-datetime">
@@ -28,7 +28,7 @@
             }}
           </p>
         </div>
-        <div class="event-date text-upper">
+        <div class="event-date font-heading text-upper">
           <div class="event-date-date">
             {{ $nuxt.$moment(event.date).format('D') }}
           </div>
@@ -144,7 +144,7 @@ export default {
     padding: 40px 0;
     background-size: cover !important;
     background-position: center center !important;
-    font-size: 21px;
+    font-size: 18px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
     z-index: 0;
     transition: color 0.4s, box-shadow 0.4s;
@@ -191,9 +191,12 @@ export default {
         white-space: pre-wrap;
       }
 
-      .event-location,
-      .event-datetime {
+      .event-location {
         font-size: 16px;
+      }
+
+      .event-datetime {
+        font-size: 14px;
       }
     }
 

@@ -1,9 +1,22 @@
-@import url('https://fonts.googleapis.com/css?family=Dancing+Script:400,700|EB+Garamond:400,600,800&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script:400,700|EB+Garamond:400,600,800|Lato:300,400,700&display=swap');
+
+@mixin heading-font {
+  font-family: 'EB Garamond', serif;
+}
+.font-heading {
+  @include heading-font;
+}
 
 @mixin body-font {
-  font-family: 'EB Garamond', serif;
+  font-family: 'Lato', sans-serif;
+}
+.font-body {
+  @include body-font;
 }
 
 @mixin script-font {
   font-family: 'Dancing Script', cursive;
+}
+.font-script {
+  @include script-font;
 }

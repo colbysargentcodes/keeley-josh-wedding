@@ -17,7 +17,7 @@
             <img :src="'/images/contact/' + contact.key + '.jpg'" />
           </div>
           <div class="contact-person-info">
-            <p class="contact-person-role text-spaced text-upper">
+            <p class="contact-person-role font-heading text-spaced text-upper">
               {{ contact.role }}
             </p>
             <p class="contact-person-name">{{ contact.name }}</p>
@@ -125,7 +125,7 @@ export default {
         }
 
         .contact-person-name {
-          font-size: 38px;
+          font-size: 36px;
         }
       }
 
@@ -138,7 +138,8 @@ export default {
     }
 
     .contact-info {
-      min-width: 250px;
+      min-width: 200px;
+      font-size: 21px;
 
       a {
         color: inherit;

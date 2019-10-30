@@ -471,6 +471,7 @@ export default {
 </script>
 
 <style scoped lang="scss">
+@import '~/assets/scss/fonts.scss';
 @import '~/assets/scss/variables.scss';
 
 .hidden {
@@ -516,6 +517,7 @@ form {
 
     .form-input-name {
       width: 29%;
+      @include heading-font;
     }
 
     .form-input-field {
@@ -527,9 +529,9 @@ form {
         width: 100%;
         border: 0;
         border-bottom: 1px solid $color-lightgrey;
-        padding: 0.1em 0.5em;
+        padding: 0.1em 0;
         font-family: inherit;
-        font-size: inherit;
+        font-size: 21px;
         color: inherit;
         text-align: center;
         vertical-align: top;
@@ -574,6 +576,7 @@ form {
     .form-event-date {
       width: 15%;
       position: relative;
+      @include heading-font;
       font-size: 32px;
 
       sup {
@@ -596,9 +599,11 @@ form {
 
     .form-event-name {
       width: 55%;
+      @include heading-font;
 
       .form-event-description {
-        font-size: 16px;
+        @include body-font;
+        font-size: 14px;
         color: $color-midgrey;
       }
     }
@@ -639,7 +644,7 @@ form {
       border: 1px solid $color-pink;
       padding: 0.75em 1.5em;
       background-color: $color-white;
-      font-family: inherit;
+      @include heading-font;
       font-size: 21px;
       color: inherit;
       text-decoration: none;

@@ -2,7 +2,7 @@
   <div class="page-container app-width">
     <div
       id="wedding-countdown"
-      class="landing-page-section text-spaced text-upper"
+      class="landing-page-section font-heading text-spaced text-upper"
       :class="{ show: !userHasEntered }"
     >
       <h1>
@@ -15,15 +15,15 @@
         <template v-if="!countdown.ended">
           <div class="countdown-block">
             <div class="countdown-number">{{ countdown.days }}</div>
-            <div class="countdown-label">days</div>
+            <div class="countdown-label font-script">days</div>
           </div>
           <div class="countdown-block">
             <div class="countdown-number">{{ countdown.hours }}</div>
-            <div class="countdown-label">hours</div>
+            <div class="countdown-label font-script">hours</div>
           </div>
           <div class="countdown-block">
             <div class="countdown-number">{{ countdown.minutes }}</div>
-            <div class="countdown-label">minutes</div>
+            <div class="countdown-label font-script">minutes</div>
           </div>
         </template>
         <div v-if="countdown.ended" class="countdown-ended">
@@ -44,7 +44,7 @@
       <p>
         See you there!
       </p>
-      <p id="sign-off">
+      <p id="sign-off" class="font-script">
         Keeley & Josh
         <br />
         <span id="sign-off-xoxo">xoxo</span>
@@ -106,7 +106,6 @@ export default {
 </script>
 
 <style scoped lang="scss">
-@import '~/assets/scss/fonts';
 @import '~/assets/scss/variables';
 
 .page-container {
@@ -137,7 +136,6 @@ export default {
     }
 
     .countdown-label {
-      @include script-font;
       text-transform: capitalize;
       letter-spacing: 0;
       font-size: 1.2em;
@@ -176,8 +174,7 @@ export default {
 
 #welcome-message {
   width: 56.25%;
-  @include script-font;
-  font-size: 28px;
+  font-size: 24px;
 
   p + p {
     margin-top: 0.75em;

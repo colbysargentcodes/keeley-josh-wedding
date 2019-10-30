@@ -28,7 +28,7 @@
             el: '#map-container',
             offset: 10
           }"
-          class="location-pointer"
+          class="location-pointer font-heading"
           :style="{ top: location.position.top, left: location.position.left }"
           @click="openLocation(location.key)"
         >
@@ -75,7 +75,7 @@
             ></div>
             <h3 class="text-spaced-correction">{{ item.name }}</h3>
             <p>{{ item.description }}</p>
-            <a :href="item.link">{{ item.link }}</a>
+            <a :href="item.link">more info</a>
           </div>
         </div>
       </div>
@@ -250,13 +250,13 @@ p.page-header {
     justify-content: center;
 
     .location-item {
-      width: 18.4%;
+      width: 22%;
       padding: 20px;
       background-color: $color-white;
       box-shadow: 0 7px 20px rgba(0, 0, 0, 0.1);
 
       + .location-item {
-        margin-left: 2%;
+        margin-left: 4%;
       }
 
       &-image {
@@ -276,7 +276,6 @@ p.page-header {
       }
 
       a {
-        align-self: flex-end;
         color: $color-pink;
         text-decoration: none;
         transition: color 0.4s;
