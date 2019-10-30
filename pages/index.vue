@@ -140,7 +140,7 @@ export default {
       letter-spacing: 0;
       font-size: 1.2em;
       font-weight: 600;
-      color: $color-pink;
+      color: $color-gold;
     }
   }
 
@@ -161,7 +161,7 @@ export default {
       left: 51%;
       right: calc(51% + 4px);
       height: 1px;
-      background-color: $color-pink;
+      background-color: $color-gold;
       transition: left 0.4s, right 0.4s, background-color 0.2s;
     }
 

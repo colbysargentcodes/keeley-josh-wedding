@@ -111,12 +111,12 @@ header {
         left: 51%;
         right: calc(51% + 4px);
         height: 1px;
-        background-color: $color-pink;
+        background-color: $color-gold;
         transition: left 0.4s, right 0.4s, background-color 0.2s;
       }
 
       &:hover {
-        color: $color-pink;
+        color: $color-gold;
       }
 
       &.nuxt-link-active {
@@ -127,7 +127,7 @@ header {
       }
 
       &.feature-button {
-        border: 1px solid $color-pink;
+        border: 1px solid $color-gold;
 
         &:not(:first-child) {
           margin-left: 1em;
@@ -138,7 +138,7 @@ header {
         }
 
         &:hover {
-          background-color: $color-pink;
+          background-color: $color-gold;
           color: $color-white;
 
           &:after {

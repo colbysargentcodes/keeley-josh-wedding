@@ -542,7 +542,7 @@ form {
           right: 51%;
           bottom: 0;
           height: 1px;
-          background-color: $color-pink;
+          background-color: $color-gold;
           transition: left 0.4s, right 0.4s;
         }
 
@@ -591,7 +591,7 @@ form {
         width: 14px;
         height: 14px;
         border-radius: 14px;
-        border: 2px solid $color-pink;
+        border: 2px solid $color-gold;
         background-color: $color-white;
         transition: box-shadow 0.4s;
       }
@@ -622,7 +622,7 @@ form {
         top: 50%;
         width: 2px;
         height: 78px;
-        background-color: $color-pink;
+        background-color: $color-gold;
       }
     }
 
@@ -641,7 +641,7 @@ form {
 
     input[type='submit'] {
       margin: 0 auto;
-      border: 1px solid $color-pink;
+      border: 1px solid $color-gold;
       padding: 0.75em 1.5em;
       background-color: $color-white;
       @include heading-font;
@@ -652,7 +652,7 @@ form {
       transition: background-color 0.2s, color 0.2s;
 
       &:hover {
-        background-color: $color-pink;
+        background-color: $color-gold;
         color: $color-white;
       }
     }

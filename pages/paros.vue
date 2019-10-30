@@ -157,7 +157,7 @@ p.page-header {
           display: block;
           width: 20px;
           height: 20px;
-          border: 7px solid $color-pink;
+          border: 7px solid $color-gold;
           border-radius: 20px;
           background-color: $color-white;
           transition: border 0.4s;
@@ -172,7 +172,7 @@ p.page-header {
           height: 0;
           border: 9px solid transparent;
           border-bottom: 0;
-          border-top: 16px solid $color-pink;
+          border-top: 16px solid $color-gold;
           z-index: -1;
           transition: border 0.4s;
         }
@@ -188,7 +188,7 @@ p.page-header {
           top: -4px;
 
           &:before {
-            border: 5px solid $color-pink;
+            border: 5px solid $color-gold;
           }
 
           &:after {
@@ -276,12 +276,12 @@ p.page-header {
       }
 
       a {
-        color: $color-pink;
+        color: $color-gold;
         text-decoration: none;
         transition: color 0.4s;
 
         &:hover {
-          color: $color-pink-lighter-2;
+          color: $color-gold-lighter-2;
         }
       }
     }
