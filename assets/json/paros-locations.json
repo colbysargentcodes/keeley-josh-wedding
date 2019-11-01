@@ -1,7 +1,7 @@
 [
   {
-    "key": "noussa",
-    "name": "Noussa",
+    "key": "naousa",
+    "name": "Naousa",
     "description": "This small picturesque fishing village...",
     "tabs": [
       {
@@ -11,7 +11,7 @@
           {
             "key": "restaurant1",
             "name": "Good Restaurant",
-            "description": "A restaurant in Noussa which is good.",
+            "description": "A restaurant in Naousa which is good.",
             "link": "https://www.example.com"
           },
           {
@@ -29,7 +29,7 @@
           {
             "key": "bar1",
             "name": "Good Bar",
-            "description": "A bar in Noussa which has good drinks.",
+            "description": "A bar in Naousa which has good drinks.",
             "link": "https://www.example.com"
           },
           {
