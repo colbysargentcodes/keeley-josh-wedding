@@ -3,32 +3,41 @@
     <h1 class="page-header">
       Itinerary
     </h1>
-    <h2 class="page-header">
-      events around the wedding that all are welcome to join
-    </h2>
     <div id="event-list-container">
       <div
-        v-for="(event, index) in events"
-        :id="'event-' + event.code"
-        :key="index"
+        v-for="event in events"
+        :id="'event-' + event.key"
+        :key="event.key"
         class="event-list-item"
-        :style="{ background: `url(/images/itinerary/${event.code}.jpg)` }"
+        :style="{ background: `url(/images/itinerary/${event.key}.jpg)` }"
       >
         <div class="event-info">
           <h2>{{ event.title }}</h2>
-          <p class="event-description">{{ event.description }}</p>
-          <p class="event-location font-heading text-spaced text-upper">
-            {{ event.location }}
+          <p class="event-description">
+            <template v-if="event.quote">
+              <span class="event-quote">{{ event.quote }}</span>
+              <span class="event-quoted"> - {{ event.quoted }}</span>
+            </template>
+            <template v-else>
+              <span>{{ event.description }}</span>
+            </template>
           </p>
-          <p class="event-datetime">
-            {{
-              event.noTime
-                ? $nuxt.$moment(event.date).format('dddd, Do MMMM')
-                : $nuxt.$moment(event.date).format('dddd, Do MMMM, h:mma')
-            }}
-          </p>
+          <div>
+            <p v-if="event.locationPretext" class="event-location-pretext">
+              {{ event.locationPretext }}
+            </p>
+            <p class="event-location font-heading text-spaced text-upper">
+              {{ event.location }}
+            </p>
+            <p class="event-time">
+              {{ $nuxt.$moment(event.date).format('h:mma') }}
+            </p>
+          </div>
         </div>
         <div class="event-date font-heading text-upper">
+          <div class="event-date-day">
+            {{ $nuxt.$moment(event.date).format('ddd') }}
+          </div>
           <div class="event-date-date">
             {{ $nuxt.$moment(event.date).format('D') }}
           </div>
@@ -48,33 +57,33 @@ export default {
     return {
       events: [
         {
-          code: 'stag',
+          key: 'stag',
           title: 'Stag',
-          description:
-            '“The first rule of the stag party, is not to talk about the stag party.”\n' +
-            '- Josh',
-          location: 'Old Town, Mykanos',
+          quote:
+            '“The first rule of the stag party, is not to talk about the stag party.”',
+          quoted: 'Josh',
+          location: 'Old Town, Mykonos',
           date: '2020-06-20 19:00'
         },
         {
-          code: 'hen',
+          key: 'hen',
           title: 'Hen',
-          description:
-            '“It’s time to drink champagne and dance on the table!”\n' +
-            '- Keeley',
-          location: 'Old Town, Mykanos',
+          quote: '“It’s time to drink champagne and dance on the table!”',
+          quoted: 'Keeley',
+          location: 'Old Town, Mykonos',
           date: '2020-06-21 19:00'
         },
         {
-          code: 'boat-trip',
+          key: 'boat-trip',
           title: 'Boat Trip',
           description:
             'Set sail with us on a traditional Greek Kaiki and explore the secluded coves and pristine beaches of the small Cycladic islands. Dive into the turquoise waters of the Aegean Sea or relax on deck and watch the dolphins swim by, all while enjoying cold refreshments and a selection of local delicacies freshly prepared onboard.',
+          locationPretext: 'departing from',
           location: 'Piso Livadi, Paros',
           date: '2020-06-24 10:00'
         },
         {
-          code: 'welcome-drinks',
+          key: 'welcome-drinks',
           title: 'Welcome Drinks',
           description:
             'You’re all here and we couldn’t be happier! Join us for cocktails and canapes on the harbour of this picturesque fishing village, as we watch the sunset on our final night as ‘Mr & Miss’.',
@@ -82,15 +91,18 @@ export default {
           date: '2020-06-25 18:00'
         },
         {
-          code: 'wedding',
+          key: 'wedding',
           title: 'Wedding',
           description:
-            'It’s time for us to say “I do” and for you to #MeetTheMcNamaras!',
+            'It’s time for us to say “I do” and for you to #MeetTheMcNamaras!\n' +
+            'Two become one. All become drunk.',
+          locationPretext:
+            'transfers depart at 4:00pm from Naousa, Parikia & Santa Maria',
           location: 'Private Villa, Paros',
           date: '2020-06-26 17:00'
         },
         {
-          code: 'beach-recovery',
+          key: 'beach-recovery',
           title: 'Beach Recovery',
           description:
             'There’s no better cure for a hangover than a swim in the ocean, or so Josh says?! Let’s hit the beach and find out! We’ll made sure there’s a big lunch and a snoozeworthy sunbed at the water’s edge with your name on it – see you there!',
@@ -98,7 +110,7 @@ export default {
           date: '2020-06-27 12:00'
         },
         {
-          code: 'pool-party',
+          key: 'pool-party',
           title: 'Farewell Pool Party',
           description:
             'We’re firing up the BBQ, turning on the tunes and inflating the unicorn to bid farewell to what will have no doubt been our best summer as husband and wife! Clothing optional. Swimwear compulsory. Because it’s not that kind of party.',
@@ -106,13 +118,12 @@ export default {
           date: '2020-06-28 11:00'
         },
         {
-          code: 'island-hop',
+          key: 'island-hop',
           title: 'Island Hop',
           description:
             'The supermodel of the Greek islands is calling our name – and I think I can hear yours too?! Why not extend your trip for a few days and join us in Santorini before we jet off on our honeymoon? We’ve partied in Paros, now let’s conquer the caldera! No itinerary. No expectations. Just good times.',
           location: 'Santorini',
-          date: '2020-06-30 13:00',
-          noTime: true
+          date: '2020-06-30 13:00'
         }
       ]
     }
@@ -137,9 +148,9 @@ export default {
   .event-list-item {
     position: relative;
     display: inline-flex;
-    align-items: center;
+    align-items: stretch;
     width: 65%;
-    min-height: 260px;
+    min-height: 290px;
     margin-top: 60px;
     padding: 40px 0;
     background-size: cover !important;
@@ -147,7 +158,7 @@ export default {
     font-size: 18px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
     z-index: 0;
-    transition: color 0.4s, box-shadow 0.4s;
+    transition: color 0.4s, box-shadow 0.4s, text-shadow 0.4s;
 
     &:nth-child(odd) {
       margin-left: 140px;
@@ -166,15 +177,25 @@ export default {
       }
     }
 
+    .event-date,
+    .event-info {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
     .event-date {
       min-width: 140px;
       padding: 0 40px;
       letter-spacing: 0.1em;
 
       &-date {
+        margin-bottom: 4px;
         font-size: 48px;
+        line-height: 1;
       }
 
+      &-day,
       &-month {
         font-size: 16px;
       }
@@ -185,17 +206,33 @@ export default {
       padding: 0 40px;
       border-right: 1px solid $color-black;
       transition: border-color 0.4s;
+      justify-content: space-between;
 
       .event-description {
-        margin-bottom: 1em;
+        margin: 0.3em 0 0.5em;
         white-space: pre-wrap;
+
+        .event-quote {
+          font-style: italic;
+        }
+
+        .event-quoted {
+          display: block;
+          font-weight: bold;
+          margin-top: 0.35em;
+        }
+      }
+
+      .event-location-pretext {
+        font-size: 14px;
+        font-style: italic;
       }
 
       .event-location {
         font-size: 16px;
       }
 
-      .event-datetime {
+      .event-time {
         font-size: 14px;
       }
     }
@@ -209,7 +246,7 @@ export default {
       background-color: $color-white;
       opacity: 0.9;
       z-index: -1;
-      transition: opacity 0.4s, background-color 0.4s;
+      transition: opacity 0.4s;
     }
 
     &:hover {
@@ -222,8 +259,7 @@ export default {
       }
 
       .event-background-fade {
-        opacity: 0.6;
-        background-color: $color-gold;
+        opacity: 0;
       }
     }
   }
