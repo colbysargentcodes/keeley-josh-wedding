@@ -37,13 +37,15 @@
       class="landing-page-section"
       :class="{ show: userHasEntered }"
     >
-      <p>
-        We're so excited for you to join us to celebrate our wedding on Paros
-        Island in Greece
-      </p>
-      <p>
-        See you there!
-      </p>
+      <div class="font-heading text-upper text-spaced">
+        <p>
+          We're so excited for you to join us to celebrate our wedding on Paros
+          Island in Greece
+        </p>
+        <p>
+          See you there!
+        </p>
+      </div>
       <p id="sign-off" class="font-script">
         Keeley & Josh
         <br />
@@ -132,13 +134,12 @@ export default {
     width: 150px;
 
     .countdown-number {
-      font-size: 4em;
+      font-size: 3.5em;
     }
 
     .countdown-label {
       text-transform: capitalize;
       letter-spacing: 0;
-      font-size: 1.2em;
       font-weight: 600;
       color: $color-gold;
     }
@@ -174,22 +175,23 @@ export default {
 
 #welcome-message {
   width: 56.25%;
-  font-size: 24px;
+  font-size: 21px;
 
   p + p {
     margin-top: 0.75em;
   }
 
   #sign-off {
+    margin-top: 1.5em;
     padding-right: 1em;
-    font-size: 36px;
+    font-size: 42px;
     text-align: right;
+    transform: rotate(-7deg);
 
     #sign-off-xoxo {
       position: relative;
       top: -0.35em;
       padding-right: 1em;
-      color: $color-gold;
     }
   }
 }
