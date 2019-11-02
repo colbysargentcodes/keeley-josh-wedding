@@ -7,16 +7,25 @@
       Where to eat, sleep, drink, repeat
     </h2>
     <p class="page-header">
-      A description of paros above the map. It may be quite a long description
-      of the island, so what would this look like. A description of paros above
-      the map. It may be quite a long description of the island, so what would
-      this look like. A description of paros above the map. It may be quite a
-      long description of the island, so what would this look like.
+      Pristine beaches, crystal clear turquoise waters, Byzantine footpaths
+      leading to traditional white-washed villages and breath-taking natural
+      landscapes are just a few of the many reasons we decided to celebrate our
+      wedding on this beautiful little island, at the heart of the
+      <a :href="cycladesLink">Cyclades</a>.
     </p>
     <p class="page-header">
-      A description of paros above the map. It may be quite a long description
-      of the island, so what would this look like. A description of paros above
-      the map.
+      Paros suits the taste of every traveller, whether you’re looking to chill
+      on the beach, (or hit the waves), hike mountain trails, visit
+      archaeological sites and museums, or shop ‘til you drop…and let’s not
+      forget the activities after the sun goes down!
+    </p>
+    <p class="page-header">
+      Below is a selection of recommended locations which are either central or
+      to the north of Paros Island as this is where the majority of the ‘wedding
+      action’ will be. However, with the drive from the most northern tip of the
+      island to the southern being only 45 mins, locations to the south of the
+      island such as Aliki, Drios, Piso Livadi and Pounta are also worth
+      checking out!
     </p>
     <div id="map-container">
       <figure>
@@ -28,6 +37,7 @@
             el: '#map-container',
             offset: 10
           }"
+          :id="'location-pointer-' + location.key"
           class="location-pointer font-heading"
           :style="{ top: location.position.top, left: location.position.left }"
           @click="openLocation(location.key)"
@@ -36,7 +46,7 @@
           <div
             class="location-pointer-name text-spaced text-spaced-correction text-upper"
           >
-            {{ location.name }}
+            <span>{{ location.name }}</span>
           </div>
         </div>
       </figure>
@@ -50,7 +60,7 @@
       <div class="app-width">
         <div class="location-close" @click="closeLocation">close</div>
         <h1 class="page-header">{{ location.name }}</h1>
-        <h2 class="page-header">{{ location.description }}</h2>
+        <p class="page-header">{{ location.description }}</p>
 
         <div class="location-tabs text-spaced text-upper">
           <span
@@ -73,9 +83,11 @@
               class="location-item-image"
               :style="{ 'background-image': 'url(/images/itinerary/stag.jpg)' }"
             ></div>
-            <h3 class="text-spaced-correction">{{ item.name }}</h3>
-            <p>{{ item.description }}</p>
-            <a :href="item.link">more info</a>
+            <div class="location-item-info">
+              <h3 class="text-spaced-correction">{{ item.name }}</h3>
+              <p>{{ item.description }}</p>
+              <a :href="item.link">more info</a>
+            </div>
           </div>
         </div>
       </div>
@@ -91,13 +103,15 @@ export default {
     return {
       locations: locationsData,
       activeLocation: false,
-      activeTab: false
+      activeTab: 0,
+      cycladesLink:
+        'http://www.visitgreece.gr/portal/site/eot/menuitem.7f0d4e449429307c12596610451000a0/?vgnextoid=622941b7e2787210VgnVCM100000460014acRCRD&lang_choosen=en'
     }
   },
   methods: {
     openLocation(location) {
       this.activeLocation = location
-      this.activeTab = false
+      this.activeTab = 0
     },
     closeLocation() {
       this.activeLocation = false
@@ -124,6 +138,16 @@ export default {
 p.page-header {
   margin-top: 1em;
   font-size: 18px;
+  line-height: 1.4;
+
+  a {
+    color: $color-gold;
+    transition: color 0.4s;
+
+    &:hover {
+      color: $color-gold-lighter-2;
+    }
+  }
 }
 
 #map-container {
@@ -181,6 +205,13 @@ p.page-header {
       &-name {
         font-weight: 600;
         transition: letter-spacing 0.4s;
+      }
+
+      &#location-pointer-santa-maria {
+        .location-pointer-name > span {
+          background-color: rgba(255, 255, 255, 0.8);
+          box-shadow: 0 0 5px 5px rgba(255, 255, 255, 0.8);
+        }
       }
 
       &:hover {
@@ -250,6 +281,8 @@ p.page-header {
     justify-content: center;
 
     .location-item {
+      display: flex;
+      flex-direction: column;
       width: 22%;
       padding: 20px;
       background-color: $color-white;
@@ -267,21 +300,28 @@ p.page-header {
         background-position: center center;
       }
 
-      h3 {
-        line-height: 1;
-      }
+      &-info {
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
 
-      p {
-        margin: 0.75em 0;
-      }
+        h3 {
+          line-height: 1;
+        }
 
-      a {
-        color: $color-gold;
-        text-decoration: none;
-        transition: color 0.4s;
+        p {
+          margin: 0.75em 0;
+        }
 
-        &:hover {
-          color: $color-gold-lighter-2;
+        a {
+          margin-top: auto;
+          color: $color-gold;
+          text-decoration: none;
+          transition: color 0.4s;
+
+          &:hover {
+            color: $color-gold-lighter-2;
+          }
         }
       }
     }

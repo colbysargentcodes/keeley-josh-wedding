@@ -2,7 +2,7 @@
   {
     "key": "naousa",
     "name": "Naousa",
-    "description": "This small picturesque fishing village...",
+    "description": "Get lost in the narrow white-washed labyrinth of bougainvilleas draped houses, local boutiques and coffee shops or sample the islands freshest seafood along the waterfront of its colourful picturesque harbour. Although considered one of the most beautiful villages in the Cyclades, Naousa is definitely more than just a pretty face! Calm and tranquil by day this cosmopolitan village truly comes to life after the sun sets, with a vibrant nightlife where you can really let your hair down and dance until dawn.",
     "tabs": [
       {
         "key": "eat",
@@ -67,7 +67,7 @@
   {
     "key": "parikia",
     "name": "Parikia",
-    "description": "This small picturesque shipping village...",
+    "description": "As the Island’s capital, this little town is the commercial and cultural hub of Paros and home to the main harbour. For its small size, Parikia packs a real punch with its old town offering up a huge selection of boutique shops, cafes and restaurants and a bustling coastal promenade lined with tavernas and bars. For those looking to soak up some culture and history, take to the streets by foot on rented bicycle and explore the impressive archaeological sites and museums.",
     "tabs": [
       {
         "key": "eat",
@@ -127,6 +127,201 @@
     "position": {
       "top": "43%",
       "left": "31%"
+    }
+  },
+  {
+    "key": "santa-maria",
+    "name": "Santa Maria",
+    "description": "Perfect for those looking to relax and soak up the sun on Paros’ more remote and off-the-beaten path beaches while still remaining in close proximity to the bustling nightlife of Naousa fishing village. Santa Maria’s beautiful coastline is divided into two golden sand beaches, both with gorgeous views of the neighbouring Naxos island, and crystal-clear waters perfect for snorkelling or taking advantage of the various watersports on offer. You’ll also find Paros’ ‘best’ beach bar on the organised section of this beach, serving up fresh fruity cocktails and a delicious lunch and dinner menu!",
+    "tabs": [
+      {
+        "key": "eat",
+        "name": "Eat",
+        "content": [
+          {
+            "key": "restaurant1",
+            "name": "Good Restaurant",
+            "description": "A restaurant in Santa Maria which is good.",
+            "link": "https://www.example.com"
+          },
+          {
+            "key": "restaurant2",
+            "name": "Fishy Restaurant",
+            "description": "A seaside fish bar along the coast.",
+            "link": "https://www.example.com"
+          }
+        ]
+      },
+      {
+        "key": "drink",
+        "name": "Drink",
+        "content": [
+          {
+            "key": "bar1",
+            "name": "Good Bar",
+            "description": "A bar in Santa Maria which has good drinks.",
+            "link": "https://www.example.com"
+          },
+          {
+            "key": "bar2",
+            "name": "Fishy Bar",
+            "description": "A seaside bar along the coast.",
+            "link": "https://www.example.com"
+          }
+        ]
+      },
+      {
+        "key": "do",
+        "name": "Do",
+        "content": [
+          {
+            "key": "do1",
+            "name": "A Doing Thing",
+            "description": "This is a fun thing to do while here.",
+            "link": "https://www.example.com"
+          },
+          {
+            "key": "do2",
+            "name": "Do This Now",
+            "description": "Second thing for ticking off here.",
+            "link": "https://www.example.com"
+          }
+        ]
+      }
+    ],
+    "position": {
+      "top": "13%",
+      "left": "90%"
+    }
+  },
+  {
+    "key": "lefkes",
+    "name": "Lefkes",
+    "description": "This first capital of Paros, located at the very centre of the island, surrounded by mountains and offering breath-taking views of the neighbouring Cyclades islands. Lefkes one of the prettiest and most traditional villages on the island, featuring whitewashed houses mixed with Venetian architecture, wonderful churches dating from the 15th century and the olive trees and windmills Greece is famous for! It’s also the perfect starting point for the many hiking trails Paros has to offer, including the famous Byzantine Road.",
+    "tabs": [
+      {
+        "key": "eat",
+        "name": "Eat",
+        "content": [
+          {
+            "key": "restaurant1",
+            "name": "Good Restaurant",
+            "description": "A restaurant in Lefkes which is good.",
+            "link": "https://www.example.com"
+          },
+          {
+            "key": "restaurant2",
+            "name": "Fishy Restaurant",
+            "description": "A seaside fish bar along the coast.",
+            "link": "https://www.example.com"
+          }
+        ]
+      },
+      {
+        "key": "drink",
+        "name": "Drink",
+        "content": [
+          {
+            "key": "bar1",
+            "name": "Good Bar",
+            "description": "A bar in Lefkes which has good drinks.",
+            "link": "https://www.example.com"
+          },
+          {
+            "key": "bar2",
+            "name": "Fishy Bar",
+            "description": "A seaside bar along the coast.",
+            "link": "https://www.example.com"
+          }
+        ]
+      },
+      {
+        "key": "do",
+        "name": "Do",
+        "content": [
+          {
+            "key": "do1",
+            "name": "A Doing Thing",
+            "description": "This is a fun thing to do while here.",
+            "link": "https://www.example.com"
+          },
+          {
+            "key": "do2",
+            "name": "Do This Now",
+            "description": "Second thing for ticking off here.",
+            "link": "https://www.example.com"
+          }
+        ]
+      }
+    ],
+    "position": {
+      "top": "52%",
+      "left": "56%"
+    }
+  },
+  {
+    "key": "petaloudes",
+    "name": "Petaloudes",
+    "description": "This oasis of dense vegetation offers a contrast the relatively dry landscape of the rest of the island. Offering sweeping views of Paros and the surrounding islands, it’s the perfect location to look out over the small sister island of Antiparos and watch the sunset over neighbouring Sifnos and Serifos. Also known as Valley of the Butterflies, Petaloudes (which actually translates to ‘butterfly’) is home to the beautiful tiger moth which can be seen in their thousands in the small rainforest-like locations of this area during the summer months – a incredible sight, not to be missed!",
+    "tabs": [
+      {
+        "key": "eat",
+        "name": "Eat",
+        "content": [
+          {
+            "key": "restaurant1",
+            "name": "Good Restaurant",
+            "description": "A restaurant in Petaloudes which is good.",
+            "link": "https://www.example.com"
+          },
+          {
+            "key": "restaurant2",
+            "name": "Fishy Restaurant",
+            "description": "A seaside fish bar along the coast.",
+            "link": "https://www.example.com"
+          }
+        ]
+      },
+      {
+        "key": "drink",
+        "name": "Drink",
+        "content": [
+          {
+            "key": "bar1",
+            "name": "Good Bar",
+            "description": "A bar in Petaloudes which has good drinks.",
+            "link": "https://www.example.com"
+          },
+          {
+            "key": "bar2",
+            "name": "Fishy Bar",
+            "description": "A seaside bar along the coast.",
+            "link": "https://www.example.com"
+          }
+        ]
+      },
+      {
+        "key": "do",
+        "name": "Do",
+        "content": [
+          {
+            "key": "do1",
+            "name": "A Doing Thing",
+            "description": "This is a fun thing to do while here.",
+            "link": "https://www.example.com"
+          },
+          {
+            "key": "do2",
+            "name": "Do This Now",
+            "description": "Second thing for ticking off here.",
+            "link": "https://www.example.com"
+          }
+        ]
+      }
+    ],
+    "position": {
+      "top": "61%",
+      "left": "22%"
     }
   }
 ]
