@@ -100,6 +100,16 @@ export default {
 <style scoped lang="scss">
 @import '~/assets/scss/variables.scss';
 
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: color 0.4s;
+
+  &:hover {
+    color: $color-gold;
+  }
+}
+
 #contacts-list-container {
   width: 60%;
   margin: 75px auto;
@@ -140,11 +150,6 @@ export default {
     .contact-info {
       min-width: 200px;
       font-size: 21px;
-
-      a {
-        color: inherit;
-        text-decoration: none;
-      }
     }
   }
 }
@@ -153,11 +158,6 @@ export default {
   h2 {
     font-size: 32px;
     margin-right: -0.125em;
-  }
-
-  a {
-    color: inherit;
-    text-decoration: none;
   }
 
   #emergency-numbers {

@@ -32,12 +32,12 @@
         <img src="/images/paros/map.svg" />
         <div
           v-for="location in locations"
+          :id="'location-pointer-' + location.key"
           :key="location.key"
           v-scroll-to="{
             el: '#map-container',
             offset: 10
           }"
-          :id="'location-pointer-' + location.key"
           class="location-pointer font-heading"
           :style="{ top: location.position.top, left: location.position.left }"
           @click="openLocation(location.key)"
