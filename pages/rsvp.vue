@@ -322,6 +322,7 @@
 
       <div class="form-events-group">
         <div
+          id="form-event-island-hop"
           class="form-row form-event-row"
           :class="{ inactive: rsvpResponses.islandHop === 'No' }"
         >
@@ -373,7 +374,11 @@
           Message
         </div>
         <div class="form-input-field">
-          <textarea name="message" rows="3"></textarea>
+          <textarea
+            name="message"
+            rows="3"
+            placeholder="Please let us know about any dietary requirements"
+          ></textarea>
           <span class="focus-bar"></span>
         </div>
       </div>
@@ -513,6 +518,7 @@ form {
     .form-input-name,
     .form-input-field {
       display: inline-block;
+      vertical-align: top;
     }
 
     .form-input-name {
@@ -523,6 +529,7 @@ form {
     .form-input-field {
       width: 70%;
       position: relative;
+      padding-top: 4px;
 
       input,
       textarea {
@@ -531,10 +538,11 @@ form {
         border-bottom: 1px solid $color-lightgrey;
         padding: 0.1em 0;
         font-family: inherit;
-        font-size: 21px;
+        font-size: 18px;
         color: inherit;
         text-align: center;
-        vertical-align: top;
+        line-height: 1.4;
+        vertical-align: bottom;
 
         + .focus-bar {
           position: absolute;
@@ -602,6 +610,7 @@ form {
       @include heading-font;
 
       .form-event-description {
+        position: absolute;
         @include body-font;
         font-size: 14px;
         color: $color-midgrey;
@@ -656,6 +665,10 @@ form {
         color: $color-white;
       }
     }
+  }
+
+  #form-event-island-hop {
+    margin-bottom: 45px;
   }
 }
 </style>
