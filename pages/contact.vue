@@ -111,16 +111,15 @@ a {
 }
 
 #contacts-list-container {
-  width: 60%;
-  margin: 75px auto;
-  font-size: 28px;
+  width: 50%;
+  margin: 60px auto;
   text-align: left;
 
   .contacts-list-item {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 1.25em;
+    margin-top: 1.5em;
 
     .contact-person {
       display: flex;
@@ -130,26 +129,25 @@ a {
         line-height: 1;
 
         .contact-person-role {
-          font-size: 18px;
           color: $color-midgrey;
         }
 
         .contact-person-name {
-          font-size: 36px;
+          font-size: 28px;
         }
       }
 
       img {
-        width: 150px;
-        height: 150px;
+        width: 100px;
+        height: 100px;
         border-radius: 150px;
         margin-right: 25px;
       }
     }
 
     .contact-info {
-      min-width: 200px;
-      font-size: 21px;
+      min-width: 165px;
+      font-size: 18px;
     }
   }
 }
