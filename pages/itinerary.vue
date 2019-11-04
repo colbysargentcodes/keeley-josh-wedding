@@ -149,13 +149,12 @@ export default {
     position: relative;
     display: inline-flex;
     align-items: stretch;
-    width: 65%;
-    min-height: 290px;
+    width: 67%;
+    min-height: 255px;
     margin-top: 60px;
     padding: 40px 0;
     background-size: cover !important;
     background-position: center center !important;
-    font-size: 18px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
     z-index: 0;
     transition: color 0.4s, box-shadow 0.4s, text-shadow 0.4s;
