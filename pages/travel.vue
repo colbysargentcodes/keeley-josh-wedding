@@ -91,6 +91,7 @@ export default {
 
       img {
         width: 50px;
+        margin-bottom: 12px;
       }
     }
   }
