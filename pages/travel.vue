@@ -9,15 +9,16 @@
     </h2>
     <div id="travel-methods-container">
       <div id="travel-methods-tabs" class="text-spaced text-upper">
-        <span
+        <div
           v-for="(tab, index) in tabs"
-          :key="index"
+          :key="tab.key"
           class="travel-method-tab"
           :class="{ active: activeTab === false || activeTab === index }"
           @click="changeTab(index)"
         >
-          {{ tab.title }}
-        </span>
+          <div><img :src="'/icons/' + tab.key + '.svg'" /></div>
+          <div>{{ tab.title }}</div>
+        </div>
       </div>
       <div v-if="activeTab !== false" id="travel-methods-content">
         <span>{{ tabs[activeTab].content }}</span>
@@ -32,18 +33,22 @@ export default {
     return {
       tabs: [
         {
+          key: 'fly',
           title: 'Fly',
           content: 'This is how to get there if you fly'
         },
         {
+          key: 'sail',
           title: 'Sail',
           content: 'This is how to get there if you sail'
         },
         {
+          key: 'drive',
           title: 'Drive',
           content: 'This is how to get there if you drive'
         },
         {
+          key: 'swim',
           title: 'Swim',
           content: 'This is how to get there if you swim'
         }
@@ -82,6 +87,10 @@ export default {
 
       &.active {
         opacity: 1;
+      }
+
+      img {
+        width: 50px;
       }
     }
   }

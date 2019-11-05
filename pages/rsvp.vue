@@ -44,7 +44,8 @@
         >
           <div class="form-event-date">20<sup>th</sup></div>
           <div class="form-event-name">
-            Stag Do
+            <img src="/icons/stag.svg" />
+            <span>Stag Do</span>
           </div>
           <div class="form-event-field">
             <input type="radio" name="stag-do" value="Stag Do" class="hidden" />
@@ -81,7 +82,8 @@
         >
           <div class="form-event-date">21<sup>st</sup></div>
           <div class="form-event-name">
-            Hen Do
+            <img src="/icons/hen.svg" />
+            <span>Hen Do</span>
           </div>
           <div class="form-event-field">
             <input type="radio" name="hen-do" value="Hen Do" class="hidden" />
@@ -120,7 +122,8 @@
         >
           <div class="form-event-date">24<sup>th</sup></div>
           <div class="form-event-name">
-            Boat Trip
+            <img src="/icons/boat-trip.svg" />
+            <span>Boat Trip</span>
           </div>
           <div class="form-event-field">
             <input
@@ -162,7 +165,8 @@
         >
           <div class="form-event-date">25<sup>th</sup></div>
           <div class="form-event-name">
-            Welcome Drinks
+            <img src="/icons/welcome-drinks.svg" />
+            <span>Welcome Drinks</span>
           </div>
           <div class="form-event-field">
             <input
@@ -204,7 +208,8 @@
         >
           <div class="form-event-date">26<sup>th</sup></div>
           <div class="form-event-name">
-            Wedding
+            <img src="/icons/wedding.svg" />
+            <span>Wedding</span>
           </div>
           <div class="form-event-field">
             <input type="radio" name="wedding" value="Wedding" class="hidden" />
@@ -241,7 +246,8 @@
         >
           <div class="form-event-date">27<sup>th</sup></div>
           <div class="form-event-name">
-            Beach Recovery
+            <img src="/icons/beach-recovery.svg" />
+            <span>Beach Recovery</span>
           </div>
           <div class="form-event-field">
             <input
@@ -283,7 +289,8 @@
         >
           <div class="form-event-date">28<sup>th</sup></div>
           <div class="form-event-name">
-            Pool Party
+            <img src="/icons/pool-party.svg" />
+            <span>Pool Party</span>
           </div>
           <div class="form-event-field">
             <input
@@ -328,7 +335,8 @@
         >
           <div class="form-event-date">30<sup>th</sup></div>
           <div class="form-event-name">
-            Island Hop
+            <img src="/icons/island-hop.svg" />
+            <span>Island Hop</span>
             <div class="form-event-description">
               Are you considering joining us in Santorini?<br />
               (We'll keep you updated on our plans)
@@ -609,8 +617,20 @@ form {
       width: 55%;
       @include heading-font;
 
+      img {
+        width: 40px;
+        margin-right: 6px;
+        vertical-align: middle;
+      }
+
+      span {
+        position: relative;
+        top: 3px;
+      }
+
       .form-event-description {
         position: absolute;
+        margin-top: 6px;
         @include body-font;
         font-size: 14px;
         color: $color-midgrey;
@@ -668,7 +688,7 @@ form {
   }
 
   #form-event-island-hop {
-    margin-bottom: 45px;
+    margin-bottom: 65px;
   }
 }
 </style>

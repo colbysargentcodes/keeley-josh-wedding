@@ -58,20 +58,23 @@
       :class="{ open: activeLocation === location.key }"
     >
       <div class="app-width">
-        <div class="location-close" @click="closeLocation">close</div>
+        <div class="location-close" @click="closeLocation">
+          <img src="/icons/close.svg" />
+        </div>
         <h1 class="page-header">{{ location.name }}</h1>
         <p class="page-header">{{ location.description }}</p>
 
         <div class="location-tabs text-spaced text-upper">
-          <span
+          <div
             v-for="(tab, index) in location.tabs"
             :key="tab.key"
             class="location-tab"
             :class="{ active: activeTab === false || activeTab === index }"
             @click="changeTab(index)"
           >
-            {{ tab.name }}
-          </span>
+            <div><img :src="'/icons/' + tab.key + '.svg'" /></div>
+            <div>{{ tab.name }}</div>
+          </div>
         </div>
         <div v-if="activeTab !== false" class="location-tab-content">
           <div
@@ -256,7 +259,12 @@ p.page-header {
     position: absolute;
     top: 50px;
     left: 50px;
+    padding: 10px;
     cursor: pointer;
+
+    img {
+      width: 25px;
+    }
   }
 
   .location-tabs {
@@ -272,6 +280,11 @@ p.page-header {
 
       &.active {
         opacity: 1;
+      }
+
+      img {
+        width: 50px;
+        margin-bottom: 12px;
       }
     }
   }

@@ -25,9 +25,11 @@
         </div>
         <div class="contact-info">
           <p>
+            <img src="/icons/phone.svg" />
             <a :href="'tel:' + contact.phone">{{ contact.phone }}</a>
           </p>
           <p>
+            <img src="/icons/email.svg" />
             <a :href="'mailto:' + contact.email">{{ contact.email }}</a>
           </p>
         </div>
@@ -38,20 +40,23 @@
       <h1><a href="tel:112">112</a></h1>
       <div id="emergency-numbers">
         <div class="emergency-number">
-          <div class="emergency-number-name text-upper">Police</div>
-          <div class="emergency-number-number">
+          <div><img src="/icons/police.svg" /></div>
+          <div class="text-upper">Police</div>
+          <div>
             <h2><a href="tel:100">100</a></h2>
           </div>
         </div>
         <div class="emergency-number">
-          <div class="emergency-number-name text-upper">Fire</div>
-          <div class="emergency-number-number">
+          <div><img src="/icons/fire.svg" /></div>
+          <div class="text-upper">Fire</div>
+          <div>
             <h2><a href="tel:199">199</a></h2>
           </div>
         </div>
         <div class="emergency-number">
-          <div class="emergency-number-name text-upper">Medical</div>
-          <div class="emergency-number-number">
+          <div><img src="/icons/medical.svg" /></div>
+          <div class="text-upper">Medical</div>
+          <div>
             <h2><a href="tel:166">166</a></h2>
           </div>
         </div>
@@ -111,7 +116,7 @@ a {
 }
 
 #contacts-list-container {
-  width: 50%;
+  width: 60%;
   margin: 60px auto;
   text-align: left;
 
@@ -146,8 +151,22 @@ a {
     }
 
     .contact-info {
-      min-width: 165px;
+      min-width: 195px;
       font-size: 18px;
+
+      p + p {
+        margin-top: 12px;
+      }
+
+      img,
+      a {
+        vertical-align: middle;
+      }
+
+      img {
+        width: 25px;
+        margin-right: 6px;
+      }
     }
   }
 }
@@ -165,6 +184,11 @@ a {
 
     .emergency-number {
       margin: 0 50px;
+
+      img {
+        width: 50px;
+        margin-bottom: 5px;
+      }
     }
   }
 }
