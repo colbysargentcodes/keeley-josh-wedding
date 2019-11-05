@@ -30,8 +30,8 @@ export default {
           path: '/itinerary'
         },
         {
-          name: 'Paros',
-          path: '/paros'
+          name: 'Place',
+          path: '/place'
         },
         {
           name: 'Travel',

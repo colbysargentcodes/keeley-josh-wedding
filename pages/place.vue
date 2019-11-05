@@ -1,7 +1,7 @@
 <template>
   <div class="page-container app-width">
     <h1 class="page-header">
-      Paros
+      Place
     </h1>
     <h2 class="page-header">
       Where to eat, sleep, drink, repeat
@@ -10,22 +10,14 @@
       Pristine beaches, crystal clear turquoise waters, Byzantine footpaths
       leading to traditional white-washed villages and breath-taking natural
       landscapes are just a few of the many reasons we decided to celebrate our
-      wedding on this beautiful little island, at the heart of the
-      <a :href="cycladesLink">Cyclades</a>.
+      wedding on this beautiful little island, at the heart of the Cyclades.
     </p>
     <p class="page-header">
       Paros suits the taste of every traveller, whether you’re looking to chill
-      on the beach, (or hit the waves), hike mountain trails, visit
-      archaeological sites and museums, or shop ‘til you drop…and let’s not
-      forget the activities after the sun goes down!
-    </p>
-    <p class="page-header">
-      Below is a selection of recommended locations which are either central or
-      to the north of Paros Island as this is where the majority of the ‘wedding
-      action’ will be. However, with the drive from the most northern tip of the
-      island to the southern being only 45 mins, locations to the south of the
-      island such as Aliki, Drios, Piso Livadi and Pounta are also worth
-      checking out!
+      on the beach (or hit the waves), hike mountain trails, visit
+      archaeological sites and museums, or shop ‘til you drop... and let’s not
+      forget about the fun to be had after the sun goes down! Use the
+      interactive map below to explore our recommended areas...
     </p>
     <div id="map-container">
       <figure>
@@ -106,9 +98,7 @@ export default {
     return {
       locations: locationsData,
       activeLocation: false,
-      activeTab: 0,
-      cycladesLink:
-        'http://www.visitgreece.gr/portal/site/eot/menuitem.7f0d4e449429307c12596610451000a0/?vgnextoid=622941b7e2787210VgnVCM100000460014acRCRD&lang_choosen=en'
+      activeTab: 0
     }
   },
   methods: {
@@ -211,9 +201,14 @@ p.page-header {
       }
 
       &#location-pointer-santa-maria {
-        .location-pointer-name > span {
-          background-color: rgba(255, 255, 255, 0.8);
-          box-shadow: 0 0 5px 5px rgba(255, 255, 255, 0.8);
+        width: 250px;
+        text-align: left;
+
+        .location-pointer-name {
+          display: inline-block;
+          position: relative;
+          top: -9px;
+          margin-left: 6px;
         }
       }
 
@@ -231,7 +226,7 @@ p.page-header {
         }
 
         .location-pointer-name {
-          letter-spacing: 0.4em;
+          letter-spacing: 0.33em;
         }
       }
     }
