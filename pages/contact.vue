@@ -75,21 +75,21 @@ export default {
           role: 'Bride',
           name: 'Keeley',
           phone: '+852 9686 1722',
-          email: 'keeley@keeley.com'
+          email: 'keeleydee2003@yahoo.co.uk'
         },
         {
           key: 'josh',
           role: 'Groom',
           name: 'Josh',
           phone: '+852 9132 0398',
-          email: 'josh@josh.com'
+          email: 'joshmcnamara@hotmail.com'
         },
         {
           key: 'katerina',
           role: 'Planner',
           name: 'Katerina',
           phone: '+000 0000 0000',
-          email: 'kat@kat.com'
+          email: 'katerina.iordanou@mitheoevents.com'
         }
       ]
     }
@@ -151,7 +151,7 @@ a {
     }
 
     .contact-info {
-      min-width: 195px;
+      min-width: 360px;
       font-size: 18px;
 
       p + p {
