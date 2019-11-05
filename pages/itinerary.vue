@@ -27,7 +27,7 @@
               {{ event.locationPretext }}
             </p>
             <p class="event-location font-heading text-spaced text-upper">
-              {{ event.location }}
+              <span>{{ event.location }}</span>
             </p>
             <p class="event-time">
               {{ $nuxt.$moment(event.date).format('h:mma') }}
@@ -87,25 +87,25 @@ export default {
           title: 'Welcome Drinks',
           description:
             'You’re all here and we couldn’t be happier! Join us for cocktails and canapes on the harbour of this picturesque fishing village, as we watch the sunset on our final night as ‘Mr & Miss’.',
-          location: 'Barbarossa Restaurant, Naousa, Paros',
+          location: 'Barbarossa Restaurant\n' + 'Naousa, Paros',
           date: '2020-06-25 18:00'
         },
         {
           key: 'wedding',
           title: 'Wedding',
           description:
-            'It’s time for us to say “I do” and for you to #MeetTheMcNamaras!\n' +
+            'It’s time for us to say “I do”, and for you to #MeetTheMcNamaras!\n' +
             'Two become one. All become drunk.',
           locationPretext:
-            'transfers depart at 4:00pm from Naousa, Parikia & Santa Maria',
+            'transfers depart at 4:30pm from Naousa, Parikia & Santa Maria',
           location: 'Private Villa, Paros',
-          date: '2020-06-26 17:00'
+          date: '2020-06-26 17:30'
         },
         {
           key: 'beach-recovery',
           title: 'Beach Recovery',
           description:
-            'There’s no better cure for a hangover than a swim in the ocean, or so Josh says?! Let’s hit the beach and find out! We’ll made sure there’s a big lunch and a snoozeworthy sunbed at the water’s edge with your name on it – see you there!',
+            'Josh always says there’s no better cure for a hangover than a swim in the ocean... so, let’s hit the beach and find out if he’s right! We’ll made sure there’s a big lunch and a snoozeworthy sunbed at the water’s edge with your name on it – see you there!',
           location: 'Santa Maria Beach, Paros',
           date: '2020-06-27 12:00'
         },
@@ -121,7 +121,7 @@ export default {
           key: 'island-hop',
           title: 'Island Hop',
           description:
-            'The supermodel of the Greek islands is calling our name – and I think I can hear yours too?! Why not extend your trip for a few days and join us in Santorini before we jet off on our honeymoon? We’ve partied in Paros, now let’s conquer the caldera! No itinerary. No expectations. Just good times.',
+            'The supermodel of the Greek islands is calling our name – and I think I can hear yours too! Why not extend your trip for a few days and join us in Santorini before we jet off on our honeymoon? We’ve partied in Paros, now let’s conquer the caldera! No itinerary. No expectations. Just good times.',
           location: 'Santorini',
           date: '2020-06-30 13:00'
         }
@@ -229,6 +229,7 @@ export default {
 
       .event-location {
         font-size: 16px;
+        white-space: pre-wrap;
       }
 
       .event-time {
