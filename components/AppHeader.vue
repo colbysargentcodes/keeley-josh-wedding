@@ -2,7 +2,7 @@
   <header :class="{ show: headerActive }">
     <div class="app-width">
       <nuxt-link id="app-logo" to="/">
-        JK
+        <img src="/images/jk-monogram-thick.svg" />
       </nuxt-link>
       <nav class="font-heading text-spaced text-upper">
         <nuxt-link
@@ -90,6 +90,11 @@ header {
 
   #app-logo {
     text-align: left;
+
+    img {
+      width: auto;
+      height: 70px;
+    }
   }
 
   nav {

@@ -1,16 +1,17 @@
 <template>
-  <div class="page-container app-width">
+  <div
+    class="page-container app-width"
+    :class="{ 'welcome-page-active': userHasEntered }"
+  >
     <div
       id="wedding-countdown"
       class="landing-page-section font-heading text-spaced text-upper"
       :class="{ show: !userHasEntered }"
     >
-      <h1>
-        JK
-      </h1>
-      <h2>
-        26.06.20
-      </h2>
+      <figure>
+        <img src="/images/jk-monogram-thin.svg" />
+        <h2>26.06.20</h2>
+      </figure>
       <div id="countdown-container">
         <template v-if="!countdown.ended">
           <div class="countdown-block">
@@ -114,6 +115,11 @@ export default {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 0;
+
+  &.welcome-page-active {
+    padding-top: 100px;
+  }
 }
 
 .landing-page-section {
@@ -127,6 +133,21 @@ export default {
 #wedding-countdown {
   > * {
     margin-top: 1rem;
+  }
+
+  figure {
+    position: relative;
+
+    img {
+      width: auto;
+      height: 300px;
+    }
+
+    h2 {
+      position: absolute;
+      bottom: 1em;
+      left: 46%;
+    }
   }
 
   .countdown-block {
@@ -148,7 +169,7 @@ export default {
   #enter-button {
     display: inline-block;
     position: relative;
-    margin-top: 4em;
+    margin-top: 3em;
     padding: 0.75em 1em;
     font-size: 21px;
     color: inherit;
