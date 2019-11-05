@@ -17,7 +17,7 @@
           @click="changeTab(index)"
         >
           <div><img :src="'/icons/' + tab.key + '.svg'" /></div>
-          <div>{{ tab.title }}</div>
+          <div class="text-spaced-correction">{{ tab.title }}</div>
         </div>
       </div>
       <div v-if="activeTab !== false" id="travel-methods-content">

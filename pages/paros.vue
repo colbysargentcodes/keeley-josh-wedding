@@ -73,7 +73,7 @@
             @click="changeTab(index)"
           >
             <div><img :src="'/icons/' + tab.key + '.svg'" /></div>
-            <div>{{ tab.name }}</div>
+            <div class="text-spaced-correction">{{ tab.name }}</div>
           </div>
         </div>
         <div v-if="activeTab !== false" class="location-tab-content">
