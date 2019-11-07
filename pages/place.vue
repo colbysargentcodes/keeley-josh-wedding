@@ -27,6 +27,7 @@
           :id="'location-pointer-' + location.key"
           :key="location.key"
           v-scroll-to="{
+            container: '#app-container',
             el: '#map-container',
             offset: 10
           }"
@@ -203,6 +204,7 @@ p.page-header {
       &#location-pointer-santa-maria {
         width: 250px;
         text-align: left;
+        transform: translate(0, -50%);
 
         .location-pointer-name {
           display: inline-block;
@@ -235,13 +237,12 @@ p.page-header {
 
 .location-container {
   visibility: hidden;
-  display: flex;
-  align-items: center;
   position: fixed;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
+  overflow-y: scroll;
   padding: 75px 0;
   transition: visibility 0s 0.4s, background-color 0.4s 0.2s;
 
@@ -251,7 +252,7 @@ p.page-header {
   }
 
   .location-close {
-    position: absolute;
+    position: fixed;
     top: 50px;
     left: 50px;
     padding: 10px;

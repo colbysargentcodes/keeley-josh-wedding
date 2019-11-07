@@ -6,12 +6,19 @@
 }
 
 html {
+  overflow: hidden;
   color: $color-black;
   @include body-font;
   font-size: 16px;
   font-weight: 400;
   text-align: center;
   z-index: 0;
+}
+
+#app-container {
+  position: relative;
+  overflow-y: scroll;
+  height: 100vh;
 }
 
 #background {
