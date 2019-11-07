@@ -37,7 +37,12 @@
         </div>
       </div>
 
-      <div class="form-events-group">
+      <div class="form-events-group first">
+        <div
+          class="form-events-group-name font-heading text-spaced text-spaced-correction text-upper"
+        >
+          <span>Mykonos</span>
+        </div>
         <div
           class="form-row form-event-row"
           :class="{ inactive: rsvpResponses.stagDo === 'No' }"
@@ -58,7 +63,11 @@
                   name="stag-do"
                   value="Yes"
                 />
-                In
+                <checkbox
+                  :checked="rsvpResponses.stagDo === 'Yes'"
+                  class="form-event-checkbox"
+                ></checkbox>
+                <span>Yes</span>
               </label>
             </div>
             <div>
@@ -70,7 +79,11 @@
                   name="stag-do"
                   value="No"
                 />
-                Out
+                <checkbox
+                  :checked="rsvpResponses.stagDo === 'No'"
+                  class="form-event-checkbox"
+                ></checkbox>
+                <span>No</span>
               </label>
             </div>
           </div>
@@ -96,7 +109,11 @@
                   name="hen-do"
                   value="Yes"
                 />
-                In
+                <checkbox
+                  :checked="rsvpResponses.henDo === 'Yes'"
+                  class="form-event-checkbox"
+                ></checkbox>
+                <span>Yes</span>
               </label>
             </div>
             <div>
@@ -108,7 +125,11 @@
                   name="hen-do"
                   value="No"
                 />
-                Out
+                <checkbox
+                  :checked="rsvpResponses.henDo === 'No'"
+                  class="form-event-checkbox"
+                ></checkbox>
+                <span>No</span>
               </label>
             </div>
           </div>
@@ -116,6 +137,11 @@
       </div>
 
       <div class="form-events-group">
+        <div
+          class="form-events-group-name font-heading text-spaced text-spaced-correction text-upper"
+        >
+          <span>Paros</span>
+        </div>
         <div
           class="form-row form-event-row"
           :class="{ inactive: rsvpResponses.boatTrip === 'No' }"
@@ -141,7 +167,11 @@
                   name="boat-trip"
                   value="Yes"
                 />
-                In
+                <checkbox
+                  :checked="rsvpResponses.boatTrip === 'Yes'"
+                  class="form-event-checkbox"
+                ></checkbox>
+                <span>Yes</span>
               </label>
             </div>
             <div>
@@ -153,7 +183,11 @@
                   name="boat-trip"
                   value="No"
                 />
-                Out
+                <checkbox
+                  :checked="rsvpResponses.boatTrip === 'No'"
+                  class="form-event-checkbox"
+                ></checkbox>
+                <span>No</span>
               </label>
             </div>
           </div>
@@ -184,7 +218,11 @@
                   name="welcome-drinks"
                   value="Yes"
                 />
-                In
+                <checkbox
+                  :checked="rsvpResponses.welcomeDrinks === 'Yes'"
+                  class="form-event-checkbox"
+                ></checkbox>
+                <span>Yes</span>
               </label>
             </div>
             <div>
@@ -196,7 +234,11 @@
                   name="welcome-drinks"
                   value="No"
                 />
-                Out
+                <checkbox
+                  :checked="rsvpResponses.welcomeDrinks === 'No'"
+                  class="form-event-checkbox"
+                ></checkbox>
+                <span>No</span>
               </label>
             </div>
           </div>
@@ -222,7 +264,11 @@
                   name="wedding"
                   value="Yes"
                 />
-                In
+                <checkbox
+                  :checked="rsvpResponses.wedding === 'Yes'"
+                  class="form-event-checkbox"
+                ></checkbox>
+                <span>Yes</span>
               </label>
             </div>
             <div>
@@ -234,7 +280,11 @@
                   name="wedding"
                   value="No"
                 />
-                Out
+                <checkbox
+                  :checked="rsvpResponses.wedding === 'No'"
+                  class="form-event-checkbox"
+                ></checkbox>
+                <span>No</span>
               </label>
             </div>
           </div>
@@ -265,7 +315,11 @@
                   name="beach-recovery"
                   value="Yes"
                 />
-                In
+                <checkbox
+                  :checked="rsvpResponses.beachRecovery === 'Yes'"
+                  class="form-event-checkbox"
+                ></checkbox>
+                <span>Yes</span>
               </label>
             </div>
             <div>
@@ -277,7 +331,11 @@
                   name="beach-recovery"
                   value="No"
                 />
-                Out
+                <checkbox
+                  :checked="rsvpResponses.beachRecovery === 'No'"
+                  class="form-event-checkbox"
+                ></checkbox>
+                <span>No</span>
               </label>
             </div>
           </div>
@@ -308,7 +366,11 @@
                   name="pool-party"
                   value="Yes"
                 />
-                In
+                <checkbox
+                  :checked="rsvpResponses.poolParty === 'Yes'"
+                  class="form-event-checkbox"
+                ></checkbox>
+                <span>Yes</span>
               </label>
             </div>
             <div>
@@ -320,7 +382,11 @@
                   name="pool-party"
                   value="No"
                 />
-                Out
+                <checkbox
+                  :checked="rsvpResponses.poolParty === 'No'"
+                  class="form-event-checkbox"
+                ></checkbox>
+                <span>No</span>
               </label>
             </div>
           </div>
@@ -328,6 +394,11 @@
       </div>
 
       <div class="form-events-group">
+        <div
+          class="form-events-group-name font-heading text-spaced text-spaced-correction text-upper"
+        >
+          <span>Santorini</span>
+        </div>
         <div
           id="form-event-island-hop"
           class="form-row form-event-row"
@@ -358,7 +429,11 @@
                   name="island-hop"
                   value="Yes"
                 />
-                In
+                <checkbox
+                  :checked="rsvpResponses.islandHop === 'Yes'"
+                  class="form-event-checkbox"
+                ></checkbox>
+                <span>Yes</span>
               </label>
             </div>
             <div>
@@ -370,7 +445,11 @@
                   name="island-hop"
                   value="No"
                 />
-                Out
+                <checkbox
+                  :checked="rsvpResponses.islandHop === 'No'"
+                  class="form-event-checkbox"
+                ></checkbox>
+                <span>No</span>
               </label>
             </div>
           </div>
@@ -410,7 +489,12 @@
 </template>
 
 <script>
+import Checkbox from '~/components/Checkbox.vue'
+
 export default {
+  components: {
+    Checkbox
+  },
   data() {
     return {
       rsvpForm: false,
@@ -579,6 +663,24 @@ form {
     }
   }
 
+  .form-events-group {
+    &.first {
+      margin-top: 2em;
+    }
+
+    &-name {
+      margin-bottom: -12px;
+      padding-left: 95px;
+      color: $color-gold;
+      font-size: 14px;
+
+      > span {
+        display: inline-block;
+        transform: translateX(-50%);
+      }
+    }
+  }
+
   .form-row.form-event-row {
     display: flex;
     align-items: center;
@@ -590,7 +692,7 @@ form {
     }
 
     .form-event-date {
-      width: 15%;
+      width: 95px;
       position: relative;
       @include heading-font;
       font-size: 32px;
@@ -614,7 +716,7 @@ form {
     }
 
     .form-event-name {
-      width: 55%;
+      flex-grow: 1;
       @include heading-font;
 
       img {
@@ -638,9 +740,28 @@ form {
     }
 
     .form-event-field {
-      width: 30%;
+      width: 200px;
       display: flex;
-      justify-content: space-around;
+      justify-content: space-between;
+
+      label {
+        font-size: 18px;
+        cursor: pointer;
+
+        input {
+          display: none;
+        }
+
+        .form-event-checkbox {
+          display: inline-block;
+        }
+
+        span {
+          display: inline-block;
+          position: relative;
+          top: -4px;
+        }
+      }
     }
 
     &:not(:last-child) {
