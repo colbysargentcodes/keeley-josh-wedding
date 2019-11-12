@@ -4,7 +4,7 @@
       Place
     </h1>
     <h2 class="page-header">
-      Where to eat, sleep, drink, repeat
+      Where to eat, sleep, drink, repeat.
     </h2>
     <p class="page-header">
       Pristine beaches, crystal clear turquoise waters, Byzantine footpaths

@@ -10,18 +10,117 @@
     <div id="travel-methods-container">
       <div id="travel-methods-tabs" class="text-spaced text-upper">
         <div
-          v-for="(tab, index) in tabs"
+          v-for="tab in tabs"
           :key="tab.key"
           class="travel-method-tab"
-          :class="{ active: activeTab === false || activeTab === index }"
-          @click="changeTab(index)"
+          :class="{ active: activeTab === false || activeTab === tab.key }"
+          @click="changeTab(tab.key)"
         >
           <div><img :src="'/icons/' + tab.key + '.svg'" /></div>
           <div class="text-spaced-correction">{{ tab.title }}</div>
         </div>
       </div>
-      <div v-if="activeTab !== false" id="travel-methods-content">
-        <span>{{ tabs[activeTab].content }}</span>
+      <div v-if="activeTab === 'fly'" class="travel-methods-content">
+        <h3>
+          To/From Athens International Airport (ATH)
+        </h3>
+        <p>
+          Those travelling from outside Europe are recommended to fly directly
+          or indirectly to/from Athens International Airport and then on to
+          Mykonos (40 mins) or Paros (40mins).
+        </p>
+        <h3>
+          To/From Mykonos Airport (JMK)
+        </h3>
+        <p>
+          Only those travelling from select countries inside Europe (or via
+          Athens) can fly directly to/from Mykonos airport. Paros can then be
+          reached by ferry (1 hr).
+        </p>
+        <p class="note">
+          *A taxi between Mykonos Airport and Mykonos Old Town (10mins)/Ornos (5
+          mins), at a cost of €15-20.
+        </p>
+        <h3>
+          To/From New Paros Airport (PAS)
+        </h3>
+        <p>
+          Only those travelling via Athens can fly directly to/from Paros
+          Airport (40 mins)
+        </p>
+        <p class="note">
+          *A taxi between Paros Airport and Naoussa (25 mins)/Santa Maria takes
+          (35mins), at a cost of €30-40.
+        </p>
+        <p>
+          Compare flights times and prices at:<br />
+          <a href="www.skyscanner.com">www.skyscanner.com</a><br />
+          <a href="www.expedia.com">www.expedia.com</a>
+        </p>
+        <p class="note">
+          *we’d recommend booking your flights ASAP!
+        </p>
+      </div>
+      <div v-if="activeTab === 'sail'" class="travel-methods-content">
+        <h3>
+          Athens Piraeus Harbour – Mykonos New Port / Paros (Parikia) - Athens
+          Piraeus Harbour
+        </h3>
+        <p>
+          There are 4-5 ferries per day between Athens and Mykonos/Paros, with a
+          journey time of approx. 4-5 hours. Costs vary between €30-60 dependent
+          upon ferry operator and duration.
+        </p>
+        <p class="note">
+          *A taxi between Athens Airport and Athens Piraeus Harbour takes 1
+          hour, at a cost of €50-60. Travel is also possible by bus, with a
+          journey time of 1.5hours, at a cost of approx. €6-10.
+        </p>
+        <h3>
+          Mykonos New Port – Paros (Parikia) – Mykonos New Port
+        </h3>
+        <p>
+          There are 3-5 ferries per day between Mykonos and Paros, with a
+          journey time of approx. 1 hour. Costs vary between €20-40 dependant on
+          ferry operator.
+        </p>
+        <p class="note">
+          *A taxi between Mykonos Airport and Mykonos New Port takes 15-20 mins,
+          at a cost of approx. €30.
+        </p>
+        <p>
+          View ferry timetables and book tickets online at:<br />
+          <a href="www.ferryhopper.com">www.ferryhopper.com</a><br />
+          <a href="www.letsferry.gr">www.letsferry.gr</a><br />
+          <a href="www.ferries.gr">www.ferries.gr</a><br />
+          <a href="www.go-ferry.com">www.go-ferry.com</a>
+        </p>
+        <p class="note">
+          *we’d recommend booking your ferry tickets online 2-3 months in
+          advance (although timetable release dates can vary).
+        </p>
+      </div>
+      <div v-if="activeTab === 'drive'" class="travel-methods-content">
+        <p>
+          Car rental is available in Athens, Mykonos and Paros. For guidance on
+          travelling via car between these locations, please see the ‘sail’ tab
+          for ferry information.
+        </p>
+        <p>
+          Compare local car rental providers and prices at:<br />
+          <a href="www.rentalcars.com">www.rentalcars.com</a><br />
+          <a href="www.autoeurope.com">www.autoeurope.com</a><br />
+          <a href="www.greececar.com">www.greececar.com</a>
+        </p>
+        <p class="note">
+          *we’d recommend booking your rental car 1-2 months in advance.
+        </p>
+      </div>
+      <div v-if="activeTab === 'swim'" class="travel-methods-content">
+        <p>
+          Rather you than us. Good luck!<br />
+          <span class="note">* we'd recommend you leave NOW.</span>
+        </p>
       </div>
     </div>
   </div>
@@ -34,31 +133,27 @@ export default {
       tabs: [
         {
           key: 'fly',
-          title: 'Fly',
-          content: 'This is how to get there if you fly'
+          title: 'Fly'
         },
         {
           key: 'sail',
-          title: 'Sail',
-          content: 'This is how to get there if you sail'
+          title: 'Sail'
         },
         {
           key: 'drive',
-          title: 'Drive',
-          content: 'This is how to get there if you drive'
+          title: 'Drive'
         },
         {
           key: 'swim',
-          title: 'Swim',
-          content: 'This is how to get there if you swim'
+          title: 'Swim'
         }
       ],
       activeTab: 0
     }
   },
   methods: {
-    changeTab(index) {
-      this.activeTab = index
+    changeTab(key) {
+      this.activeTab = key
     }
   },
   head() {

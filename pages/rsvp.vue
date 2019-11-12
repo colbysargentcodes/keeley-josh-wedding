@@ -5,7 +5,7 @@
     </h1>
     <h2 class="page-header">
       We hope you can join us! Let us know if we can also count you ‘in’ for any
-      of our pre and post wedding activities
+      of our pre and post wedding activities.
     </h2>
     <form
       name="rsvp"
