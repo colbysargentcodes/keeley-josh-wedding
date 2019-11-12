@@ -4,7 +4,8 @@
       R.S.V.P
     </h1>
     <h2 class="page-header">
-      let us know if you can join us and which events you'd like to attend
+      We hope you can join us! Let us know if we can also count you ‘in’ for any
+      of our pre and post wedding activities
     </h2>
     <form
       name="rsvp"
@@ -67,7 +68,7 @@
                   :checked="rsvpResponses.stagDo === 'Yes'"
                   class="form-event-checkbox"
                 ></checkbox>
-                <span>Yes</span>
+                <span>In</span>
               </label>
             </div>
             <div>
@@ -83,7 +84,7 @@
                   :checked="rsvpResponses.stagDo === 'No'"
                   class="form-event-checkbox"
                 ></checkbox>
-                <span>No</span>
+                <span>Out</span>
               </label>
             </div>
           </div>
@@ -91,45 +92,50 @@
 
         <div
           class="form-row form-event-row"
-          :class="{ inactive: rsvpResponses.henDo === 'No' }"
+          :class="{ inactive: rsvpResponses.henParty === 'No' }"
         >
           <div class="form-event-date">21<sup>st</sup></div>
           <div class="form-event-name">
             <img src="/icons/hen.svg" />
-            <span>Hen Do</span>
+            <span>Hen Party</span>
           </div>
           <div class="form-event-field">
-            <input type="radio" name="hen-do" value="Hen Do" class="hidden" />
+            <input
+              type="radio"
+              name="hen-party"
+              value="Hen Party"
+              class="hidden"
+            />
             <div>
-              <label for="hen-do-yes">
+              <label for="hen-party-yes">
                 <input
-                  id="hen-do-yes"
-                  v-model="rsvpResponses.henDo"
+                  id="hen-party-yes"
+                  v-model="rsvpResponses.henParty"
                   type="radio"
-                  name="hen-do"
+                  name="hen-party"
                   value="Yes"
                 />
                 <checkbox
-                  :checked="rsvpResponses.henDo === 'Yes'"
+                  :checked="rsvpResponses.henParty === 'Yes'"
                   class="form-event-checkbox"
                 ></checkbox>
-                <span>Yes</span>
+                <span>In</span>
               </label>
             </div>
             <div>
-              <label for="hen-do-no">
+              <label for="hen-party-no">
                 <input
-                  id="hen-do-no"
-                  v-model="rsvpResponses.henDo"
+                  id="hen-party-no"
+                  v-model="rsvpResponses.henParty"
                   type="radio"
-                  name="hen-do"
+                  name="hen-party"
                   value="No"
                 />
                 <checkbox
-                  :checked="rsvpResponses.henDo === 'No'"
+                  :checked="rsvpResponses.henParty === 'No'"
                   class="form-event-checkbox"
                 ></checkbox>
-                <span>No</span>
+                <span>Out</span>
               </label>
             </div>
           </div>
@@ -171,7 +177,7 @@
                   :checked="rsvpResponses.boatTrip === 'Yes'"
                   class="form-event-checkbox"
                 ></checkbox>
-                <span>Yes</span>
+                <span>In</span>
               </label>
             </div>
             <div>
@@ -187,7 +193,7 @@
                   :checked="rsvpResponses.boatTrip === 'No'"
                   class="form-event-checkbox"
                 ></checkbox>
-                <span>No</span>
+                <span>Out</span>
               </label>
             </div>
           </div>
@@ -222,7 +228,7 @@
                   :checked="rsvpResponses.welcomeDrinks === 'Yes'"
                   class="form-event-checkbox"
                 ></checkbox>
-                <span>Yes</span>
+                <span>In</span>
               </label>
             </div>
             <div>
@@ -238,7 +244,7 @@
                   :checked="rsvpResponses.welcomeDrinks === 'No'"
                   class="form-event-checkbox"
                 ></checkbox>
-                <span>No</span>
+                <span>Out</span>
               </label>
             </div>
           </div>
@@ -268,7 +274,7 @@
                   :checked="rsvpResponses.wedding === 'Yes'"
                   class="form-event-checkbox"
                 ></checkbox>
-                <span>Yes</span>
+                <span>In</span>
               </label>
             </div>
             <div>
@@ -284,7 +290,7 @@
                   :checked="rsvpResponses.wedding === 'No'"
                   class="form-event-checkbox"
                 ></checkbox>
-                <span>No</span>
+                <span>Out</span>
               </label>
             </div>
           </div>
@@ -319,7 +325,7 @@
                   :checked="rsvpResponses.beachRecovery === 'Yes'"
                   class="form-event-checkbox"
                 ></checkbox>
-                <span>Yes</span>
+                <span>In</span>
               </label>
             </div>
             <div>
@@ -335,7 +341,7 @@
                   :checked="rsvpResponses.beachRecovery === 'No'"
                   class="form-event-checkbox"
                 ></checkbox>
-                <span>No</span>
+                <span>Out</span>
               </label>
             </div>
           </div>
@@ -370,7 +376,7 @@
                   :checked="rsvpResponses.poolParty === 'Yes'"
                   class="form-event-checkbox"
                 ></checkbox>
-                <span>Yes</span>
+                <span>In</span>
               </label>
             </div>
             <div>
@@ -386,7 +392,7 @@
                   :checked="rsvpResponses.poolParty === 'No'"
                   class="form-event-checkbox"
                 ></checkbox>
-                <span>No</span>
+                <span>Out</span>
               </label>
             </div>
           </div>
@@ -409,8 +415,8 @@
             <img src="/icons/island-hop.svg" />
             <span>Island Hop</span>
             <div class="form-event-description">
-              Are you considering joining us in Santorini?<br />
-              (We'll keep you updated on our plans)
+              If you are considering joining us in Santorini select ‘in’ and
+              we’ll keep you updated on our plans
             </div>
           </div>
           <div class="form-event-field">
@@ -433,7 +439,7 @@
                   :checked="rsvpResponses.islandHop === 'Yes'"
                   class="form-event-checkbox"
                 ></checkbox>
-                <span>Yes</span>
+                <span>In</span>
               </label>
             </div>
             <div>
@@ -449,7 +455,7 @@
                   :checked="rsvpResponses.islandHop === 'No'"
                   class="form-event-checkbox"
                 ></checkbox>
-                <span>No</span>
+                <span>Out</span>
               </label>
             </div>
           </div>
@@ -464,7 +470,7 @@
           <textarea
             name="message"
             rows="3"
-            placeholder="Please let us know about any dietary requirements"
+            placeholder="Please let us know of any dietary requirements"
           ></textarea>
           <span class="focus-bar"></span>
         </div>
@@ -500,7 +506,7 @@ export default {
       rsvpForm: false,
       rsvpResponses: {
         stagDo: null,
-        henDo: null,
+        henParty: null,
         boatTrip: null,
         welcomeDrinks: null,
         wedding: null,
@@ -716,6 +722,7 @@ form {
     }
 
     .form-event-name {
+      position: relative;
       flex-grow: 1;
       @include heading-font;
 
