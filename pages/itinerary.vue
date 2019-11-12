@@ -3,6 +3,9 @@
     <h1 class="page-header">
       Itinerary
     </h1>
+    <h2 class="page-header">
+      Boy, do we have a line up for you...
+    </h2>
     <div id="event-list-container">
       <div
         v-for="event in events"
@@ -58,7 +61,7 @@ export default {
       events: [
         {
           key: 'stag',
-          title: 'Stag',
+          title: 'Stag Do',
           quote:
             '“The first rule of the stag party, is not to talk about the stag party.”',
           quoted: 'Josh',
@@ -67,7 +70,7 @@ export default {
         },
         {
           key: 'hen',
-          title: 'Hen',
+          title: 'Hen Party',
           quote: '“It’s time to drink champagne and dance on the table!”',
           quoted: 'Keeley',
           location: 'Old Town, Mykonos',
@@ -97,7 +100,7 @@ export default {
             'It’s time for us to say “I do”, and for you to #MeetTheMcNamaras!\n' +
             'Two become one. All become drunk.',
           locationPretext:
-            'transfers depart at 4:30pm from Naousa, Parikia & Santa Maria',
+            'transfers will depart from select locations at 4:30pm',
           location: 'Private Villa, Paros',
           date: '2020-06-26 17:30'
         },
@@ -105,7 +108,7 @@ export default {
           key: 'beach-recovery',
           title: 'Beach Recovery',
           description:
-            'Josh always says there’s no better cure for a hangover than a swim in the ocean... so, let’s hit the beach and find out if he’s right! We’ll made sure there’s a big lunch and a snoozeworthy sunbed at the water’s edge with your name on it – see you there!',
+            'Josh always says there’s no better cure for a hangover than a swim in the ocean... so, let’s hit the beach! We’ll made sure there’s a big lunch and a snoozeworthy sunbed at the water’s edge with your name on it – see you there!',
           location: 'Santa Maria Beach, Paros',
           date: '2020-06-27 12:00'
         },
