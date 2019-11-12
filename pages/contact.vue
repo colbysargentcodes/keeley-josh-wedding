@@ -4,7 +4,7 @@
       Contact
     </h1>
     <h2 class="page-header">
-      how to get in touch
+      Got a question or just want to say hi? Get in touch!
     </h2>
     <div id="contacts-list-container">
       <div
