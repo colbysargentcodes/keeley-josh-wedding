@@ -196,6 +196,7 @@ export default {
 
 #welcome-message {
   width: 56.25%;
+  padding-bottom: 50px;
   font-size: 21px;
 
   p + p {
