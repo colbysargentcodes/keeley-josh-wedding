@@ -1,8 +1,8 @@
 [
   {
-    "key": "naousa",
-    "name": "Naousa",
-    "description": "Get lost in the narrow white-washed labyrinth of bougainvilleas draped houses, local boutiques and coffee shops or sample the islands freshest seafood along the waterfront of its colourful picturesque harbour. Although considered one of the most beautiful villages in the Cyclades, Naousa is definitely more than just a pretty face! Calm and tranquil by day this cosmopolitan village truly comes to life after the sun sets, with a vibrant nightlife where you can really let your hair down and dance until dawn.",
+    "key": "naoussa",
+    "name": "Naoussa",
+    "description": "Get lost in the narrow white-washed labyrinth of bougainvilleas draped houses, local boutiques and coffee shops or sample the islands freshest seafood along the waterfront of its colourful picturesque harbour. Although considered one of the most beautiful villages in the Cyclades, Naoussa is definitely more than just a pretty face! Calm and tranquil by day this cosmopolitan village truly comes to life after the sun sets, with a vibrant nightlife where you can really let your hair down and dance until dawn.",
     "tabs": [
       {
         "key": "eat",
@@ -11,7 +11,7 @@
           {
             "key": "restaurant1",
             "name": "Good Restaurant",
-            "description": "A restaurant in Naousa which is good.",
+            "description": "A restaurant in Naoussa which is good.",
             "link": "https://www.example.com"
           },
           {
@@ -29,7 +29,7 @@
           {
             "key": "bar1",
             "name": "Good Bar",
-            "description": "A bar in Naousa which has good drinks.",
+            "description": "A bar in Naoussa which has good drinks.",
             "link": "https://www.example.com"
           },
           {
@@ -132,7 +132,7 @@
   {
     "key": "santa-maria",
     "name": "Santa Maria",
-    "description": "Perfect for those looking to relax and soak up the sun on Paros’ more remote and off-the-beaten path beaches while still remaining in close proximity to the bustling nightlife of Naousa fishing village. Santa Maria’s beautiful coastline is divided into two golden sand beaches, both with gorgeous views of the neighbouring Naxos island, and crystal-clear waters perfect for snorkelling or taking advantage of the various watersports on offer. You’ll also find Paros’ ‘best’ beach bar on the organised section of this beach, serving up fresh fruity cocktails and a delicious lunch and dinner menu!",
+    "description": "Perfect for those looking to relax and soak up the sun on Paros’ more remote and off-the-beaten path beaches while still remaining in close proximity to the bustling nightlife of Naoussa fishing village. Santa Maria’s beautiful coastline is divided into two golden sand beaches, both with gorgeous views of the neighbouring Naxos island, and crystal-clear waters perfect for snorkelling or taking advantage of the various watersports on offer. You’ll also find Paros’ ‘best’ beach bar on the organised section of this beach, serving up fresh fruity cocktails and a delicious lunch and dinner menu!",
     "tabs": [
       {
         "key": "eat",

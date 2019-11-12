@@ -90,7 +90,7 @@ export default {
           title: 'Welcome Drinks',
           description:
             'You’re all here and we couldn’t be happier! Join us for cocktails and canapes on the harbour of this picturesque fishing village, as we watch the sunset on our final night as ‘Mr & Miss’.',
-          location: 'Barbarossa Restaurant\n' + 'Naousa, Paros',
+          location: 'Barbarossa Restaurant\n' + 'Naoussa, Paros',
           date: '2020-06-25 18:00'
         },
         {
