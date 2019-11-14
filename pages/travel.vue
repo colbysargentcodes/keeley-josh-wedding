@@ -20,7 +20,7 @@
           <div class="text-spaced-correction">{{ tab.title }}</div>
         </div>
       </div>
-      <div v-if="activeTab === 'fly'" class="travel-methods-content">
+      <div v-if="activeTab === 'fly'" class="travel-method-content">
         <h3>
           To/From Athens International Airport (ATH)
         </h3>
@@ -46,7 +46,7 @@
         </h3>
         <p>
           Only those travelling via Athens can fly directly to/from Paros
-          Airport (40 mins)
+          Airport (40 mins).
         </p>
         <p class="note">
           *A taxi between Paros Airport and Naoussa (25 mins)/Santa Maria takes
@@ -54,16 +54,19 @@
         </p>
         <p>
           Compare flights times and prices at:<br />
-          <a href="www.skyscanner.com">www.skyscanner.com</a><br />
-          <a href="www.expedia.com">www.expedia.com</a>
+          <a href="https://www.skyscanner.com" target="_blank">
+            www.skyscanner.com
+          </a>
+          <br />
+          <a href="https://www.expedia.com" target="_blank">www.expedia.com</a>
         </p>
         <p class="note">
           *we’d recommend booking your flights ASAP!
         </p>
       </div>
-      <div v-if="activeTab === 'sail'" class="travel-methods-content">
+      <div v-if="activeTab === 'sail'" class="travel-method-content">
         <h3>
-          Athens Piraeus Harbour – Mykonos New Port / Paros (Parikia) - Athens
+          Athens Piraeus Harbour – Mykonos New Port / Paros (Parikia) – Athens
           Piraeus Harbour
         </h3>
         <p>
@@ -90,17 +93,26 @@
         </p>
         <p>
           View ferry timetables and book tickets online at:<br />
-          <a href="www.ferryhopper.com">www.ferryhopper.com</a><br />
-          <a href="www.letsferry.gr">www.letsferry.gr</a><br />
-          <a href="www.ferries.gr">www.ferries.gr</a><br />
-          <a href="www.go-ferry.com">www.go-ferry.com</a>
+          <a href="https://www.ferryhopper.com" target="_blank">
+            www.ferryhopper.com
+          </a>
+          <br />
+          <a href="https://www.letsferry.gr" target="_blank">
+            www.letsferry.gr
+          </a>
+          <br />
+          <a href="https://www.ferries.gr" target="_blank">www.ferries.gr</a>
+          <br />
+          <a href="https://www.go-ferry.com" target="_blank">
+            www.go-ferry.com
+          </a>
         </p>
         <p class="note">
           *we’d recommend booking your ferry tickets online 2-3 months in
           advance (although timetable release dates can vary).
         </p>
       </div>
-      <div v-if="activeTab === 'drive'" class="travel-methods-content">
+      <div v-if="activeTab === 'drive'" class="travel-method-content">
         <p>
           Car rental is available in Athens, Mykonos and Paros. For guidance on
           travelling via car between these locations, please see the ‘sail’ tab
@@ -108,18 +120,28 @@
         </p>
         <p>
           Compare local car rental providers and prices at:<br />
-          <a href="www.rentalcars.com">www.rentalcars.com</a><br />
-          <a href="www.autoeurope.com">www.autoeurope.com</a><br />
-          <a href="www.greececar.com">www.greececar.com</a>
+          <a href="https://www.rentalcars.com" target="_blank">
+            www.rentalcars.com
+          </a>
+          <br />
+          <a href="https://www.autoeurope.com" target="_blank">
+            www.autoeurope.com
+          </a>
+          <br />
+          <a href="https://www.greececar.com" target="_blank">
+            www.greececar.com
+          </a>
         </p>
         <p class="note">
           *we’d recommend booking your rental car 1-2 months in advance.
         </p>
       </div>
-      <div v-if="activeTab === 'swim'" class="travel-methods-content">
+      <div v-if="activeTab === 'swim'" class="travel-method-content">
         <p>
-          Rather you than us. Good luck!<br />
-          <span class="note">* we'd recommend you leave NOW.</span>
+          Rather you than us. Good luck!
+        </p>
+        <p class="note">
+          * we'd recommend you leave NOW.
         </p>
       </div>
     </div>
@@ -165,6 +187,8 @@ export default {
 </script>
 
 <style scoped lang="scss">
+@import '~/assets/scss/variables';
+
 #travel-methods-container {
   width: 65%;
   margin: 0 auto;
@@ -188,6 +212,33 @@ export default {
         width: 50px;
         margin-bottom: 12px;
       }
+    }
+  }
+
+  .travel-method-content {
+    font-size: 16px;
+
+    > h3:not(:first-child) {
+      margin-top: 2em;
+    }
+
+    > p:not(:first-child) {
+      margin-top: 0.65em;
+    }
+
+    a {
+      color: $color-gold;
+      transition: color 0.4s;
+
+      &:hover {
+        color: $color-gold-lighter-2;
+      }
+    }
+
+    .note {
+      font-size: 12px;
+      color: $color-midgrey;
+      font-style: italic;
     }
   }
 }
