@@ -23,7 +23,7 @@
           Name(s)
         </div>
         <div class="form-input-field">
-          <input name="names" type="text" />
+          <input v-model="rsvpResponses.name" name="names" type="text" />
           <span class="focus-bar"></span>
         </div>
       </div>
@@ -33,7 +33,7 @@
           Email
         </div>
         <div class="form-input-field">
-          <input name="email" type="email" />
+          <input v-model="rsvpResponses.email" name="email" type="email" />
           <span class="focus-bar"></span>
         </div>
       </div>
@@ -464,7 +464,8 @@
 
       <div class="form-row form-input-row">
         <div class="form-input-name">
-          Message
+          Message<br />
+          <span class="note">optional</span>
         </div>
         <div class="form-input-field">
           <textarea
@@ -483,6 +484,10 @@
           :disabled="rsvpFormSubmitting || rsvpFormResult.success"
           class="text-spaced text-upper"
         />
+      </div>
+
+      <div v-if="rsvpFormSubmitAttempted && !rsvpFormValid" class="error">
+        Please fill in all events
       </div>
 
       <div>
@@ -505,6 +510,8 @@ export default {
     return {
       rsvpForm: false,
       rsvpResponses: {
+        name: null,
+        email: null,
         stagDo: null,
         henParty: null,
         boatTrip: null,
@@ -514,8 +521,20 @@ export default {
         poolParty: null,
         islandHop: null
       },
+      rsvpFormSubmitAttempted: false,
       rsvpFormSubmitting: false,
       rsvpFormResult: {}
+    }
+  },
+  computed: {
+    rsvpFormValid() {
+      let formValid = true
+
+      for (const response of Object.entries(this.rsvpResponses)) {
+        if (!response[1]) formValid = false
+      }
+
+      return formValid
     }
   },
   mounted() {
@@ -525,6 +544,12 @@ export default {
     handleRsvpSubmit(e) {
       e.preventDefault()
       this.rsvpFormSubmitting = true
+      this.rsvpFormSubmitAttempted = true
+
+      if (!this.rsvpFormValid) {
+        this.rsvpFormSubmitting = false
+        return
+      }
 
       this.sendRsvpSubmit().then((response) => {
         this.rsvpFormSubmitting = false
@@ -622,6 +647,15 @@ form {
     .form-input-name {
       width: 29%;
       @include heading-font;
+
+      .note {
+        position: relative;
+        top: -10px;
+        color: $color-midgrey;
+        @include body-font;
+        font-size: 12px;
+        font-style: italic;
+      }
     }
 
     .form-input-field {
