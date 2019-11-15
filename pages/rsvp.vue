@@ -16,6 +16,7 @@
     >
       <div class="form-border"></div>
 
+      <input name="form-name" type="text" class="hidden" value="rsvp" />
       <input name="its-a-trap" type="text" class="hidden" />
 
       <div class="form-row form-input-row">
