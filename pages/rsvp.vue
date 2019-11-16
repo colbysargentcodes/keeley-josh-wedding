@@ -12,6 +12,7 @@
       action="/rsvp"
       netlify
       netlify-honeypot="its-a-trap"
+      :class="{ frozen: rsvpFormResult.success }"
       @submit="handleRsvpSubmit"
     >
       <div class="form-border"></div>
@@ -487,14 +488,19 @@
         />
       </div>
 
-      <div v-if="rsvpFormSubmitAttempted && !rsvpFormValid" class="error">
+      <div
+        v-if="rsvpFormSubmitAttempted && !rsvpFormValid"
+        class="validation-message error"
+      >
         Please fill in all events
       </div>
 
-      <div>
-        <span :class="{ error: !rsvpFormResult.success }">
-          {{ rsvpFormResult.message }}
-        </span>
+      <div
+        v-if="rsvpFormResult.message"
+        class="feedback-message"
+        :class="{ error: !rsvpFormResult.success }"
+      >
+        {{ rsvpFormResult.message }}
       </div>
     </form>
   </div>
@@ -567,7 +573,7 @@ export default {
             message:
               'Thank you, ' +
               (this.rsvpResponses.wedding === 'Yes'
-                ? 'we look forward to seeing you.'
+                ? 'we look forward to seeing you!'
                 : "we're sorry you can't make it.")
           }
         }
@@ -608,7 +614,7 @@ export default {
 }
 
 .error {
-  color: red;
+  color: #e12;
 }
 
 form {
@@ -622,6 +628,10 @@ form {
   letter-spacing: 0.025em;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
   z-index: 0;
+
+  &.frozen {
+    pointer-events: none;
+  }
 
   .form-border {
     position: absolute;
@@ -833,6 +843,7 @@ form {
 
     input[type='submit'] {
       margin: 0 auto;
+      outline: 0;
       border: 1px solid $color-gold;
       padding: 0.75em 1.5em;
       background-color: $color-white;
@@ -848,6 +859,13 @@ form {
         color: $color-white;
       }
     }
+  }
+
+  .validation-message,
+  .feedback-message {
+    margin-top: 2em;
+    text-align: center;
+    font-size: 18px;
   }
 
   #form-event-island-hop {
