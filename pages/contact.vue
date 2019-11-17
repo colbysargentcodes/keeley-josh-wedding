@@ -20,7 +20,7 @@
             <p class="contact-person-role font-heading text-spaced text-upper">
               {{ contact.role }}
             </p>
-            <p class="contact-person-name">{{ contact.name }}</p>
+            <p class="contact-person-name font-script">{{ contact.name }}</p>
           </div>
         </div>
         <div class="contact-info">
@@ -138,7 +138,8 @@ a {
         }
 
         .contact-person-name {
-          font-size: 28px;
+          margin-top: 5px;
+          font-size: 36px;
         }
       }
 

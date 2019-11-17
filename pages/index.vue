@@ -159,10 +159,10 @@ export default {
     }
 
     .countdown-label {
+      color: $color-gold;
+      font-size: 18px;
       text-transform: capitalize;
       letter-spacing: 0;
-      font-weight: 600;
-      color: $color-gold;
     }
   }
 

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Dancing+Script:400,700|EB+Garamond:400,600,800|Lato:300,400,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=EB+Garamond:400,600,800|Lato:300,400,700|Parisienne&display=swap');
 
 @mixin heading-font {
   font-family: 'EB Garamond', serif;
@@ -15,7 +15,7 @@
 }
 
 @mixin script-font {
-  font-family: 'Dancing Script', cursive;
+  font-family: 'Parisienne', cursive;
 }
 .font-script {
   @include script-font;
