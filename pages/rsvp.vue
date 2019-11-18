@@ -753,6 +753,7 @@ form {
 
   .form-row.form-rsvp-row {
     margin-top: 2em;
+    margin-bottom: 2em;
 
     .form-rsvp-name {
       @include heading-font;
