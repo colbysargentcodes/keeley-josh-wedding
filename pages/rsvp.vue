@@ -40,7 +40,44 @@
         </div>
       </div>
 
-      <div class="form-events-group first">
+      <div class="form-row form-rsvp-row">
+        <div class="form-rsvp-name">
+          Will you be attending?
+        </div>
+        <div class="form-rsvp-field">
+          <label for="rsvp-yes">
+            <input
+              id="rsvp-yes"
+              v-model="rsvpResponses.rsvp"
+              type="radio"
+              name="rsvp"
+              value="Yes"
+            />
+            <checkbox
+              :checked="rsvpResponses.rsvp === 'Yes'"
+              class="form-event-checkbox"
+            ></checkbox>
+            <span>I am SO in</span>
+          </label>
+
+          <label for="rsvp-no">
+            <input
+              id="rsvp-no"
+              v-model="rsvpResponses.rsvp"
+              type="radio"
+              name="rsvp"
+              value="No"
+            />
+            <checkbox
+              :checked="rsvpResponses.rsvp === 'No'"
+              class="form-event-checkbox"
+            ></checkbox>
+            <span>Sorry, I'm out</span>
+          </label>
+        </div>
+      </div>
+
+      <div v-if="rsvpResponses.rsvp === 'Yes'" class="form-events-group first">
         <div
           class="form-events-group-name font-heading text-spaced text-spaced-correction text-upper"
         >
@@ -144,7 +181,7 @@
         </div>
       </div>
 
-      <div class="form-events-group">
+      <div v-if="rsvpResponses.rsvp === 'Yes'" class="form-events-group">
         <div
           class="form-events-group-name font-heading text-spaced text-spaced-correction text-upper"
         >
@@ -401,7 +438,7 @@
         </div>
       </div>
 
-      <div class="form-events-group">
+      <div v-if="rsvpResponses.rsvp === 'Yes'" class="form-events-group">
         <div
           class="form-events-group-name font-heading text-spaced text-spaced-correction text-upper"
         >
@@ -710,6 +747,43 @@ form {
       textarea {
         text-align: left;
         resize: vertical;
+      }
+    }
+  }
+
+  .form-row.form-rsvp-row {
+    margin-top: 2em;
+
+    .form-rsvp-name {
+      @include heading-font;
+      text-align: center;
+    }
+
+    .form-rsvp-field {
+      margin-top: 0.65em;
+      text-align: center;
+
+      label {
+        font-size: 18px;
+        cursor: pointer;
+
+        + label {
+          margin-left: 2em;
+        }
+
+        input {
+          display: none;
+        }
+
+        .form-event-checkbox {
+          display: inline-block;
+        }
+
+        span {
+          display: inline-block;
+          position: relative;
+          top: -4px;
+        }
       }
     }
   }
