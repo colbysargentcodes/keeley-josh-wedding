@@ -8,9 +8,10 @@
       class="landing-page-section font-heading text-spaced text-upper"
       :class="{ show: !userHasEntered }"
     >
-      <figure>
+      <figure @click="enter">
         <img src="/images/jk-monogram-thin.svg" />
         <h2>26.06.20</h2>
+        <div id="enter-button">enter</div>
       </figure>
       <div id="countdown-container">
         <template v-if="!countdown.ended">
@@ -31,7 +32,6 @@
           We're married!
         </div>
       </div>
-      <div id="enter-button" @click="enter">enter</div>
     </div>
     <div
       id="welcome-message"
@@ -137,6 +137,12 @@ export default {
 
   figure {
     position: relative;
+    cursor: pointer;
+
+    img,
+    h2 {
+      transition: opacity 1s 0.2s;
+    }
 
     img {
       width: auto;
@@ -147,6 +153,32 @@ export default {
       position: absolute;
       bottom: 1em;
       left: 46%;
+    }
+
+    #enter-button {
+      display: inline-block;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      opacity: 0;
+      padding: 0.75em 1em;
+      font-size: 28px;
+      color: inherit;
+      text-decoration: none;
+      transition: opacity 1.2s;
+    }
+
+    &:hover {
+      img,
+      h2 {
+        opacity: 0.3;
+        transition: opacity 1s;
+      }
+
+      #enter-button {
+        opacity: 1;
+      }
     }
   }
 
@@ -163,33 +195,6 @@ export default {
       font-size: 18px;
       text-transform: capitalize;
       letter-spacing: 0;
-    }
-  }
-
-  #enter-button {
-    display: inline-block;
-    position: relative;
-    margin-top: 3em;
-    padding: 0.75em 1em;
-    font-size: 21px;
-    color: inherit;
-    text-decoration: none;
-    cursor: pointer;
-
-    &:after {
-      content: '';
-      position: absolute;
-      bottom: 0.55em;
-      left: 51%;
-      right: calc(51% + 4px);
-      height: 1px;
-      background-color: $color-gold;
-      transition: left 0.4s, right 0.4s, background-color 0.2s;
-    }
-
-    &:hover:after {
-      left: 2em;
-      right: calc(2em + 4px); // adjust for text-spacing
     }
   }
 }
