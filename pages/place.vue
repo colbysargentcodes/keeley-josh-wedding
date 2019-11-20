@@ -15,9 +15,9 @@
     <p class="page-header">
       Paros suits the taste of every traveller, whether you’re looking to chill
       on the beach (or hit the waves), hike mountain trails, visit
-      archaeological sites and museums, or shop ‘til you drop... and let’s not
+      archaeological sites and museums, or shop ‘til you drop - and let’s not
       forget about the fun to be had after the sun goes down! Use the
-      interactive map below to explore our recommended areas...
+      interactive map below to explore our recommended areas.
     </p>
     <div id="map-container">
       <figure>
