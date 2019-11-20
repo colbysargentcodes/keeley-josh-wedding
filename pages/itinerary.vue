@@ -63,7 +63,7 @@ export default {
           key: 'stag',
           title: 'Stag Do',
           quote:
-            '“The first rule of the stag party, is not to talk about the stag party.”',
+            '“The first rule of the stag do, is not to talk about the stag do.”',
           quoted: 'Josh',
           location: 'Old Town, Mykonos',
           date: '2020-06-20 19:00'
@@ -100,16 +100,16 @@ export default {
             'It’s time for us to say “I do”, and for you to #MeetTheMcNamaras!\n' +
             'Two become one. All become drunk.',
           locationPretext:
-            'transfers will depart from select locations at 4:30pm',
+            'transfers will depart from select locations at 5:00pm',
           location: 'Private Villa, Paros',
-          date: '2020-06-26 17:30'
+          date: '2020-06-26 18:00'
         },
         {
           key: 'beach-recovery',
           title: 'Beach Recovery',
           description:
-            'Josh always says there’s no better cure for a hangover than a swim in the ocean... so, let’s hit the beach! We’ll made sure there’s a big lunch and a snoozeworthy sunbed at the water’s edge with your name on it – see you there!',
-          location: 'Santa Maria Beach, Paros',
+            'Josh always says there’s no better cure for a hangover than a swim in the ocean...so, let’s hit the beach! We’ll made sure there’s a big lunch and a snoozeworthy sunbed at the water’s edge with your name on it – see you there!',
+          location: 'Santa Maria Beach Bar\n' + 'Santa Maria Beach, Paros',
           date: '2020-06-27 12:00'
         },
         {
@@ -125,6 +125,7 @@ export default {
           title: 'Island Hop',
           description:
             'The supermodel of the Greek islands is calling our name – and I think I can hear yours too! Why not extend your trip for a few days and join us in Santorini before we jet off on our honeymoon? We’ve partied in Paros, now let’s conquer the caldera! No itinerary. No expectations. Just good times.',
+          locationPretext: 'ferries depart from Parikia',
           location: 'Santorini',
           date: '2020-06-30 13:00'
         }
