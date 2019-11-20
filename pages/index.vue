@@ -163,7 +163,7 @@ export default {
       transform: translate(-50%, -50%);
       opacity: 0;
       padding: 0.75em 1em;
-      font-size: 28px;
+      font-size: 21px;
       color: inherit;
       text-decoration: none;
       transition: opacity 1.2s;
