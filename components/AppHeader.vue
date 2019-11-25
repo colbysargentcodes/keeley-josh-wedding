@@ -1,22 +1,5 @@
 <template>
-  <header :class="{ show: headerActive }">
-    <div class="app-width">
-      <nuxt-link id="app-logo" to="/">
-        <img src="/images/jk-monogram-thick.svg" />
-      </nuxt-link>
-      <nav class="font-heading text-spaced text-upper">
-        <nuxt-link
-          v-for="(page, index) in pages"
-          :key="index"
-          :to="page.path"
-          :class="{
-            'feature-button': page.feature
-          }"
-          >{{ page.name }}</nuxt-link
-        >
-      </nav>
-    </div>
-  </header>
+  <header :class="{ show: headerActive }"></header>
 </template>
 
 <script>

@@ -2,7 +2,58 @@
   <div
     class="page-container app-width"
     :class="{ 'welcome-page-active': userHasEntered }"
-  ></div>
+  >
+    <div
+      id="wedding-countdown"
+      class="landing-page-section font-heading text-spaced text-upper"
+      :class="{ show: !userHasEntered }"
+    >
+      <figure @click="enter">
+        <img src="/images/jk-monogram-thin.svg" />
+        <h2>26.06.20</h2>
+        <div id="enter-button">enter</div>
+      </figure>
+      <div id="countdown-container">
+        <template v-if="!countdown.ended">
+          <div class="countdown-block">
+            <div class="countdown-number">{{ countdown.days }}</div>
+            <div class="countdown-label font-script">days</div>
+          </div>
+          <div class="countdown-block">
+            <div class="countdown-number">{{ countdown.hours }}</div>
+            <div class="countdown-label font-script">hours</div>
+          </div>
+          <div class="countdown-block">
+            <div class="countdown-number">{{ countdown.minutes }}</div>
+            <div class="countdown-label font-script">minutes</div>
+          </div>
+        </template>
+        <div v-if="countdown.ended" class="countdown-ended">
+          We're married!
+        </div>
+      </div>
+    </div>
+    <div
+      id="welcome-message"
+      class="landing-page-section"
+      :class="{ show: userHasEntered }"
+    >
+      <div class="font-heading text-upper text-spaced">
+        <p>
+          We're so excited for you to join us to celebrate our wedding on Paros
+          Island in Greece
+        </p>
+        <p>
+          See you there!
+        </p>
+      </div>
+      <p id="sign-off" class="font-script">
+        Keeley & Josh
+        <br />
+        <span id="sign-off-xoxo">xoxo</span>
+      </p>
+    </div>
+  </div>
 </template>
 
 <script>

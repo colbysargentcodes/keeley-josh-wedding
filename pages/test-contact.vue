@@ -14,23 +14,23 @@
       >
         <div class="contact-person">
           <div class="contact-person-image">
-            <img :src="'/images/contact/' + contact.key + '.jpg'" />
+            <img :src="'/images/contact/' + test.key + '.jpg'" />
           </div>
           <div class="contact-person-info">
             <p class="contact-person-role font-heading text-spaced text-upper">
-              {{ contact.role }}
+              {{ test.role }}
             </p>
-            <p class="contact-person-name font-script">{{ contact.name }}</p>
+            <p class="contact-person-name font-script">{{ test.name }}</p>
           </div>
         </div>
         <div class="contact-info">
           <p>
             <img src="/icons/phone.svg" />
-            <a :href="'tel:' + contact.phone">{{ contact.phone }}</a>
+            <a :href="'tel:' + test.phone">{{ test.phone }}</a>
           </p>
           <p>
             <img src="/icons/email.svg" />
-            <a :href="'mailto:' + contact.email">{{ contact.email }}</a>
+            <a :href="'mailto:' + test.email">{{ test.email }}</a>
           </p>
         </div>
       </div>
