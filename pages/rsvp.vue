@@ -41,23 +41,26 @@
       </div>
 
       <div class="form-row form-rsvp-row">
-        <div class="form-rsvp-name">
-          Will you be attending?
-        </div>
         <div class="form-rsvp-field">
           <label for="rsvp-yes">
             <input
               id="rsvp-yes"
               v-model="rsvpResponses.rsvp"
               type="radio"
-              name="rsvp"
               value="Yes"
             />
             <checkbox
               :checked="rsvpResponses.rsvp === 'Yes'"
               class="form-event-checkbox"
             ></checkbox>
-            <span>I am SO in</span>
+            <div>
+              <div class="font-script">Accepts</div>
+              <div
+                class="font-heading text-upper text-spaced text-spaced-correction"
+              >
+                With Pleasure
+              </div>
+            </div>
           </label>
 
           <label for="rsvp-no">
@@ -65,23 +68,38 @@
               id="rsvp-no"
               v-model="rsvpResponses.rsvp"
               type="radio"
-              name="rsvp"
               value="No"
             />
             <checkbox
               :checked="rsvpResponses.rsvp === 'No'"
               class="form-event-checkbox"
             ></checkbox>
-            <span>Sorry, I'm out</span>
+            <div>
+              <div class="font-script">Declines</div>
+              <div
+                class="font-heading text-upper text-spaced text-spaced-correction"
+              >
+                With Regret
+              </div>
+            </div>
           </label>
         </div>
       </div>
 
-      <div v-if="rsvpResponses.rsvp === 'Yes'" class="form-events-group first">
+      <div
+        v-show="rsvpResponses.rsvp === 'Yes'"
+        class="form-events-group first"
+      >
         <div
-          class="form-events-group-name font-heading text-spaced text-spaced-correction text-upper"
+          class="form-events-group-headings font-heading text-spaced text-spaced-correction text-upper"
         >
-          <span>Mykonos</span>
+          <div class="form-events-group-headings-name">
+            <span>Mykonos</span>
+          </div>
+          <div class="form-events-group-headings-responses">
+            <span>In</span>
+            <span>Out</span>
+          </div>
         </div>
         <div
           class="form-row form-event-row"
@@ -107,7 +125,6 @@
                   :checked="rsvpResponses.stagDo === 'Yes'"
                   class="form-event-checkbox"
                 ></checkbox>
-                <span>In</span>
               </label>
             </div>
             <div>
@@ -123,7 +140,6 @@
                   :checked="rsvpResponses.stagDo === 'No'"
                   class="form-event-checkbox"
                 ></checkbox>
-                <span>Out</span>
               </label>
             </div>
           </div>
@@ -158,7 +174,6 @@
                   :checked="rsvpResponses.henParty === 'Yes'"
                   class="form-event-checkbox"
                 ></checkbox>
-                <span>In</span>
               </label>
             </div>
             <div>
@@ -174,18 +189,23 @@
                   :checked="rsvpResponses.henParty === 'No'"
                   class="form-event-checkbox"
                 ></checkbox>
-                <span>Out</span>
               </label>
             </div>
           </div>
         </div>
       </div>
 
-      <div v-if="rsvpResponses.rsvp === 'Yes'" class="form-events-group">
+      <div v-show="rsvpResponses.rsvp === 'Yes'" class="form-events-group">
         <div
-          class="form-events-group-name font-heading text-spaced text-spaced-correction text-upper"
+          class="form-events-group-headings font-heading text-spaced text-spaced-correction text-upper"
         >
-          <span>Paros</span>
+          <div class="form-events-group-headings-name">
+            <span>Paros</span>
+          </div>
+          <div class="form-events-group-headings-responses">
+            <span>In</span>
+            <span>Out</span>
+          </div>
         </div>
         <div
           class="form-row form-event-row"
@@ -216,7 +236,6 @@
                   :checked="rsvpResponses.boatTrip === 'Yes'"
                   class="form-event-checkbox"
                 ></checkbox>
-                <span>In</span>
               </label>
             </div>
             <div>
@@ -232,7 +251,6 @@
                   :checked="rsvpResponses.boatTrip === 'No'"
                   class="form-event-checkbox"
                 ></checkbox>
-                <span>Out</span>
               </label>
             </div>
           </div>
@@ -267,7 +285,6 @@
                   :checked="rsvpResponses.welcomeDrinks === 'Yes'"
                   class="form-event-checkbox"
                 ></checkbox>
-                <span>In</span>
               </label>
             </div>
             <div>
@@ -283,7 +300,6 @@
                   :checked="rsvpResponses.welcomeDrinks === 'No'"
                   class="form-event-checkbox"
                 ></checkbox>
-                <span>Out</span>
               </label>
             </div>
           </div>
@@ -313,7 +329,6 @@
                   :checked="rsvpResponses.wedding === 'Yes'"
                   class="form-event-checkbox"
                 ></checkbox>
-                <span>In</span>
               </label>
             </div>
             <div>
@@ -329,7 +344,6 @@
                   :checked="rsvpResponses.wedding === 'No'"
                   class="form-event-checkbox"
                 ></checkbox>
-                <span>Out</span>
               </label>
             </div>
           </div>
@@ -364,7 +378,6 @@
                   :checked="rsvpResponses.beachRecovery === 'Yes'"
                   class="form-event-checkbox"
                 ></checkbox>
-                <span>In</span>
               </label>
             </div>
             <div>
@@ -380,7 +393,6 @@
                   :checked="rsvpResponses.beachRecovery === 'No'"
                   class="form-event-checkbox"
                 ></checkbox>
-                <span>Out</span>
               </label>
             </div>
           </div>
@@ -415,7 +427,6 @@
                   :checked="rsvpResponses.poolParty === 'Yes'"
                   class="form-event-checkbox"
                 ></checkbox>
-                <span>In</span>
               </label>
             </div>
             <div>
@@ -431,18 +442,23 @@
                   :checked="rsvpResponses.poolParty === 'No'"
                   class="form-event-checkbox"
                 ></checkbox>
-                <span>Out</span>
               </label>
             </div>
           </div>
         </div>
       </div>
 
-      <div v-if="rsvpResponses.rsvp === 'Yes'" class="form-events-group">
+      <div v-show="rsvpResponses.rsvp === 'Yes'" class="form-events-group">
         <div
-          class="form-events-group-name font-heading text-spaced text-spaced-correction text-upper"
+          class="form-events-group-headings font-heading text-spaced text-spaced-correction text-upper"
         >
-          <span>Santorini</span>
+          <div class="form-events-group-headings-name">
+            <span>Santorini</span>
+          </div>
+          <div class="form-events-group-headings-responses">
+            <span>Maybe</span>
+            <span>Out</span>
+          </div>
         </div>
         <div
           id="form-event-island-hop"
@@ -454,8 +470,8 @@
             <img src="/icons/island-hop.svg" />
             <span>Island Hop</span>
             <div class="form-event-description">
-              If you are considering joining us in Santorini select ‘in’ and
-              we’ll keep you updated on our plans
+              Let us know if you are interested in joining us in Santorini and
+              we’ll keep you updated on our plans.
             </div>
           </div>
           <div class="form-event-field">
@@ -478,7 +494,6 @@
                   :checked="rsvpResponses.islandHop === 'Yes'"
                   class="form-event-checkbox"
                 ></checkbox>
-                <span>In</span>
               </label>
             </div>
             <div>
@@ -494,7 +509,6 @@
                   :checked="rsvpResponses.islandHop === 'No'"
                   class="form-event-checkbox"
                 ></checkbox>
-                <span>Out</span>
               </label>
             </div>
           </div>
@@ -507,11 +521,7 @@
           <span class="note">optional</span>
         </div>
         <div class="form-input-field">
-          <textarea
-            name="message"
-            rows="3"
-            placeholder="Please let us know of any dietary requirements"
-          ></textarea>
+          <textarea name="message" rows="3"></textarea>
           <span class="focus-bar"></span>
         </div>
       </div>
@@ -685,7 +695,9 @@ form {
     margin-top: 1em;
   }
 
-  .form-input-row {
+  .form-row.form-input-row {
+    display: flex;
+
     .form-input-name,
     .form-input-field {
       display: inline-block;
@@ -753,23 +765,20 @@ form {
 
   .form-row.form-rsvp-row {
     margin-top: 2em;
-
-    .form-rsvp-name {
-      @include heading-font;
-      text-align: center;
-    }
+    margin-bottom: 2em;
 
     .form-rsvp-field {
+      display: flex;
+      justify-content: space-around;
       margin-top: 0.65em;
       text-align: center;
 
       label {
-        font-size: 18px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 16px;
         cursor: pointer;
-
-        + label {
-          margin-left: 2em;
-        }
 
         input {
           display: none;
@@ -777,12 +786,15 @@ form {
 
         .form-event-checkbox {
           display: inline-block;
+          margin-right: 1em;
         }
 
-        span {
-          display: inline-block;
-          position: relative;
-          top: -4px;
+        .font-script {
+          font-size: 54px;
+        }
+
+        .font-heading {
+          margin-top: -0.5em;
         }
       }
     }
@@ -793,15 +805,32 @@ form {
       margin-top: 2em;
     }
 
-    &-name {
+    &-headings {
+      display: flex;
+      justify-content: space-between;
       margin-bottom: -12px;
-      padding-left: 95px;
       color: $color-gold;
       font-size: 14px;
 
-      > span {
-        display: inline-block;
-        transform: translateX(-50%);
+      &-name {
+        padding-left: 95px;
+
+        > span {
+          display: inline-block;
+          transform: translateX(-50%);
+        }
+      }
+
+      &-responses {
+        display: flex;
+        text-align: center;
+        width: 200px;
+        padding: 0 20px;
+
+        > span {
+          display: inline-block;
+          width: 50%;
+        }
       }
     }
   }
@@ -868,7 +897,7 @@ form {
     .form-event-field {
       width: 200px;
       display: flex;
-      justify-content: space-between;
+      justify-content: space-around;
 
       label {
         font-size: 18px;
@@ -880,12 +909,6 @@ form {
 
         .form-event-checkbox {
           display: inline-block;
-        }
-
-        span {
-          display: inline-block;
-          position: relative;
-          top: -4px;
         }
       }
     }
