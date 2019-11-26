@@ -42,11 +42,13 @@
 
       <div class="form-row form-rsvp-row">
         <div class="form-rsvp-field">
+          <input type="radio" name="rsvp" value="RSVP" class="hidden" />
           <label for="rsvp-yes">
             <input
               id="rsvp-yes"
               v-model="rsvpResponses.rsvp"
               type="radio"
+              name="rsvp"
               value="Yes"
             />
             <checkbox
@@ -68,6 +70,7 @@
               id="rsvp-no"
               v-model="rsvpResponses.rsvp"
               type="radio"
+              name="rsvp"
               value="No"
             />
             <checkbox
@@ -108,10 +111,15 @@
           <div class="form-event-date">20<sup>th</sup></div>
           <div class="form-event-name">
             <img src="/icons/stag.svg" />
-            <span>Stag Do</span>
+            <span>Buck's Party</span>
           </div>
           <div class="form-event-field">
-            <input type="radio" name="stag-do" value="Stag Do" class="hidden" />
+            <input
+              type="radio"
+              name="stag-do"
+              value="Bucks Party"
+              class="hidden"
+            />
             <div>
               <label for="stag-do-yes">
                 <input
@@ -566,6 +574,7 @@ export default {
       rsvpResponses: {
         name: null,
         email: null,
+        rsvp: null,
         stagDo: null,
         henParty: null,
         boatTrip: null,
@@ -589,6 +598,32 @@ export default {
       }
 
       return formValid
+    }
+  },
+  watch: {
+    'rsvpResponses.rsvp'(n) {
+      if (n === 'Yes') {
+        // if RSVP yes - set all events as NULL except for wedding, which should
+        // be set as Yes
+        this.rsvpResponses.stagDo = null
+        this.rsvpResponses.henParty = null
+        this.rsvpResponses.boatTrip = null
+        this.rsvpResponses.welcomeDrinks = null
+        this.rsvpResponses.wedding = 'Yes'
+        this.rsvpResponses.beachRecovery = null
+        this.rsvpResponses.poolParty = null
+        this.rsvpResponses.islandHop = null
+      } else {
+        // if RSVP no - set all events as No
+        this.rsvpResponses.stagDo = 'No'
+        this.rsvpResponses.henParty = 'No'
+        this.rsvpResponses.boatTrip = 'No'
+        this.rsvpResponses.welcomeDrinks = 'No'
+        this.rsvpResponses.wedding = 'No'
+        this.rsvpResponses.beachRecovery = 'No'
+        this.rsvpResponses.poolParty = 'No'
+        this.rsvpResponses.islandHop = 'No'
+      }
     }
   },
   mounted() {

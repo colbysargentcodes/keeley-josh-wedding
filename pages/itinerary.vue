@@ -61,9 +61,9 @@ export default {
       events: [
         {
           key: 'stag',
-          title: 'Stag Do',
+          title: "Buck's Party",
           quote:
-            '“The first rule of the stag do, is not to talk about the stag do.”',
+            "“The first rule of the buck's party, is not to talk about the buck's party.”",
           quoted: 'Josh',
           location: 'Old Town, Mykonos',
           date: '2020-06-20 19:00'
