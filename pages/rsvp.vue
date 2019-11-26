@@ -111,10 +111,15 @@
           <div class="form-event-date">20<sup>th</sup></div>
           <div class="form-event-name">
             <img src="/icons/stag.svg" />
-            <span>Stag Do</span>
+            <span>Buck's Party</span>
           </div>
           <div class="form-event-field">
-            <input type="radio" name="stag-do" value="Stag Do" class="hidden" />
+            <input
+              type="radio"
+              name="stag-do"
+              value="Bucks Party"
+              class="hidden"
+            />
             <div>
               <label for="stag-do-yes">
                 <input
