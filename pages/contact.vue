@@ -89,7 +89,7 @@ export default {
           key: 'katerina',
           role: 'Planner',
           name: 'Katerina',
-          phone: '+000 0000 0000',
+          phone: '+30 694 904 5973',
           email: 'katerina.iordanou@mitheoevents.com'
         }
       ]
