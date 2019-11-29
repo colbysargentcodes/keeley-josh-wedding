@@ -61,7 +61,7 @@ export default {
   data() {
     return {
       countdown: {
-        date: new Date('Jun 26, 2020 17:00:00').getTime(),
+        date: new Date(Date.UTC(2020, 5, 26, 15)).getTime(),
         interval: false,
         days: 0,
         hours: 0,
