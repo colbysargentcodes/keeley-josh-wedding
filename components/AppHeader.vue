@@ -1,9 +1,9 @@
 <template>
   <header :class="{ show: headerActive }">
     <div class="app-width">
-      <nuxt-link id="app-logo" to="/">
+      <div id="app-logo">
         <img src="/images/jk-monogram-thick.svg" />
-      </nuxt-link>
+      </div>
       <nav class="font-heading text-spaced text-upper">
         <nuxt-link
           v-for="(page, index) in pages"
