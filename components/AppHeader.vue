@@ -52,8 +52,6 @@ export default {
   mounted() {
     this.$eventBus.$on('showHeader', this.showHeader)
     this.$eventBus.$on('hideHeader', this.hideHeader)
-
-    if ($nuxt.$route.name !== 'index') this.showHeader()
   },
   methods: {
     showHeader() {

@@ -38,7 +38,12 @@
         <h2>Please enter the password</h2>
       </div>
       <div>
-        <input id="login-password" v-model="enteredPassword" type="password" />
+        <input
+          id="login-password"
+          v-model="enteredPassword"
+          type="password"
+          @keyup="attemptLogin"
+        />
       </div>
       <div>
         <div
@@ -93,7 +98,7 @@ export default {
       loginOpen: false,
       incorrectPassword: false,
       enteredPassword: '',
-      correctPassword: 'paros2020!',
+      correctPassword: 'keeleyandjosh',
       userHasEntered: false
     }
   },
@@ -127,17 +132,31 @@ export default {
       )
     },
     openLogin() {
-      this.loginOpen = true
+      if (this.checkLogin()) this.successfulLogin()
+      else this.loginOpen = true
     },
-    attemptLogin() {
+    checkLogin() {
+      const lastLogin = localStorage.getItem('lastLogin')
+      const loginExpiry = new Date()
+      const changedDate = loginExpiry.getDate() - 14
+      loginExpiry.setDate(changedDate)
+
+      return !(!lastLogin || lastLogin < loginExpiry.getTime())
+    },
+    attemptLogin(e) {
+      if (e.keyCode && e.keyCode !== 13) return false
       this.incorrectPassword = false
       if (this.enteredPassword === this.correctPassword) {
-        this.loginOpen = false
-        this.userHasEntered = true
-        this.$eventBus.$emit('showHeader')
+        this.successfulLogin()
       } else {
         this.incorrectPassword = true
       }
+    },
+    successfulLogin() {
+      this.loginOpen = false
+      this.userHasEntered = true
+      this.$eventBus.$emit('showHeader')
+      localStorage.setItem('lastLogin', Date.now())
     }
   }
 }
@@ -259,6 +278,7 @@ export default {
 
   #login-password {
     outline: none;
+    width: 300px;
     border: 1px solid $color-gold;
     padding: 1em 1em 1em 1.5em;
     text-align: center;
