@@ -8,7 +8,7 @@
       class="landing-page-section font-heading text-spaced text-upper"
       :class="{ show: !userHasEntered }"
     >
-      <figure @click="enter">
+      <figure @click="openLogin">
         <img src="/images/jk-monogram-thin.svg" />
         <h2>26.06.20</h2>
         <div id="enter-button">enter</div>
@@ -31,6 +31,33 @@
         <div v-if="countdown.ended" class="countdown-ended">
           We're married!
         </div>
+      </div>
+    </div>
+    <div id="login" :class="{ show: loginOpen }">
+      <div>
+        <h2>Please enter the password</h2>
+      </div>
+      <div>
+        <input
+          id="login-password"
+          v-model="enteredPassword"
+          type="password"
+          @keyup="attemptLogin"
+        />
+      </div>
+      <div>
+        <div
+          id="login-button"
+          class="font-heading text-spaced text-upper"
+          @click="attemptLogin"
+        >
+          login
+        </div>
+      </div>
+      <div>
+        <span id="login-error" :class="{ show: incorrectPassword }">
+          Incorrect password, please try again
+        </span>
       </div>
     </div>
     <div
@@ -68,6 +95,10 @@ export default {
         minutes: 0,
         ended: false
       },
+      loginOpen: false,
+      incorrectPassword: false,
+      enteredPassword: '',
+      correctPassword: 'keeleyandjosh',
       userHasEntered: false
     }
   },
@@ -100,9 +131,32 @@ export default {
         (countdownAmount % (1000 * 60 * 60)) / (1000 * 60)
       )
     },
-    enter() {
+    openLogin() {
+      if (this.checkLogin()) this.successfulLogin()
+      else this.loginOpen = true
+    },
+    checkLogin() {
+      const lastLogin = localStorage.getItem('lastLogin')
+      const loginExpiry = new Date()
+      const changedDate = loginExpiry.getDate() - 14
+      loginExpiry.setDate(changedDate)
+
+      return !(!lastLogin || lastLogin < loginExpiry.getTime())
+    },
+    attemptLogin(e) {
+      if (e.keyCode && e.keyCode !== 13) return false
+      this.incorrectPassword = false
+      if (this.enteredPassword === this.correctPassword) {
+        this.successfulLogin()
+      } else {
+        this.incorrectPassword = true
+      }
+    },
+    successfulLogin() {
+      this.loginOpen = false
       this.userHasEntered = true
       this.$eventBus.$emit('showHeader')
+      localStorage.setItem('lastLogin', Date.now())
     }
   }
 }
@@ -195,6 +249,88 @@ export default {
       font-size: 18px;
       text-transform: capitalize;
       letter-spacing: 0;
+    }
+  }
+}
+
+#login {
+  opacity: 0;
+  pointer-events: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.9);
+  transition: opacity 0.4s;
+
+  > div {
+    opacity: 0;
+    transition: opacity 0.4s 0.2s;
+
+    + div {
+      margin-top: 3em;
+    }
+  }
+
+  #login-password {
+    outline: none;
+    width: 300px;
+    border: 1px solid $color-gold;
+    padding: 1em 1em 1em 1.5em;
+    text-align: center;
+    font-family: inherit;
+    font-size: inherit;
+    letter-spacing: 0.5em;
+  }
+
+  #login-button {
+    display: inline-block;
+    position: relative;
+    margin-top: -3em;
+    padding: 0.75em 1em;
+    font-size: 21px;
+    color: inherit;
+    text-decoration: none;
+    cursor: pointer;
+
+    &:after {
+      content: '';
+      position: absolute;
+      bottom: 0.55em;
+      left: 51%;
+      right: calc(51% + 4px);
+      height: 1px;
+      background-color: $color-gold;
+      transition: left 0.4s, right 0.4s, background-color 0.2s;
+    }
+
+    &:hover:after {
+      left: 2em;
+      right: calc(2em + 4px); // adjust for text-spacing
+    }
+  }
+
+  #login-error {
+    opacity: 0;
+    color: #e84a4a;
+    transition: none;
+
+    &.show {
+      opacity: 1;
+      transition: opacity 0.4s;
+    }
+  }
+
+  &.show {
+    opacity: 1;
+    pointer-events: auto;
+
+    > div {
+      opacity: 1;
     }
   }
 }

@@ -9,16 +9,28 @@
         "name": "Eat",
         "content": [
           {
-            "key": "restaurant1",
-            "name": "Good Restaurant",
-            "description": "A restaurant in Naoussa which is good.",
-            "link": "https://www.example.com"
+            "key": "soso",
+            "name": "Soso",
+            "description": "Traditional Greek cuisine with a twist",
+            "link": "https://www.facebook.com/sosorestaurantparos"
           },
           {
-            "key": "restaurant2",
-            "name": "Fishy Restaurant",
-            "description": "A seaside fish bar along the coast.",
-            "link": "https://www.example.com"
+            "key": "ragoussis-bakery",
+            "name": "Ragoussis Bakery",
+            "description": "Coffee, juice, sandwiches, ice cream and freshly baked pastries and cakes",
+            "link": "https://ragoussisbakery.com/"
+          },
+          {
+            "key": "taverna-glafkos",
+            "name": "Taverna Glafkos",
+            "description": "Mediterranean seafood on the sands of Agios Dimitrios Beach",
+            "link": "https://www.facebook.com/pages/Glafkos-Taverna/351916291551303"
+          },
+          {
+            "key": "paradosiako",
+            "name": "Paradosiako",
+            "description": "The best dessert in Paros - famous for their Loukoumades!",
+            "link": "https://www.facebook.com/pages/Loukoumades-To-Paradosiako-Naousa/149699295111393"
           }
         ]
       },
@@ -27,16 +39,28 @@
         "name": "Drink",
         "content": [
           {
-            "key": "bar1",
-            "name": "Good Bar",
-            "description": "A bar in Naoussa which has good drinks.",
-            "link": "https://www.example.com"
+            "key": "agosta",
+            "name": "Agosta",
+            "description": "A small bar that packs a big (lively) punch!",
+            "link": "https://www.facebook.com/Agostabar/"
           },
           {
-            "key": "bar2",
-            "name": "Fishy Bar",
-            "description": "A seaside bar along the coast.",
-            "link": "https://www.example.com"
+            "key": "sante-of-paros",
+            "name": "Sante of Paros",
+            "description": "Cocktails mixed with flair, accompanied by an equally flavoursome soundtrack",
+            "link": "https://www.santecocktailbar.com/"
+          },
+          {
+            "key": "kosmos",
+            "name": "Kosmos ",
+            "description": "The locals say this place serves up the most delicious cocktails on the island",
+            "link": "https://www.facebook.com/KosmosCocktailBar/"
+          },
+          {
+            "key": "linardp",
+            "name": "Linardp",
+            "description": "A who’s who of DJs have passed through the pink doors of this historic bar",
+            "link": "https://www.facebook.com/linardoclub/"
           }
         ]
       },
@@ -45,16 +69,118 @@
         "name": "Do",
         "content": [
           {
-            "key": "do1",
-            "name": "A Doing Thing",
-            "description": "This is a fun thing to do while here.",
-            "link": "https://www.example.com"
+            "key": "paros-park",
+            "name": "Paros Park",
+            "description": "Beautiful walking trails, rock formations, caves, hidden coves, beaches and traces of history",
+            "link": "https://www.parospark.com/"
           },
           {
-            "key": "do2",
-            "name": "Do This Now",
-            "description": "Second thing for ticking off here.",
-            "link": "https://www.example.com"
+            "key": "moraitis-winery",
+            "name": "Moraitis Winery",
+            "description": "Founded in 1910 this winery has been passed from generation to generation of the Moraitis family",
+            "link": "http://www.moraitiswines.gr/"
+          },
+          {
+            "key": "aqua-paros",
+            "name": "Aqua Paros",
+            "description": "A fun waterpark featuring a lazy river and 13 water slides which all end in the sea",
+            "link": "http://portoparos.gr/waterpark-2/"
+          },
+          {
+            "key": "agean-tennis-centre",
+            "name": "Agean Tennis Centre",
+            "description": "A high quality tennis centre set against the backdrop of the natural landscape of Paros",
+            "link": "https://www.aegeantenniscentre.com/"
+          }
+        ]
+      },
+      {
+        "key": "shop",
+        "name": "Shop",
+        "content": [
+          {
+            "key": "handmade-with-love-in-paros",
+            "name": "Handmade With Love in Paros",
+            "description": "A collection of vibrant and colourful locally-made accessories, including make-up bags and leather sandals",
+            "link": "https://www.facebook.com/pages/category/Shopping---Retail/Handmade-with-love-in-Paros-154213364749636/"
+          },
+          {
+            "key": "heras-gallery-shop",
+            "name": "Hera’s Gallery Shop",
+            "description": "Chic modern Greek design pieces, perfect for that one of a kind gift - they also have a gorgeous selection of Turkish towels!",
+            "link": "https://www.facebook.com/pages/Heras/429692853804450"
+          },
+          {
+            "key": "artisun",
+            "name": "Artisun",
+            "description": "Handmade jewellery, handbags and accessories using traditional craftsmanship and eco-friendly materials and methods",
+            "link": "https://en.tripadvisor.com.hk/Attraction_Review-g642170-d17468977-Reviews-Artisun-Naoussa_Paros_Cyclades_South_Aegean.html"
+          },
+          {
+            "key": "white-in-paros",
+            "name": "White in Paros",
+            "description": "An uber-chic fashion boutique -warning: you’ll want to buy everything!",
+            "link": "https://www.facebook.com/whiteinparos/?ref=nearby_places&eid=ARDxDJMdmXhUc65HSIj3jNwqp12_Zozh6CgVcS67kYRUidIYdYLlOGfPfN5eDpDbQv8qSyA0nCRmbn99"
+          }
+        ]
+      },
+      {
+        "key": "beach",
+        "name": "Beach",
+        "content": [
+          {
+            "key": "kolymbithres",
+            "name": "Kolymbithres",
+            "description": "One of the most famous beaches on Paros, featuring impressive rock formations",
+            "link": "https://www.greeka.com/cyclades/paros/beaches/kolymbithres/"
+          },
+          {
+            "key": "monastiri",
+            "name": "Monastiri",
+            "description": "Surrounded by huge rocky hills, this little bay has its own restaurant and bar",
+            "link": "https://www.greeka.com/cyclades/paros/beaches/monastiri/"
+          },
+          {
+            "key": "piperi",
+            "name": "Piperi",
+            "description": "A tiny scenic beach, perfect for snorkelling or fishing, among its rocks",
+            "link": "https://www.greeka.com/cyclades/paros/beaches/piperi/"
+          },
+          {
+            "key": "agioi-anargyroi",
+            "name": "Agioi Anargyroi",
+            "description": "A small secluded beach, partly organised with sunbeds and umbrellas",
+            "link": "https://www.greeka.com/cyclades/paros/beaches/agioi-anargyri/"
+          }
+        ]
+      },
+      {
+        "key": "sleep",
+        "name": "Sleep",
+        "content": [
+          {
+            "key": "coming-soon-1",
+            "name": "",
+            "description": "",
+            "link": ""
+          },
+          {
+            "key": "coming-soon-2",
+            "name": "",
+            "description": "",
+            "link": ""
+          },
+          {
+            "key": "coming-soon-3",
+            "name": "",
+            "description": "",
+            "link": ""
+          },
+          {
+            "key": "coming-soon-4",
+            "name": "",
+            "description": "",
+            "link": ""
           }
         ]
       }
@@ -74,16 +200,28 @@
         "name": "Eat",
         "content": [
           {
-            "key": "restaurant1",
-            "name": "Good Restaurant",
-            "description": "A restaurant in Parikia which is good.",
-            "link": "https://www.example.com"
+            "key": "levantis",
+            "name": "Levantis",
+            "description": "Contemporary Greek cuisine combining traditional dishes with modern Mediterranean flavours",
+            "link": "https://www.levantisrestaurant.com/"
           },
           {
-            "key": "restaurant2",
-            "name": "Fishy Restaurant",
-            "description": "A seaside fish bar along the coast.",
-            "link": "https://www.example.com"
+            "key": "albatros",
+            "name": "Albatros",
+            "description": "This long-running seafood ouzerí may not look like much compared to its flashier neighbours, but the platters are amazing!",
+            "link": "https://en.tripadvisor.com.hk/Restaurant_Review-g189432-d3416827-Reviews-Albatros-Paros_Cyclades_South_Aegean.html"
+          },
+          {
+            "key": "aromas",
+            "name": "Aromas",
+            "description": "A traditional Greek taverna with vegan and gluten free options",
+            "link": "https://www.facebook.com/AromasParos/"
+          },
+          {
+            "key": "coralli",
+            "name": "Coralli",
+            "description": "Situated on Livadia beach it’s a great spot for watching the sunset – we highly recommend the risotto!",
+            "link": "https://coralliparos.com/"
           }
         ]
       },
@@ -92,16 +230,28 @@
         "name": "Drink",
         "content": [
           {
-            "key": "bar1",
-            "name": "Good Bar",
-            "description": "A bar in Parikia which has good drinks.",
-            "link": "https://www.example.com"
+            "key": "bebop",
+            "name": "Bebop",
+            "description": "A gorgeous rooftop bar perfect for sundowners",
+            "link": "https://www.facebook.com/BeBop-Paros-643866115691484/"
           },
           {
-            "key": "bar2",
-            "name": "Fishy Bar",
-            "description": "A seaside bar along the coast.",
-            "link": "https://www.example.com"
+            "key": "sativa",
+            "name": "Sativa",
+            "description": "Good music, good vibes and super-sized cocktails",
+            "link": "https://www.facebook.com/sativaparos"
+          },
+          {
+            "key": "pirate-bar",
+            "name": "Pirate Bar",
+            "description": "This hidden-gem is open from early evening until the break of dawn",
+            "link": "https://m.facebook.com/pirate.bar.paros1983"
+          },
+          {
+            "key": "kiaola",
+            "name": "Kiaola",
+            "description": "A beachfront bar with mainstream vibes that plays music from all decades and ends the night with a Greek party",
+            "link": "https://www.facebook.com/KIALOABAR/"
           }
         ]
       },
@@ -110,16 +260,118 @@
         "name": "Do",
         "content": [
           {
-            "key": "do1",
-            "name": "A Doing Thing",
-            "description": "This is a fun thing to do while here.",
-            "link": "https://www.example.com"
+            "key": "visit-antiparos",
+            "name": "Visit Antiparos",
+            "description": "Paros’ sister island is only a short ferry ride away – look out Tom Hanks who spends his summer here every year!",
+            "link": "https://www.greeka.com/cyclades/antiparos/"
           },
           {
-            "key": "do2",
-            "name": "Do This Now",
-            "description": "Second thing for ticking off here.",
-            "link": "https://www.example.com"
+            "key": "panagia-ekatontapiliani",
+            "name": "Panagia Ekatontapiliani",
+            "description": "Better known as the Church of 100 doors, this beautiful complex dates back to AD 326",
+            "link": "https://www.greeka.com/cyclades/paros/sightseeing/paros-panagia-ekatontapiliani/"
+          },
+          {
+            "key": "archaeological-museum",
+            "name": "Archaeological Museum",
+            "description": "Founded in 1960 this important museum displays artefacts discovered on Paros and Antiparos that date back to the neolithic period",
+            "link": "http://www.paros.gr/en/what-to-do/shmeia-endiaferontos/museums/721-archaeological-museum-of-paros.html"
+          },
+          {
+            "key": "frankish-castle",
+            "name": "Frankish Castle",
+            "description": "One of the most enduring monuments on the island of Paros, built in the 1200s by the Venetian Sanoudos",
+            "link": "https://www.greeka.com/cyclades/paros/sightseeing/paros-frankish-castle/"
+          }
+        ]
+      },
+      {
+        "key": "shop",
+        "name": "Shop",
+        "content": [
+          {
+            "key": "atelier-1935",
+            "name": "Atelier 1935",
+            "description": "A gorgeous selection of, comfortable handmade Cretan leather sandals",
+            "link": "https://www.atelier1935.com/"
+          },
+          {
+            "key": "jazmin",
+            "name": "Jazmin",
+            "description": "Local natural cosmetics including custom-made perfumes for the girls and beard care for the boys!",
+            "link": "https://www.facebook.com/Jazmin-paros-734421843341932/"
+          },
+          {
+            "key": "melissa",
+            "name": "Melissa",
+            "description": "A concept life and style gift store, perfect for grabbing your fun and funky souvenirs! #IHeartGreece",
+            "link": "https://www.facebook.com/Melissa.Store.Paros/"
+          },
+          {
+            "key": "jewellery-by-poulopoulos",
+            "name": "Jewellery by Poulopoulos",
+            "description": "Established 42 years ago, this handmade Greek jewellery store can also be found on Etsy!",
+            "link": "https://www.facebook.com/jbpoulopoulos/"
+          }
+        ]
+      },
+      {
+        "key": "beach",
+        "name": "Beach",
+        "content": [
+          {
+            "key": "krios",
+            "name": "Krios",
+            "description": "A sandy beach sheltered from the wind, with restaurants that offer free sunbeds and umbrellas with any purchase",
+            "link": "https://www.greeka.com/cyclades/paros/beaches/krios/"
+          },
+          {
+            "key": "marchello",
+            "name": "Marchello",
+            "description": "A bustling beach that consists of a series of secluded rocky coves",
+            "link": "https://www.greeka.com/cyclades/paros/beaches/marchello/"
+          },
+          {
+            "key": "kaminia",
+            "name": "Kaminia",
+            "description": "A long relaxing unorganised beach with short vegetation at the entrance of Parikia Bay",
+            "link": "https://www.greeka.com/cyclades/paros/beaches/kaminia/"
+          },
+          {
+            "key": "agios-fokas",
+            "name": "Agios Fokas",
+            "description": "A small hidden beach perfect for peace and privacy",
+            "link": "https://www.greeka.com/cyclades/paros/beaches/agios-fokas/"
+          }
+        ]
+      },
+      {
+        "key": "sleep",
+        "name": "Sleep",
+        "content": [
+          {
+            "key": "coming-soon-5",
+            "name": "",
+            "description": "",
+            "link": ""
+          },
+          {
+            "key": "coming-soon-6",
+            "name": "",
+            "description": "",
+            "link": ""
+          },
+          {
+            "key": "coming-soon-7",
+            "name": "",
+            "description": "",
+            "link": ""
+          },
+          {
+            "key": "coming-soon-8",
+            "name": "",
+            "description": "",
+            "link": ""
           }
         ]
       }
@@ -139,16 +391,28 @@
         "name": "Eat",
         "content": [
           {
-            "key": "restaurant1",
-            "name": "Good Restaurant",
-            "description": "A restaurant in Santa Maria which is good.",
-            "link": "https://www.example.com"
+            "key": "coming-soon-9",
+            "name": "",
+            "description": "",
+            "link": ""
           },
           {
-            "key": "restaurant2",
-            "name": "Fishy Restaurant",
-            "description": "A seaside fish bar along the coast.",
-            "link": "https://www.example.com"
+            "key": "coming-soon-10",
+            "name": "",
+            "description": "",
+            "link": ""
+          },
+          {
+            "key": "coming-soon-11",
+            "name": "",
+            "description": "",
+            "link": ""
+          },
+          {
+            "key": "coming-soon-12",
+            "name": "",
+            "description": "",
+            "link": ""
           }
         ]
       },
@@ -157,16 +421,28 @@
         "name": "Drink",
         "content": [
           {
-            "key": "bar1",
-            "name": "Good Bar",
-            "description": "A bar in Santa Maria which has good drinks.",
-            "link": "https://www.example.com"
+            "key": "coming-soon-13",
+            "name": "",
+            "description": "",
+            "link": ""
           },
           {
-            "key": "bar2",
-            "name": "Fishy Bar",
-            "description": "A seaside bar along the coast.",
-            "link": "https://www.example.com"
+            "key": "coming-soon-14",
+            "name": "",
+            "description": "",
+            "link": ""
+          },
+          {
+            "key": "coming-soon-15",
+            "name": "",
+            "description": "",
+            "link": ""
+          },
+          {
+            "key": "coming-soon-16",
+            "name": "",
+            "description": "",
+            "link": ""
           }
         ]
       },
@@ -175,16 +451,118 @@
         "name": "Do",
         "content": [
           {
-            "key": "do1",
-            "name": "A Doing Thing",
-            "description": "This is a fun thing to do while here.",
-            "link": "https://www.example.com"
+            "key": "coming-soon-17",
+            "name": "",
+            "description": "",
+            "link": ""
           },
           {
-            "key": "do2",
-            "name": "Do This Now",
-            "description": "Second thing for ticking off here.",
-            "link": "https://www.example.com"
+            "key": "coming-soon-18",
+            "name": "",
+            "description": "",
+            "link": ""
+          },
+          {
+            "key": "coming-soon-19",
+            "name": "",
+            "description": "",
+            "link": ""
+          },
+          {
+            "key": "coming-soon-20",
+            "name": "",
+            "description": "",
+            "link": ""
+          }
+        ]
+      },
+      {
+        "key": "shop",
+        "name": "Shop",
+        "content": [
+          {
+            "key": "coming-soon-21",
+            "name": "",
+            "description": "",
+            "link": ""
+          },
+          {
+            "key": "coming-soon-22",
+            "name": "",
+            "description": "",
+            "link": ""
+          },
+          {
+            "key": "coming-soon-23",
+            "name": "",
+            "description": "",
+            "link": ""
+          },
+          {
+            "key": "coming-soon-24",
+            "name": "",
+            "description": "",
+            "link": ""
+          }
+        ]
+      },
+      {
+        "key": "beach",
+        "name": "Beach",
+        "content": [
+          {
+            "key": "coming-soon-25",
+            "name": "",
+            "description": "",
+            "link": ""
+          },
+          {
+            "key": "coming-soon-26",
+            "name": "",
+            "description": "",
+            "link": ""
+          },
+          {
+            "key": "coming-soon-27",
+            "name": "",
+            "description": "",
+            "link": ""
+          },
+          {
+            "key": "coming-soon-28",
+            "name": "",
+            "description": "",
+            "link": ""
+          }
+        ]
+      },
+      {
+        "key": "sleep",
+        "name": "Sleep",
+        "content": [
+          {
+            "key": "coming-soon-29",
+            "name": "",
+            "description": "",
+            "link": ""
+          },
+          {
+            "key": "coming-soon-30",
+            "name": "",
+            "description": "",
+            "link": ""
+          },
+          {
+            "key": "coming-soon-31",
+            "name": "",
+            "description": "",
+            "link": ""
+          },
+          {
+            "key": "coming-soon-32",
+            "name": "",
+            "description": "",
+            "link": ""
           }
         ]
       }
@@ -204,52 +582,128 @@
         "name": "Eat",
         "content": [
           {
-            "key": "restaurant1",
-            "name": "Good Restaurant",
-            "description": "A restaurant in Lefkes which is good.",
-            "link": "https://www.example.com"
+            "key": "aranto",
+            "name": "Aranto",
+            "description": "Simple, locally-sourced, authentic Cyclades dishes served on a huge terrace where you can enjoy sweeping views of the wild landscapes of Paros",
+            "link": "https://www.facebook.com/pages/category/Greek-Restaurant/Aranto-134789006686792/"
           },
           {
-            "key": "restaurant2",
-            "name": "Fishy Restaurant",
-            "description": "A seaside fish bar along the coast.",
-            "link": "https://www.example.com"
+            "key": "ramnos-cafe",
+            "name": "Ramnos Cafe",
+            "description": "Located on (and named after) the Central street of the village, this café serves up the Island’s most delicious crepes!",
+            "link": "https://en.tripadvisor.com.hk/Restaurant_Review-g189432-d3416827-Reviews-Albatros-Paros_Cyclades_South_Aegean.html"
+          },
+          {
+            "key": "lefkiano",
+            "name": "Lefkiano",
+            "description": "Offering generous portions of delicious Mediterranean cuisine, this cosy little restaurant is a hidden gem among the winding paths of Lefkes",
+            "link": "https://www.facebook.com/pg/lefkiano/about/?ref=page_internal"
+          },
+          {
+            "key": "kafeneio-marigos",
+            "name": "Kafeneio Marigos",
+            "description": "Situated opposite Agia Triada church, it’s the perfect place to take a break from exploring and enjoy a slice of cake with a cup of coffee or glass of homemade lemonade",
+            "link": "https://en.tripadvisor.com.hk/Restaurant_Review-g1187896-d4784676-Reviews-Kafeneio_Marigos-Lefkes_Paros_Cyclades_South_Aegean.html"
           }
         ]
       },
       {
         "key": "drink",
         "name": "Drink",
-        "content": [
-          {
-            "key": "bar1",
-            "name": "Good Bar",
-            "description": "A bar in Lefkes which has good drinks.",
-            "link": "https://www.example.com"
-          },
-          {
-            "key": "bar2",
-            "name": "Fishy Bar",
-            "description": "A seaside bar along the coast.",
-            "link": "https://www.example.com"
-          }
-        ]
+        "description": "This sleepy little village is definitely not a hotspot for those seeking a vibrant nightlife. We’d recommend making the 20 minute journey (by car) to Parikia or Naoussa, where there are countless bars and nightclubs to explore."
       },
       {
         "key": "do",
         "name": "Do",
         "content": [
           {
-            "key": "do1",
-            "name": "A Doing Thing",
-            "description": "This is a fun thing to do while here.",
-            "link": "https://www.example.com"
+            "key": "the-byzantine-road",
+            "name": "The Byzantine Road",
+            "description": "Dating back to 1,000 AD, this 3.5km (majority flat/downhill) trail is the oldest on the island, and connects Lefkes to Prodromos",
+            "link": "http://www.paros.gr/en/what-to-do/body/hiking/440-byzantine-road.html"
           },
           {
-            "key": "do2",
-            "name": "Do This Now",
-            "description": "Second thing for ticking off here.",
-            "link": "https://www.example.com"
+            "key": "agia-triada-church",
+            "name": "Agia Triada Church",
+            "description": "Known for its intricate bell towers, this church is the second largest on the island and has an impressive interior with elaborate frescoes and artistic features",
+            "link": "https://www.greeka.com/cyclades/paros/sightseeing/paros-agia-triada/"
+          },
+          {
+            "key": "the-folklore-art-museum",
+            "name": "The Folklore Art Museum",
+            "description": "All exhibits in this Parian museum were generously donated by the locals in the hopes of preserving the cultural character and history of Lefkes",
+            "link": "https://www.greeka.com/cyclades/paros/sightseeing/folklore-art-museum/"
+          },
+          {
+            "key": "rent-a-bike",
+            "name": "Rent a bike",
+            "description": "See and experience as much of Lefkes, and the whole of Paros Island, as possible - without the sore feet (plan B: quad bikes)",
+            "link": "http://awakeparos.gr/"
+          }
+        ]
+      },
+      {
+        "key": "shop",
+        "name": "Shop",
+        "content": [
+          {
+            "key": "oneipa-concept-store",
+            "name": "ONEipa Concept Store",
+            "description": "Creative and tasteful designs in homeware and clothing including scarves by felt designer, Elena Kyriakakou",
+            "link": "https://www.oneipa.com/"
+          },
+          {
+            "key": "blackrose",
+            "name": "Blackrose",
+            "description": "A fabulous little gift store with a variety of affordable locally made items to suit all tastes",
+            "link": "https://www.facebook.com/blackroselefkesparos/"
+          },
+          {
+            "key": "keramiko",
+            "name": "Keramiko",
+            "description": "A handmade ceramic dinnerware and home décor store, with an onsite workshop where you witness the production process",
+            "link": "https://en.tripadvisor.com.hk/Attraction_Review-g1187896-d7162321-Reviews-Keramiko-Lefkes_Paros_Cyclades_South_Aegean.html"
+          },
+          {
+            "key": "chorochronos",
+            "name": "Chorochronos",
+            "description": "Owned by local artist, Marina Triantafyllou, this gallery specialises in traditional Greek iconography, pottery, and modern marble sculpture and jewellery",
+            "link": "https://www.facebook.com/pg/MarinaG.Triantafyllou/photos/?tab=album&album_id=883051271749346&ref=page_internal"
+          }
+        ]
+      },
+      {
+        "key": "beach",
+        "name": "Beach",
+        "description": "Being on a verdant hill, 300m above sea level, it’s no surprise that Lefkes is unable to offer the stunning Cycladic island beaches you’ve been dreaming of. Luckily as the central point of the Island you can set off in virtually any direction and hit a beach within 20 mins (by car)!"
+      },
+      {
+        "key": "sleep",
+        "name": "Sleep",
+        "content": [
+          {
+            "key": "lefkes-village-hotel",
+            "name": "Lefkes Village Hotel",
+            "description": "A 4-star hotel surrounded by 20 acres of fruit trees and gardens, a community of traditional houses and a private museum of popular Aegean civilisation",
+            "link": "http://www.lefkesvillage.com/en/"
+          },
+          {
+            "key": "traditional-stone-built-windmill",
+            "name": "Traditional Stone-built Windmill",
+            "description": "A 19th century windmill renovated as a house, with magnificent views of the village and out to the sea, only 5 mins walk from Lefkes",
+            "link": "https://www.airbnb.com/rooms/10335853?source_impression_id=p3_1574709207_n6BGstmdT963tPeZ"
+          },
+          {
+            "key": "green-house",
+            "name": "Green House",
+            "description": "An eco-friendly, solar energy powered Cycladic stone house in the centre of the village, with breath-taking sea views and a lush garden full of fruit trees",
+            "link": "https://www.airbnb.com/rooms/27514472?source_impression_id=p3_1574709435_g4SHN%2FpIhOZtn1cv"
+          },
+          {
+            "key": "luxury-modern-apartment",
+            "name": "Luxury Modern Apartment",
+            "description": "A newly renovated apartment with a contemporary interior design and private shaded terrace",
+            "link": "https://www.airbnb.com/rooms/36395698?source_impression_id=p3_1574709668_5G%2BpKkmaWTXAQmKd"
           }
         ]
       }

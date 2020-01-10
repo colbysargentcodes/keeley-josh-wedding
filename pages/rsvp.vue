@@ -56,7 +56,7 @@
               class="form-event-checkbox"
             ></checkbox>
             <div>
-              <div class="font-script">Accepts</div>
+              <div class="font-script">accepts</div>
               <div
                 class="font-heading text-upper text-spaced text-spaced-correction"
               >
@@ -78,7 +78,7 @@
               class="form-event-checkbox"
             ></checkbox>
             <div>
-              <div class="font-script">Declines</div>
+              <div class="font-script">declines</div>
               <div
                 class="font-heading text-upper text-spaced text-spaced-correction"
               >
@@ -812,7 +812,7 @@ form {
         display: inline-flex;
         align-items: center;
         justify-content: center;
-        font-size: 16px;
+        font-size: 14px;
         cursor: pointer;
 
         input {
@@ -821,15 +821,16 @@ form {
 
         .form-event-checkbox {
           display: inline-block;
+          margin-top: 1.25em;
           margin-right: 1em;
         }
 
         .font-script {
-          font-size: 54px;
+          font-size: 80px;
         }
 
         .font-heading {
-          margin-top: -0.5em;
+          margin-top: -0.65em;
         }
       }
     }

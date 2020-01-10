@@ -70,20 +70,29 @@
           </div>
         </div>
         <div v-if="activeTab !== false" class="location-tab-content">
-          <div
-            v-for="item in location.tabs[activeTab].content"
-            :key="item.key"
-            class="location-item"
-          >
+          <template v-if="location.tabs[activeTab].content">
             <div
-              class="location-item-image"
-              :style="{ 'background-image': 'url(/images/itinerary/stag.jpg)' }"
-            ></div>
-            <div class="location-item-info">
-              <h3 class="text-spaced-correction">{{ item.name }}</h3>
-              <p>{{ item.description }}</p>
-              <a :href="item.link">more info</a>
+              v-for="item in location.tabs[activeTab].content"
+              :key="item.key"
+              class="location-item"
+            >
+              <div
+                class="location-item-image"
+                :style="{
+                  'background-image': 'url(/images/itinerary/stag.jpg)'
+                }"
+              ></div>
+              <div class="location-item-info">
+                <h3 class="text-spaced-correction">{{ item.name }}</h3>
+                <p>{{ item.description }}</p>
+                <a :href="item.link" target="_blank">more info</a>
+              </div>
             </div>
+          </template>
+          <div v-else-if="location.tabs[activeTab].description">
+            <p class="page-header">
+              {{ location.tabs[activeTab].description }}
+            </p>
           </div>
         </div>
       </div>
