@@ -159,28 +159,34 @@
         "name": "Sleep",
         "content": [
           {
-            "key": "coming-soon-1",
-            "name": "",
-            "description": "",
-            "link": ""
+            "key": "bohemian-boutique-hotel",
+            "name": "Bohemian Boutique Hotel",
+            "description": "This hotel offers luxury living beyond convention, by combining modern design and contemporary amenities with bohemian spirit!",
+            "link": "https://bohemianparos.com/"
           },
           {
-            "key": "coming-soon-2",
-            "name": "",
-            "description": "",
-            "link": ""
+            "key": "blue-mare-villas",
+            "name": "Blue Mare Villas",
+            "description": "A newly built 5-villa complex located in the picturesque village of Agios Andreas, just a few minutes from Naoussa",
+            "link": "http://www.bluemarevillas.com/"
           },
           {
-            "key": "coming-soon-3",
-            "name": "",
-            "description": "",
-            "link": ""
+            "key": "mr-mrs-white",
+            "name": "Mr & Mrs White",
+            "description": "A secluded state of the art new style hotel that pampers you with tailor made service and state of the art facilities",
+            "link": "https://mrandmrswhiteparos.com/en/"
           },
           {
-            "key": "coming-soon-4",
-            "name": "",
-            "description": "",
-            "link": ""
+            "key": "kanales-rooms-suites",
+            "name": "Kanale’s Rooms & Suites",
+            "description": "Nestled among different levels of the hillside, this small boutique hotel has sweeping views across the Aegean sea to Mykonos",
+            "link": "https://www.kanales.gr/"
+          },
+          {
+            "key": "astir-of-paros",
+            "name": "Astir of Paros",
+            "description": "This 5-star resort is tucked away in a unique landscape surrounded by colorful tropical gardens and exotic trees and features its own private beach",
+            "link": "https://www.astirofparos.gr/"
           }
         ]
       }
@@ -350,28 +356,28 @@
         "name": "Sleep",
         "content": [
           {
-            "key": "coming-soon-5",
-            "name": "",
-            "description": "",
-            "link": ""
+            "key": "sunset-view-hotel",
+            "name": "Sunset View Hotel",
+            "description": "Built amphitheatrically above the town of Parikia, in a unique traditional island style, this hotel offers spectacular sunset views",
+            "link": "https://www.paros-sunsetview-hotel.com/"
           },
           {
-            "key": "coming-soon-6",
-            "name": "",
-            "description": "",
-            "link": ""
+            "key": "archipelagos-resort-hotel",
+            "name": "Archipelagos Resort Hotel",
+            "description": "This stunning 5 star luxury hotel features 30 luxurious suites and 3 family villas, contemporarily designed and inspired by the island’s local architecture",
+            "link": "https://www.archipelagosresort.com/"
           },
           {
-            "key": "coming-soon-7",
-            "name": "",
-            "description": "",
-            "link": ""
+            "key": "paros-palace",
+            "name": "Paros Palace",
+            "description": "This newly renovated hotel offers calm and tranquil surroundings while still only a short distance from the vibrant city centre of Parikia",
+            "link": "https://www.parospalace.gr/"
           },
           {
-            "key": "coming-soon-8",
-            "name": "",
-            "description": "",
-            "link": ""
+            "key": "white-blossom",
+            "name": "White Blossom",
+            "description": "Spacious and comfortable apartments just a few steps away from Livadia beach, that promise a quiet and relaxing stay",
+            "link": "https://www.whiteblossomparos.com/"
           }
         ]
       }
