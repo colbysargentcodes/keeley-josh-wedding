@@ -391,178 +391,78 @@
         "name": "Eat",
         "content": [
           {
-            "key": "coming-soon-9",
-            "name": "",
-            "description": "",
-            "link": ""
+            "key": "koom-santa-maria-beach-bar",
+            "name": "Koom & Santa Maria Beach Bar",
+            "description": "Situated side by side, these lively restaurants are the perfect place to sample dishes made from fresh seasonal ingredients or simply sip on a cocktail and enjoy the sea breeze (from the bar/restaurant or sunbeds)",
+            "link": "https://koom.gr/"
           },
           {
-            "key": "coming-soon-10",
-            "name": "",
-            "description": "",
-            "link": ""
+            "key": "to-dixty",
+            "name": "To Dixty",
+            "description": "Beginning as fishermen who sold their fresh fish to nearby businesses – this family decided to open their own restaurant in North Santa Maria aptly named To ‘Dixty’, which translates as The ‘Net’",
+            "link": "https://todixtyrestaurant.gr/"
           },
           {
-            "key": "coming-soon-11",
-            "name": "",
-            "description": "",
-            "link": ""
+            "key": "white-dunes",
+            "name": "White Dunes",
+            "description": "Attached to the exclusive White Dunes Hotel, this fine dining restaurant features amazing sea views and elegant decoration details.",
+            "link": "https://www.whitedunesparos.com/dining/"
           },
           {
-            "key": "coming-soon-12",
-            "name": "",
-            "description": "",
-            "link": ""
+            "key": "katsoynas",
+            "name": "Katsoynas",
+            "description": "A traditional family-run Greek fish taverna located in Northern Santa Maria that is also famed for its succulent pork chops and homemade moussaka",
+            "link": "https://www.facebook.com/katsoynas"
           }
         ]
       },
       {
         "key": "drink",
         "name": "Drink",
-        "content": [
-          {
-            "key": "coming-soon-13",
-            "name": "",
-            "description": "",
-            "link": ""
-          },
-          {
-            "key": "coming-soon-14",
-            "name": "",
-            "description": "",
-            "link": ""
-          },
-          {
-            "key": "coming-soon-15",
-            "name": "",
-            "description": "",
-            "link": ""
-          },
-          {
-            "key": "coming-soon-16",
-            "name": "",
-            "description": "",
-            "link": ""
-          }
-        ]
+        "description": "While the two beach bars stay open late into the evening so you can boogie in your bikini, there are also countless bars and nightclubs to explore in nearby fishing village Naoussa, which can be reached (by car) in 10mins."
       },
       {
         "key": "do",
         "name": "Do",
-        "content": [
-          {
-            "key": "coming-soon-17",
-            "name": "",
-            "description": "",
-            "link": ""
-          },
-          {
-            "key": "coming-soon-18",
-            "name": "",
-            "description": "",
-            "link": ""
-          },
-          {
-            "key": "coming-soon-19",
-            "name": "",
-            "description": "",
-            "link": ""
-          },
-          {
-            "key": "coming-soon-20",
-            "name": "",
-            "description": "",
-            "link": ""
-          }
-        ]
+        "description": "Sun. Sand. Sea. Life’s a beach! For more adventurous activity options, please see the other map locations which are all only a short drive away."
       },
       {
         "key": "shop",
         "name": "Shop",
-        "content": [
-          {
-            "key": "coming-soon-21",
-            "name": "",
-            "description": "",
-            "link": ""
-          },
-          {
-            "key": "coming-soon-22",
-            "name": "",
-            "description": "",
-            "link": ""
-          },
-          {
-            "key": "coming-soon-23",
-            "name": "",
-            "description": "",
-            "link": ""
-          },
-          {
-            "key": "coming-soon-24",
-            "name": "",
-            "description": "",
-            "link": ""
-          }
-        ]
+        "description": "Seashells are free, so fill your boots! However, if you’re looking to splash the cash, head to nearby Naoussa, Parikia or Lefkes to shop ‘til you drop!"
       },
       {
         "key": "beach",
         "name": "Beach",
-        "content": [
-          {
-            "key": "coming-soon-25",
-            "name": "",
-            "description": "",
-            "link": ""
-          },
-          {
-            "key": "coming-soon-26",
-            "name": "",
-            "description": "",
-            "link": ""
-          },
-          {
-            "key": "coming-soon-27",
-            "name": "",
-            "description": "",
-            "link": ""
-          },
-          {
-            "key": "coming-soon-28",
-            "name": "",
-            "description": "",
-            "link": ""
-          }
-        ]
+        "description": "Good news…it is the beach - YAY!"
       },
       {
         "key": "sleep",
         "name": "Sleep",
         "content": [
           {
-            "key": "coming-soon-29",
-            "name": "",
-            "description": "",
-            "link": ""
+            "key": "white-dunes",
+            "name": "White Dunes",
+            "description": "A luxurious 12 suite resort with amazing sea views, only 2 minutes’ walk from the Beach",
+            "link": "https://www.whitedunesparos.com"
           },
           {
-            "key": "coming-soon-30",
-            "name": "",
-            "description": "",
-            "link": ""
+            "key": "seven",
+            "name": "Seven",
+            "description": "This ultra-stylish boutique hotel features 6 rooms and 1 villa and is situated a mere 30 metres from the little bay of Mikri Santa Maria beach",
+            "link": "https://www.sevensantamaria.com"
           },
           {
-            "key": "coming-soon-31",
-            "name": "",
-            "description": "",
-            "link": ""
+            "key": "ambassador-luxury-villas",
+            "name": "Ambassador Luxury Villas",
+            "description": "A gorgeous upscale villa complex on the water’s edge, with a large pool and spacious terrace",
+            "link": "https://www.ambassadorluxuryvillas.com/"
           },
           {
-            "key": "coming-soon-32",
-            "name": "",
-            "description": "",
-            "link": ""
+            "key": "the-sand-collection-villas",
+            "name": "The Sand Collection Villas",
+            "description": "5 lavish villas and 3 charming suites designed in deluxe modern Cycladic flair, a stone’s throw from the beach",
+            "link": "https://www.thesandcollectionvillas.com/"
           }
         ]
       }
