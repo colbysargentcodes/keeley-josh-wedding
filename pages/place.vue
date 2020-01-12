@@ -79,7 +79,7 @@
               <div
                 class="location-item-image"
                 :style="{
-                  'background-image': 'url(/images/itinerary/stag.jpg)'
+                  'background-image': `url(/images/paros/${location.key}-${location.tabs[activeTab].key}-${item.key}.jpg)`
                 }"
               ></div>
               <div class="location-item-info">
@@ -89,11 +89,12 @@
               </div>
             </div>
           </template>
-          <div v-else-if="location.tabs[activeTab].description">
-            <p class="page-header">
-              {{ location.tabs[activeTab].description }}
-            </p>
-          </div>
+          <p
+            v-else-if="location.tabs[activeTab].description"
+            class="page-header"
+          >
+            {{ location.tabs[activeTab].description }}
+          </p>
         </div>
       </div>
     </div>
