@@ -35,7 +35,7 @@
           Email
         </div>
         <div class="form-input-field">
-          <input v-model="rsvpResponses.email" name="email" type="email" />
+          <input v-model="rsvpResponses.email" name="email" type="text" />
           <span class="focus-bar"></span>
         </div>
       </div>
@@ -544,10 +544,10 @@
       </div>
 
       <div
-        v-if="rsvpFormSubmitAttempted && !rsvpFormValid"
+        v-if="rsvpFormSubmitAttempted && rsvpFormErrorMessage"
         class="validation-message error"
       >
-        Please fill in all events
+        {{ rsvpFormErrorMessage }}
       </div>
 
       <div
@@ -590,14 +590,18 @@ export default {
     }
   },
   computed: {
-    rsvpFormValid() {
-      let formValid = true
+    rsvpFormErrorMessage() {
+      const emailTest = /[^@]+@[^.]+\..+/
+      let errorMessage = ''
 
       for (const response of Object.entries(this.rsvpResponses)) {
-        if (!response[1]) formValid = false
+        if (!response[1]) errorMessage = 'Please fill in all events'
       }
 
-      return formValid
+      if (!emailTest.test(this.rsvpResponses.email))
+        errorMessage = 'Please enter a valid email address'
+
+      return errorMessage
     }
   },
   watch: {
@@ -635,7 +639,7 @@ export default {
       this.rsvpFormSubmitting = true
       this.rsvpFormSubmitAttempted = true
 
-      if (!this.rsvpFormValid) {
+      if (this.rsvpFormErrorMessage) {
         this.rsvpFormSubmitting = false
         return
       }
