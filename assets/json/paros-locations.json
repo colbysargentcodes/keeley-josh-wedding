@@ -2,7 +2,7 @@
   {
     "key": "naoussa",
     "name": "Naoussa",
-    "description": "Get lost in the narrow white-washed labyrinth of bougainvilleas draped houses, local boutiques and coffee shops or sample the islands freshest seafood along the waterfront of its colourful picturesque harbour. Although considered one of the most beautiful villages in the Cyclades, Naoussa is definitely more than just a pretty face! Calm and tranquil by day this cosmopolitan village truly comes to life after the sun sets, with a vibrant nightlife where you can really let your hair down and dance until dawn.",
+    "description": "Get lost in the narrow white-washed labyrinth of bougainvillea draped houses, local boutiques and coffee shops, or sample the islands freshest seafood along the waterfront of its colourful picturesque harbour. Although considered one of the most beautiful villages in the Cyclades, Naoussa is definitely more than just a pretty face! Calm and tranquil by day, this cosmopolitan village truly comes to life after the sun sets, with a vibrant nightlife where you can really let your hair down and dance until dawn.",
     "tabs": [
       {
         "key": "eat",
@@ -11,7 +11,7 @@
           {
             "key": "soso",
             "name": "Soso",
-            "description": "Traditional Greek cuisine with a twist",
+            "description": "‘A small, elegant restaurant offering generous portions of Greek fusion cuisine",
             "link": "https://www.facebook.com/sosorestaurantparos"
           },
           {
@@ -71,19 +71,19 @@
           {
             "key": "paros-park",
             "name": "Paros Park",
-            "description": "Beautiful walking trails, rock formations, caves, hidden coves, beaches and traces of history",
+            "description": "Follow the beautiful walking trails and explore the rock formations, caves, hidden coves, beaches and traces of history this Park is home to",
             "link": "https://www.parospark.com/"
           },
           {
             "key": "moraitis-winery",
             "name": "Moraitis Winery",
-            "description": "Founded in 1910 this winery has been passed from generation to generation of the Moraitis family",
+            "description": "Take home a taste of Paros from the 110 year old, Moraitis family winery",
             "link": "http://www.moraitiswines.gr/"
           },
           {
             "key": "aqua-paros",
             "name": "Aqua Paros",
-            "description": "A fun waterpark featuring a lazy river and 13 water slides which all end in the sea",
+            "description": "Attached to the Porto Paros Hotel, this waterpark features a lazy river and 13 water slides all ending in the Aegean sea",
             "link": "http://portoparos.gr/waterpark-2/"
           },
           {
@@ -119,7 +119,7 @@
           {
             "key": "white-in-paros",
             "name": "White in Paros",
-            "description": "An uber-chic fashion boutique -warning: you’ll want to buy everything!",
+            "description": "An uber-chic fashion boutique. Warning: you’ll want to buy everything!",
             "link": "https://www.facebook.com/whiteinparos/?ref=nearby_places&eid=ARDxDJMdmXhUc65HSIj3jNwqp12_Zozh6CgVcS67kYRUidIYdYLlOGfPfN5eDpDbQv8qSyA0nCRmbn99"
           }
         ]
@@ -179,7 +179,7 @@
           {
             "key": "astir-of-paros",
             "name": "Astir of Paros",
-            "description": "This 5-star resort is tucked away in a unique landscape surrounded by colorful tropical gardens and exotic trees and features its own private beach",
+            "description": "Tucked away in a unique landscape surrounded by colourful tropical gardens and exotic trees, this 5 star luxury resort features its own private beach",
             "link": "https://www.astirofparos.gr/"
           }
         ]
@@ -193,7 +193,7 @@
   {
     "key": "parikia",
     "name": "Parikia",
-    "description": "As the Island’s capital, this little town is the commercial and cultural hub of Paros and home to the main harbour. For its small size, Parikia packs a real punch with its old town offering up a huge selection of boutique shops, cafes and restaurants and a bustling coastal promenade lined with tavernas and bars. For those looking to soak up some culture and history, take to the streets by foot on rented bicycle and explore the impressive archaeological sites and museums.",
+    "description": "As the Island’s capital, this little town is the commercial and cultural hub of Paros and home to the main harbour. For its small size, Parikia packs a real punch with its old town offering up a huge selection of boutique shops, cafes and restaurants and a bustling coastal promenade lined with tavernas and bars. For those looking to soak up some culture and history, take to the streets by foot or rented bicycle and explore the impressive archaeological sites and museums.",
     "tabs": [
       {
         "key": "eat",
@@ -220,7 +220,7 @@
           {
             "key": "coralli",
             "name": "Coralli",
-            "description": "Situated on Livadia beach it’s a great spot for watching the sunset – we highly recommend the risotto!",
+            "description": "Situated on Livadia beach this is a great spot for watching the sunset – we highly recommend the risotto!",
             "link": "https://coralliparos.com/"
           }
         ]
@@ -250,7 +250,7 @@
           {
             "key": "kiaola",
             "name": "Kiaola",
-            "description": "A beachfront bar with mainstream vibes that plays music from all decades and ends the night with a Greek party",
+            "description": "A beachfront bar with mainstream vibes, playing music from all decades and ending the night Greek-style",
             "link": "https://www.facebook.com/KIALOABAR/"
           }
         ]
@@ -262,13 +262,13 @@
           {
             "key": "visit-antiparos",
             "name": "Visit Antiparos",
-            "description": "Paros’ sister island is only a short ferry ride away – look out Tom Hanks who spends his summer here every year!",
+            "description": "Paros’ sister island is only a short ferry ride away – look out for Tom Hanks who spends his summer here every year!",
             "link": "https://www.greeka.com/cyclades/antiparos/"
           },
           {
             "key": "panagia-ekatontapiliani",
             "name": "Panagia Ekatontapiliani",
-            "description": "Better known as the Church of 100 doors, this beautiful complex dates back to AD 326",
+            "description": "Better known as the Church of 100 doors, this beautiful complex dates back to 326 AD",
             "link": "https://www.greeka.com/cyclades/paros/sightseeing/paros-panagia-ekatontapiliani/"
           },
           {
@@ -334,13 +334,13 @@
           {
             "key": "kaminia",
             "name": "Kaminia",
-            "description": "A long relaxing unorganised beach with short vegetation at the entrance of Parikia Bay",
+            "description": "A long, relaxing, unorganised beach with short vegetation, at the entrance of Parikia Bay",
             "link": "https://www.greeka.com/cyclades/paros/beaches/kaminia/"
           },
           {
             "key": "agios-fokas",
             "name": "Agios Fokas",
-            "description": "A small hidden beach perfect for peace and privacy",
+            "description": "A small, hidden beach perfect for peace and privacy",
             "link": "https://www.greeka.com/cyclades/paros/beaches/agios-fokas/"
           }
         ]
@@ -352,13 +352,13 @@
           {
             "key": "sunset-view-hotel",
             "name": "Sunset View Hotel",
-            "description": "Built amphitheatrically above the town of Parikia, in a unique traditional island style, this hotel offers spectacular sunset views",
+            "description": "Built amphitheatrically above the town of Parikia in a unique traditional island style, this hotel offers spectacular sunset views",
             "link": "https://www.paros-sunsetview-hotel.com/"
           },
           {
             "key": "archipelagos-resort-hotel",
             "name": "Archipelagos Resort Hotel",
-            "description": "This stunning 5 star luxury hotel features 30 luxurious suites and 3 family villas, contemporarily designed and inspired by the island’s local architecture",
+            "description": "This stunning 5 star luxury hotel features 30 suites and 3 family villas, contemporarily designed and inspired by the island’s local architecture",
             "link": "https://www.archipelagosresort.com/"
           },
           {
@@ -370,7 +370,7 @@
           {
             "key": "white-blossom",
             "name": "White Blossom",
-            "description": "Spacious and comfortable apartments just a few steps away from Livadia beach, that promise a quiet and relaxing stay",
+            "description": "Spacious and comfortable apartments just a few steps from Livadia beach, promising a quiet and relaxing stay",
             "link": "https://www.whiteblossomparos.com/"
           }
         ]
@@ -384,7 +384,7 @@
   {
     "key": "santa-maria",
     "name": "Santa Maria",
-    "description": "Perfect for those looking to relax and soak up the sun on Paros’ more remote and off-the-beaten path beaches while still remaining in close proximity to the bustling nightlife of Naoussa fishing village. Santa Maria’s beautiful coastline is divided into two golden sand beaches, both with gorgeous views of the neighbouring Naxos island, and crystal-clear waters perfect for snorkelling or taking advantage of the various watersports on offer. You’ll also find Paros’ ‘best’ beach bar on the organised section of this beach, serving up fresh fruity cocktails and a delicious lunch and dinner menu!",
+    "description": "Perfect for those looking to relax and soak up the sun on Paros’ more remote and off-the-beaten path beaches, while still remaining in close proximity to the bustling nightlife of Naoussa fishing village. Santa Maria’s beautiful coastline is divided into two golden sand beaches, both with gorgeous views of the neighbouring Naxos island, and crystal-clear waters perfect for snorkelling or taking advantage of the various watersports on offer. You’ll also find Paros’ best beach bar on the organised section of this beach, serving up fresh fruity cocktails and a delicious lunch and dinner menu!",
     "tabs": [
       {
         "key": "eat",
@@ -393,13 +393,13 @@
           {
             "key": "koom-santa-maria-beach-bar",
             "name": "Koom & Santa Maria Beach Bar",
-            "description": "Situated side by side, these lively restaurants are the perfect place to sample dishes made from fresh seasonal ingredients or simply sip on a cocktail and enjoy the sea breeze (from the bar/restaurant or sunbeds)",
+            "description": "Situated side by side, these lively restaurants are the perfect place to sample dishes made from fresh seasonal ingredients or simply sip on a cocktail and enjoy the sea breeze",
             "link": "https://koom.gr/"
           },
           {
             "key": "to-dixty",
             "name": "To Dixty",
-            "description": "Beginning as fishermen who sold their fresh fish to nearby businesses – this family decided to open their own restaurant in North Santa Maria aptly named To ‘Dixty’, which translates as The ‘Net’",
+            "description": "Beginning as fishermen who sold their catch of the day to nearby businesses – this family decided to open their own restaurant in North Santa Maria aptly named To ‘Dixty’, which translates as The ‘Net’",
             "link": "https://todixtyrestaurant.gr/"
           },
           {
@@ -411,7 +411,7 @@
           {
             "key": "katsoynas",
             "name": "Katsoynas",
-            "description": "A traditional family-run Greek fish taverna located in Northern Santa Maria that is also famed for its succulent pork chops and homemade moussaka",
+            "description": "A traditional family-run Greek fish taverna located in Northern Santa Maria that is famed for its succulent pork chops and homemade moussaka",
             "link": "https://www.facebook.com/katsoynas"
           }
         ]
@@ -434,7 +434,7 @@
       {
         "key": "beach",
         "name": "Beach",
-        "description": "Good news…it is the beach - YAY!"
+        "description": "Good news…it IS the beach - YAY!"
       },
       {
         "key": "sleep",
@@ -443,7 +443,7 @@
           {
             "key": "white-dunes",
             "name": "White Dunes",
-            "description": "A luxurious 12 suite resort with amazing sea views, only 2 minutes’ walk from the Beach",
+            "description": "A luxurious 12 suite resort with amazing sea views, only 2 minutes’ walk from the beach",
             "link": "https://www.whitedunesparos.com"
           },
           {
@@ -475,7 +475,7 @@
   {
     "key": "lefkes",
     "name": "Lefkes",
-    "description": "This first capital of Paros, located at the very centre of the island, surrounded by mountains and offering breath-taking views of the neighbouring Cyclades islands. Lefkes one of the prettiest and most traditional villages on the island, featuring whitewashed houses mixed with Venetian architecture, wonderful churches dating from the 15th century and the olive trees and windmills Greece is famous for! It’s also the perfect starting point for the many hiking trails Paros has to offer, including the famous Byzantine Road.",
+    "description": "This first capital of Paros, located at the very centre of the island, surrounded by mountains and offering breath-taking views of the neighbouring Cyclades islands. Lefkes is one of the prettiest and most traditional villages on the island, featuring whitewashed houses mixed with Venetian architecture, wonderful churches dating from the 15th century and the olive trees and windmills Greece is famous for! It’s also the perfect starting point for the many hiking trails Paros has to offer, including the famous Byzantine Road.",
     "tabs": [
       {
         "key": "eat",
@@ -496,7 +496,7 @@
           {
             "key": "lefkiano",
             "name": "Lefkiano",
-            "description": "Offering generous portions of delicious Mediterranean cuisine, this cosy little restaurant is a hidden gem among the winding paths of Lefkes",
+            "description": "Offering generous portions of mouth-watering Mediterranean cuisine, this cosy little restaurant is a hidden gem among the winding paths of Lefkes",
             "link": "https://www.facebook.com/pg/lefkiano/about/?ref=page_internal"
           },
           {
@@ -537,7 +537,7 @@
           {
             "key": "rent-a-bike",
             "name": "Rent a bike",
-            "description": "See and experience as much of Lefkes, and the whole of Paros Island, as possible - without the sore feet (plan B: quad bikes)",
+            "description": "See and experience as much of the island as possible - without the sore feet! And if you’re feeling really lazy, quad bikes are also available",
             "link": "http://awakeparos.gr/"
           }
         ]
@@ -549,7 +549,7 @@
           {
             "key": "oneipa-concept-store",
             "name": "ONEipa Concept Store",
-            "description": "Creative and tasteful designs in homeware and clothing including scarves by felt designer, Elena Kyriakakou",
+            "description": "Creative and tasteful designs in homeware and clothing, including scarves by felt designer, Elena Kyriakakou",
             "link": "https://www.oneipa.com/"
           },
           {
@@ -561,7 +561,7 @@
           {
             "key": "keramiko",
             "name": "Keramiko",
-            "description": "A handmade ceramic dinnerware and home décor store, with an onsite workshop where you witness the production process",
+            "description": "A handmade ceramic dinnerware and home décor store, with an onsite workshop where you can watch the production process",
             "link": "https://en.tripadvisor.com.hk/Attraction_Review-g1187896-d7162321-Reviews-Keramiko-Lefkes_Paros_Cyclades_South_Aegean.html"
           },
           {
@@ -575,7 +575,7 @@
       {
         "key": "beach",
         "name": "Beach",
-        "description": "Being on a verdant hill, 300m above sea level, it’s no surprise that Lefkes is unable to offer the stunning Cycladic island beaches you’ve been dreaming of. Luckily as the central point of the Island you can set off in virtually any direction and hit a beach within 20 mins (by car)!"
+        "description": "Being on a verdant hill 300m above sea level, it’s no surprise that Lefkes is unable to offer the stunning Cycladic island beaches you’ve been dreaming of. Luckily, as the central point of the Island, you can set off in virtually any direction and hit a beach within 20 mins (by car)!"
       },
       {
         "key": "sleep",
@@ -602,7 +602,7 @@
           {
             "key": "luxury-modern-apartment",
             "name": "Luxury Modern Apartment",
-            "description": "A newly renovated apartment with a contemporary interior design and private shaded terrace",
+            "description": "A newly renovated apartment with contemporary interior design and private shaded terrace",
             "link": "https://www.airbnb.com/rooms/36395698?source_impression_id=p3_1574709668_5G%2BpKkmaWTXAQmKd"
           }
         ]

@@ -4,8 +4,8 @@
       R.S.V.P
     </h1>
     <h2 class="page-header">
-      We hope you can join us! Let us know if we can also count you ‘in’ for any
-      of our pre and post wedding activities.
+      We hope you can join us! Please let us know if also plan on attending any
+      of our pre and post wedding acitivies.
     </h2>
     <form
       name="rsvp"
@@ -100,8 +100,8 @@
             <span>Mykonos</span>
           </div>
           <div class="form-events-group-headings-responses">
-            <span>In</span>
-            <span>Out</span>
+            <span>Yes</span>
+            <span>No</span>
           </div>
         </div>
         <div
@@ -211,8 +211,8 @@
             <span>Paros</span>
           </div>
           <div class="form-events-group-headings-responses">
-            <span>In</span>
-            <span>Out</span>
+            <span>Yes</span>
+            <span>No</span>
           </div>
         </div>
         <div
@@ -464,8 +464,8 @@
             <span>Santorini</span>
           </div>
           <div class="form-events-group-headings-responses">
-            <span>Maybe</span>
-            <span>Out</span>
+            <span>Yes</span>
+            <span>No</span>
           </div>
         </div>
         <div

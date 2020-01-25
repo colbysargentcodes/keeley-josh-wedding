@@ -8,16 +8,17 @@
     </h2>
     <p class="page-header">
       Pristine beaches, crystal clear turquoise waters, Byzantine footpaths
-      leading to traditional white-washed villages and breath-taking natural
-      landscapes are just a few of the many reasons we decided to celebrate our
-      wedding on this beautiful little island, at the heart of the Cyclades.
+      leading to traditional white-washed villages, and breath-taking natural
+      landscapes, are just a few of the many reasons we decided to celebrate our
+      wedding on this beautiful little island at the heart of the Cyclades.
     </p>
     <p class="page-header">
       Paros suits the taste of every traveller, whether you’re looking to chill
       on the beach (or hit the waves), hike mountain trails, visit
       archaeological sites and museums, or shop ‘til you drop - and let’s not
       forget about the fun to be had after the sun goes down! Use the
-      interactive map below to explore our recommended areas.
+      interactive map below to explore our recommended areas, and don’t hesitate
+      to reach out (to Keeley, of course) for any further advice.
     </p>
     <div id="map-container">
       <figure>

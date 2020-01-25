@@ -74,8 +74,7 @@
         </p>
         <p class="note">
           *A taxi between Athens Airport and Athens (Piraeus) Harbour takes 1
-          hour, at a cost of €50-60. Travel is also possible by bus, with a
-          journey time of 1.5hours, at a cost of approx. €6-10.
+          hour. Travel is also possible by bus, with a journey time of 1.5hours.
         </p>
         <h3>
           MYKONOS (NEW) PORT – PAROS (PARIKIA) TERMINAL
@@ -87,8 +86,7 @@
           Costs vary between €20-40 dependant on ferry operator.
         </p>
         <p class="note">
-          *A taxi between Mykonos Airport and Mykonos New Port takes 15-20 mins,
-          at a cost of approx. €30.
+          *A taxi between Mykonos Airport and Mykonos New Port takes 15-20 mins.
         </p>
         <p class="spaced-links">
           <strong>View ferry timetables and book tickets online at:</strong>

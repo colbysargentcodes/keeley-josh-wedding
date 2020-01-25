@@ -67,8 +67,8 @@
     >
       <div class="font-heading text-upper text-spaced">
         <p>
-          We're so excited for you to join us to celebrate our wedding on Paros
-          Island in Greece
+          We're so excited for you to join us to celebrate our wedding on the
+          beautiful Paros Island in Greece.
         </p>
         <p>
           See you there!
@@ -349,7 +349,7 @@ export default {
     padding-right: 1em;
     font-size: 42px;
     text-align: right;
-    transform: rotate(-7deg);
+    transform: rotate(-2deg) skew(0deg, -7deg);
 
     #sign-off-xoxo {
       position: relative;

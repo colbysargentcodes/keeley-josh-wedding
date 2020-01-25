@@ -66,7 +66,7 @@ export default {
             "“The first rule of the buck's party, is not to talk about the buck's party.”",
           quoted: 'Josh',
           location: 'Old Town, Mykonos',
-          date: '2020-06-20 19:00'
+          date: '2020-06-20 16:00'
         },
         {
           key: 'hen',
@@ -74,7 +74,7 @@ export default {
           quote: '“It’s time to drink champagne and dance on the table!”',
           quoted: 'Keeley',
           location: 'Old Town, Mykonos',
-          date: '2020-06-21 19:00'
+          date: '2020-06-21 16:00'
         },
         {
           key: 'boat-trip',
@@ -100,9 +100,9 @@ export default {
             'It’s time for us to say “I do”, and for you to #MeetTheMcNamaras!\n' +
             'Two become one. All become drunk.',
           locationPretext:
-            'transfers will depart from select locations at 5:00pm',
+            'transfers will depart from select locations at 4:30pm',
           location: 'Private Villa, Paros',
-          date: '2020-06-26 18:00'
+          date: '2020-06-26 17:30'
         },
         {
           key: 'beach-recovery',
@@ -116,7 +116,7 @@ export default {
           key: 'pool-party',
           title: 'Farewell Pool Party',
           description:
-            'We’re firing up the BBQ, turning on the tunes and inflating the unicorn to bid farewell to what will have no doubt been our best summer as husband and wife! Clothing optional. Swimwear compulsory. Because it’s not that kind of party.',
+            'We’re firing up the BBQ, turning on the tunes and inflating the unicorn, to bid farewell to what will have no doubt been our best summer as husband and wife! Clothing optional. Swimwear compulsory. Because it’s not that kind of party.',
           location: 'Private Villa, Paros',
           date: '2020-06-28 11:00'
         },
@@ -124,7 +124,7 @@ export default {
           key: 'island-hop',
           title: 'Island Hop',
           description:
-            'The supermodel of the Greek islands is calling our name – and I think I can hear yours too! Why not extend your trip for a few days and join us in Santorini before we jet off on our honeymoon? We’ve partied in Paros, now let’s conquer the caldera! No itinerary. No expectations. Just good times.',
+            'The supermodel of the Greek islands is calling our name – and I think I can hear yours too! Why not extend your trip for a few days and join us in Santorini for our pre-honeymoon? We’ve partied in Paros, now let’s conquer the caldera! No itinerary. No expectations. Just good times.',
           locationPretext: 'ferries depart from Parikia',
           location: 'Santorini',
           date: '2020-06-30 13:00'
