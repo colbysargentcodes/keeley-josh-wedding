@@ -358,4 +358,43 @@ export default {
     }
   }
 }
+
+@media only screen and (max-width: 800px) {
+  #welcome-message {
+    width: 75%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  #wedding-countdown {
+    figure {
+      img {
+        height: 250px;
+      }
+
+      h2 {
+        bottom: 1.5em;
+        font-size: 1.05em;
+      }
+    }
+
+    .countdown-block {
+      width: 90px;
+
+      .countdown-number {
+        font-size: 2.625em;
+      }
+    }
+  }
+
+  #welcome-message {
+    width: 100%;
+    font-size: 16px;
+
+    #sign-off {
+      padding-right: 0.75em;
+      font-size: 32px;
+    }
+  }
+}
 </style>
