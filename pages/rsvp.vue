@@ -4,8 +4,8 @@
       R.S.V.P
     </h1>
     <h2 class="page-header">
-      We hope you can join us! Please let us know if also plan on attending any
-      of our pre and post wedding acitivies.
+      We hope you can join us! Please let us know if you also plan on attending
+      any of our pre and post wedding activities.
     </h2>
     <form
       name="rsvp"

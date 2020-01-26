@@ -86,7 +86,8 @@
           Costs vary between €20-40 dependant on ferry operator.
         </p>
         <p class="note">
-          *A taxi between Mykonos Airport and Mykonos New Port takes 15-20 mins.
+          *A taxi between Mykonos Airport and Mykonos (New) Ferry Port takes
+          15-20 mins.
         </p>
         <p class="spaced-links">
           <strong>View ferry timetables and book tickets online at:</strong>
@@ -106,8 +107,12 @@
           </a>
         </p>
         <p class="note">
-          *we’d recommend booking your ferry tickets online 1-2 months in
-          advance (full timetables are not yet released for June 2020).
+          *we would not recommend booking your ferry tickets (departing Paros)
+          online, as schedules are known to change without notice and additional
+          late afternoon/evening ferries in the summer months are not listed
+          until as little as two weeks in advance. Tickets can be purchased at
+          various locations on the island and availability is ample, even when
+          purchased only a few hours prior to your desired departure time.
         </p>
       </div>
       <div v-if="activeTab === 'drive'" class="travel-method-content">
