@@ -12,8 +12,9 @@
       <nav
         class="font-heading text-spaced text-upper"
         :class="{ open: menuOpen }"
+        @click="menuOpen = false"
       >
-        <a class="close-button" @click="menuOpen = false">close</a>
+        <a class="close-button">close</a>
         <nuxt-link
           v-for="(page, index) in pages"
           :key="index"
@@ -21,7 +22,6 @@
           :class="{
             'feature-button': page.feature
           }"
-          @click="menuOpen = false"
         >
           {{ page.name }}
         </nuxt-link>
@@ -212,7 +212,7 @@ header {
       flex-direction: column;
       align-items: center;
       background-color: $color-white;
-      box-shadow: 0 0 0 rgba(0, 0, 0, 00);
+      box-shadow: 0 0 0 rgba(0, 0, 0, 0);
       z-index: 999;
       transition: left 0.3s, box-shadow 0.3s;
 
