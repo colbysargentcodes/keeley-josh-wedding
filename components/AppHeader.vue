@@ -4,7 +4,16 @@
       <div id="app-logo">
         <img src="/images/jk-monogram-thick.svg" />
       </div>
-      <nav class="font-heading text-spaced text-upper">
+      <div
+        id="nav-overlay"
+        :class="{ show: menuOpen }"
+        @click="menuOpen = false"
+      ></div>
+      <nav
+        class="font-heading text-spaced text-upper"
+        :class="{ open: menuOpen }"
+      >
+        <a class="close-button" @click="menuOpen = false">close</a>
         <nuxt-link
           v-for="(page, index) in pages"
           :key="index"
@@ -12,9 +21,14 @@
           :class="{
             'feature-button': page.feature
           }"
-          >{{ page.name }}</nuxt-link
+          @click="menuOpen = false"
         >
+          {{ page.name }}
+        </nuxt-link>
       </nav>
+      <div id="menu-trigger" @click="menuOpen = true">
+        <span id="menu-icon"></span>
+      </div>
     </div>
   </header>
 </template>
@@ -24,6 +38,7 @@ export default {
   data() {
     return {
       headerActive: false,
+      menuOpen: false,
       pages: [
         {
           name: 'Itinerary',
@@ -82,6 +97,7 @@ header {
   > div {
     display: flex;
     align-items: center;
+    justify-content: space-between;
     border-bottom: 1px solid $color-black;
     height: 100%;
   }
@@ -93,6 +109,10 @@ header {
       width: auto;
       height: 70px;
     }
+  }
+
+  #nav-overlay {
+    display: none;
   }
 
   nav {
@@ -129,6 +149,10 @@ header {
         }
       }
 
+      &.close-button {
+        display: none;
+      }
+
       &.feature-button {
         border: 1px solid $color-gold;
 
@@ -147,6 +171,95 @@ header {
           &:after {
             background-color: $color-white;
           }
+        }
+      }
+    }
+  }
+
+  #menu-trigger {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  header {
+    #nav-overlay {
+      position: fixed;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      display: block;
+      background: rgba(255, 255, 255, 0.75);
+      opacity: 0;
+      pointer-events: none;
+      z-index: 998;
+      transition: opacity 0.3s;
+
+      &.show {
+        opacity: 1;
+        pointer-events: auto;
+      }
+    }
+
+    nav {
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      left: 100%;
+      width: 65%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color: $color-white;
+      box-shadow: 0 0 0 rgba(0, 0, 0, 00);
+      z-index: 999;
+      transition: left 0.3s, box-shadow 0.3s;
+
+      &.open {
+        left: 35%;
+        box-shadow: 0 0 40px rgba(0, 0, 0, 0.25);
+      }
+
+      a {
+        margin-top: 2em;
+
+        &.close-button {
+          display: inline-block;
+          color: $color-gold;
+          font-size: 12px;
+          font-weight: bold;
+          cursor: pointer;
+        }
+
+        &.feature-button:not(:first-child) {
+          margin-left: 0;
+        }
+      }
+    }
+
+    #menu-trigger {
+      display: block;
+      padding: 13px 3px;
+
+      #menu-icon {
+        position: relative;
+        display: inline-block;
+        width: 40px;
+        height: 20px;
+        border-top: 2px solid $color-gold;
+        border-bottom: 2px solid $color-gold;
+        cursor: pointer;
+
+        &:after {
+          content: '';
+          position: absolute;
+          top: 50%;
+          right: 0;
+          left: 0;
+          height: 2px;
+          transform: translateY(-50%);
+          background-color: $color-gold;
         }
       }
     }
