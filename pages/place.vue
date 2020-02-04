@@ -85,7 +85,7 @@
               ></div>
               <div class="location-item-info">
                 <h3 class="text-spaced-correction">{{ item.name }}</h3>
-                <p>{{ item.description }}</p>
+                <p v-html="item.description"></p>
                 <a :href="item.link" target="_blank">more info</a>
               </div>
             </div>

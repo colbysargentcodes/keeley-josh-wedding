@@ -71,13 +71,13 @@
           {
             "key": "paros-park",
             "name": "Paros Park",
-            "description": "Follow the beautiful walking trails and explore the rock formations, caves, hidden coves, beaches and traces of history this Park is home to",
+            "description": "Follow the beautiful walking trails and explore the rock formations, caves, hidden coves, beaches and traces of history this park is home to",
             "link": "https://www.parospark.com/"
           },
           {
             "key": "moraitis-winery",
             "name": "Moraitis Winery",
-            "description": "Take home a taste of Paros from the 110 year old, Moraitis family winery",
+            "description": "Take home a taste of Paros from this 110 year old family-run winery",
             "link": "http://www.moraitiswines.gr/"
           },
           {
@@ -250,7 +250,7 @@
           {
             "key": "kiaola",
             "name": "Kiaola",
-            "description": "A beachfront bar with mainstream vibes, playing music from all decades and ending the night Greek-style",
+            "description": "A beachfront bar with mainstream vibes playing music from all decades that ends each and every night with a very Greek bang!",
             "link": "https://www.facebook.com/KIALOABAR/"
           }
         ]
@@ -443,7 +443,7 @@
           {
             "key": "white-dunes",
             "name": "White Dunes",
-            "description": "A luxurious 12 suite resort with amazing sea views, only 2 minutes’ walk from the beach",
+            "description": "A luxurious 12 suite resort with amazing sea views, only 2 minutes walk from the beach",
             "link": "https://www.whitedunesparos.com"
           },
           {
@@ -537,7 +537,7 @@
           {
             "key": "rent-a-bike",
             "name": "Rent a bike",
-            "description": "See and experience as much of the island as possible - without the sore feet! And if you’re feeling really lazy, quad bikes are also available",
+            "description": "See and experience as much of the island as possible - without the sore feet! And if you’re feeling <i>really</i> lazy, quad bikes are also available",
             "link": "http://awakeparos.gr/"
           }
         ]
@@ -602,7 +602,7 @@
           {
             "key": "luxury-modern-apartment",
             "name": "Luxury Modern Apartment",
-            "description": "A newly renovated apartment with contemporary interior design and private shaded terrace",
+            "description": "A newly renovated apartment with contemporary interior design and a private shaded terrace",
             "link": "https://www.airbnb.com/rooms/36395698?source_impression_id=p3_1574709668_5G%2BpKkmaWTXAQmKd"
           }
         ]
