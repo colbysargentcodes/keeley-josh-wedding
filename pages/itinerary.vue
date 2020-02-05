@@ -267,5 +267,59 @@ export default {
       }
     }
   }
+
+  @media only screen and (max-width: 950px) {
+    .event-list-item {
+      width: 80%;
+
+      &:nth-child(odd) {
+        margin-left: 20%;
+      }
+
+      &:nth-child(even) {
+        margin-right: 20%;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 800px) {
+    .event-list-item {
+      width: 100%;
+
+      &:nth-child(odd) {
+        margin-left: 0;
+      }
+
+      &:nth-child(even) {
+        margin-right: 0;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 600px) {
+    .event-list-item {
+      flex-direction: column;
+      padding: 30px 0;
+
+      &:nth-child(even),
+      &:nth-child(odd) {
+        .event-info {
+          border: 0;
+        }
+      }
+
+      .event-date {
+        order: -1;
+        min-width: auto;
+        margin: 0 35%;
+        border-bottom: 1px solid $color-black;
+        padding: 0 0 20px;
+      }
+
+      .event-info {
+        padding: 20px 20px 0;
+      }
+    }
+  }
 }
 </style>

@@ -31,3 +31,9 @@ h3 {
 .text-upper {
   text-transform: uppercase;
 }
+
+@media only screen and (max-width: 600px) {
+  h1 {
+    font-size: 2.5em;
+  }
+}
