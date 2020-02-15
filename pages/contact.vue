@@ -84,13 +84,6 @@ export default {
           name: 'Josh',
           phone: '+852 9132 0398',
           email: 'joshmcnamara@hotmail.com'
-        },
-        {
-          key: 'katerina',
-          role: 'Planner',
-          name: 'Katerina',
-          phone: '+30 694 904 5973',
-          email: 'katerina.iordanou@mitheoevents.com'
         }
       ]
     }

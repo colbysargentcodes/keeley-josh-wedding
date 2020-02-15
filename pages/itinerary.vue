@@ -108,7 +108,7 @@ export default {
           key: 'beach-recovery',
           title: 'Beach Recovery',
           description:
-            'Josh always says there’s no better cure for a hangover than a swim in the ocean...so, let’s hit the beach! We’ll made sure there’s a big lunch and a snoozeworthy sunbed at the water’s edge with your name on it – see you there!',
+            'Josh always says there’s no better cure for a hangover than a swim in the ocean...so, let’s hit the beach! We’ll make sure there’s a big lunch and a snoozeworthy sunbed at the water’s edge with your name on it – see you there!',
           location: 'Santa Maria Beach Bar\n' + 'Santa Maria Beach, Paros',
           date: '2020-06-27 12:00'
         },
