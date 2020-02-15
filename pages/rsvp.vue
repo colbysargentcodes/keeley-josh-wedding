@@ -1008,5 +1008,65 @@ form {
   #form-event-island-hop {
     margin-bottom: 65px;
   }
+
+  @media only screen and (max-width: 1200px) {
+    width: 90%;
+  }
+
+  @media only screen and (max-width: 900px) {
+    width: 90%;
+    padding: 60px;
+
+    .form-border {
+      margin: 20px;
+    }
+
+    .form-row.form-rsvp-row .form-rsvp-field label {
+      font-size: 11px;
+
+      .font-script {
+        font-size: 60px;
+      }
+    }
+
+    .form-events-group-headings-name {
+      padding-left: 70px;
+    }
+
+    .form-events-group-headings-responses {
+      padding-right: 0;
+      width: 140px;
+    }
+
+    .form-row.form-event-row {
+      .form-event-date {
+        width: 70px;
+        padding-left: 0;
+      }
+
+      .form-event-field {
+        padding-right: 0;
+        width: 140px;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 750px) {
+    width: 100%;
+    min-width: 475px;
+    padding: 50px;
+
+    .form-row.form-event-row .form-event-name {
+      padding-right: 0;
+
+      img {
+        display: none;
+      }
+
+      span {
+        top: 0;
+      }
+    }
+  }
 }
 </style>
