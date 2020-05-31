@@ -4,8 +4,8 @@
       R.S.V.P
     </h1>
     <h2 class="page-header">
-      We hope you can join us! Please let us know if you also plan on attending
-      any of our pre and post wedding activities.
+      We hope you can join us on our new wedding date! Same time. Same place.
+      Less to worry about. More to celebrate.
     </h2>
     <form
       name="rsvp"
@@ -108,7 +108,7 @@
           class="form-row form-event-row"
           :class="{ inactive: rsvpResponses.stagDo === 'No' }"
         >
-          <div class="form-event-date">20<sup>th</sup></div>
+          <div class="form-event-date">17<sup>th</sup></div>
           <div class="form-event-name">
             <img src="/icons/stag.svg" />
             <span>Buck's Party</span>
@@ -157,7 +157,7 @@
           class="form-row form-event-row"
           :class="{ inactive: rsvpResponses.henParty === 'No' }"
         >
-          <div class="form-event-date">21<sup>st</sup></div>
+          <div class="form-event-date">18<sup>th</sup></div>
           <div class="form-event-name">
             <img src="/icons/hen.svg" />
             <span>Hen Party</span>
@@ -219,7 +219,7 @@
           class="form-row form-event-row"
           :class="{ inactive: rsvpResponses.boatTrip === 'No' }"
         >
-          <div class="form-event-date">24<sup>th</sup></div>
+          <div class="form-event-date">21<sup>st</sup></div>
           <div class="form-event-name">
             <img src="/icons/boat-trip.svg" />
             <span>Boat Trip</span>
@@ -268,7 +268,7 @@
           class="form-row form-event-row"
           :class="{ inactive: rsvpResponses.welcomeDrinks === 'No' }"
         >
-          <div class="form-event-date">25<sup>th</sup></div>
+          <div class="form-event-date">22<sup>nd</sup></div>
           <div class="form-event-name">
             <img src="/icons/welcome-drinks.svg" />
             <span>Welcome Drinks</span>
@@ -317,7 +317,7 @@
           class="form-row form-event-row"
           :class="{ inactive: rsvpResponses.wedding === 'No' }"
         >
-          <div class="form-event-date">26<sup>th</sup></div>
+          <div class="form-event-date">23<sup>rd</sup></div>
           <div class="form-event-name">
             <img src="/icons/wedding.svg" />
             <span>Wedding</span>
@@ -361,7 +361,7 @@
           class="form-row form-event-row"
           :class="{ inactive: rsvpResponses.beachRecovery === 'No' }"
         >
-          <div class="form-event-date">27<sup>th</sup></div>
+          <div class="form-event-date">24<sup>th</sup></div>
           <div class="form-event-name">
             <img src="/icons/beach-recovery.svg" />
             <span>Beach Recovery</span>
@@ -410,10 +410,10 @@
           class="form-row form-event-row"
           :class="{ inactive: rsvpResponses.poolParty === 'No' }"
         >
-          <div class="form-event-date">28<sup>th</sup></div>
+          <div class="form-event-date">25<sup>th</sup></div>
           <div class="form-event-name">
             <img src="/icons/pool-party.svg" />
-            <span>Pool Party</span>
+            <span>Brunch Pool Party</span>
           </div>
           <div class="form-event-field">
             <input
@@ -473,7 +473,7 @@
           class="form-row form-event-row"
           :class="{ inactive: rsvpResponses.islandHop === 'No' }"
         >
-          <div class="form-event-date">30<sup>th</sup></div>
+          <div class="form-event-date">27<sup>th</sup></div>
           <div class="form-event-name">
             <img src="/icons/island-hop.svg" />
             <span>Island Hop</span>

@@ -10,7 +10,7 @@
     >
       <figure @click="openLogin">
         <img src="/images/jk-monogram-thin.svg" />
-        <h2>26.06.20</h2>
+        <h2>27.03.21</h2>
         <div id="enter-button">enter</div>
       </figure>
       <div id="countdown-container">
@@ -67,11 +67,20 @@
     >
       <div class="font-heading text-upper text-spaced">
         <p>
-          We're so excited for you to join us to celebrate our wedding on the
-          beautiful Paros Island in Greece.
+          DUE TO THE CURRENT CIRCUMSTANCES, WE HAVE MADE THE DECISION TO
+          POSTPONE OUR WEDDING TO A DATE WHEN WE CAN CELEBRATE TOGETHER SAFELY.
+          YOUR HEALTH IS OF THE UTMOST IMPORTANCE TO US, AND WE ARE THINKING OF
+          YOU ALL IN THESE UNCERTAIN TIMES.
         </p>
         <p>
-          See you there!
+          WE LOOK FORWARD TO SEEING YOU ON THE BEAUTIFUL PAROS ISLAND IN GREECE
+          IN 2021.
+        </p>
+        <p>
+          GOOD THINGS COME TO THOSE WHO WAIT…
+        </p>
+        <p>
+          SEE YOU THERE!
         </p>
       </div>
       <p id="sign-off" class="font-script">
@@ -88,7 +97,7 @@ export default {
   data() {
     return {
       countdown: {
-        date: new Date(Date.UTC(2020, 5, 26, 15)).getTime(),
+        date: new Date(Date.UTC(2021, 6, 23, 15)).getTime(),
         interval: false,
         days: 0,
         hours: 0,
@@ -121,9 +130,7 @@ export default {
         return
       }
 
-      this.countdown.days = Math.floor(
-        (countdownAmount % (1000 * 60 * 60 * 24 * 365)) / (1000 * 60 * 60 * 24)
-      )
+      this.countdown.days = Math.floor(countdownAmount / (1000 * 60 * 60 * 24))
       this.countdown.hours = Math.floor(
         (countdownAmount % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
       )
@@ -338,7 +345,7 @@ export default {
 #welcome-message {
   width: 56.25%;
   padding-bottom: 50px;
-  font-size: 21px;
+  font-size: 18px;
 
   p + p {
     margin-top: 0.75em;

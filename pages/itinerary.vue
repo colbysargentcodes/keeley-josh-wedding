@@ -66,7 +66,7 @@ export default {
             "“The first rule of the buck's party, is not to talk about the buck's party.”",
           quoted: 'Josh',
           location: 'Old Town, Mykonos',
-          date: '2020-06-20 16:00'
+          date: '2021-07-17 16:00'
         },
         {
           key: 'hen',
@@ -74,7 +74,7 @@ export default {
           quote: '“It’s time to drink champagne and dance on the table!”',
           quoted: 'Keeley',
           location: 'Old Town, Mykonos',
-          date: '2020-06-21 16:00'
+          date: '2021-07-18 16:00'
         },
         {
           key: 'boat-trip',
@@ -83,7 +83,7 @@ export default {
             'Set sail with us on a traditional Greek Kaiki and explore the secluded coves and pristine beaches of the small Cycladic islands. Dive into the turquoise waters of the Aegean Sea or relax on deck and watch the dolphins swim by, all while enjoying cold refreshments and a selection of local delicacies freshly prepared onboard.',
           locationPretext: 'departing from',
           location: 'Piso Livadi, Paros',
-          date: '2020-06-24 10:00'
+          date: '2021-07-21 10:00'
         },
         {
           key: 'welcome-drinks',
@@ -91,7 +91,7 @@ export default {
           description:
             'You’re all here and we couldn’t be happier! Join us for cocktails and canapes on the harbour of this picturesque fishing village, as we watch the sunset on our final night as ‘Mr & Miss’.',
           location: 'Barbarossa Restaurant\n' + 'Naoussa, Paros',
-          date: '2020-06-25 18:00'
+          date: '2021-07-22 18:00'
         },
         {
           key: 'wedding',
@@ -102,7 +102,7 @@ export default {
           locationPretext:
             'transfers will depart from select locations at 4:30pm',
           location: 'Private Villa, Paros',
-          date: '2020-06-26 17:30'
+          date: '2021-07-23 17:30'
         },
         {
           key: 'beach-recovery',
@@ -110,15 +110,15 @@ export default {
           description:
             'Josh always says there’s no better cure for a hangover than a swim in the ocean...so, let’s hit the beach! We’ll make sure there’s a big lunch and a snoozeworthy sunbed at the water’s edge with your name on it – see you there!',
           location: 'Santa Maria Beach Bar\n' + 'Santa Maria Beach, Paros',
-          date: '2020-06-27 12:00'
+          date: '2021-07-24 12:00'
         },
         {
           key: 'pool-party',
-          title: 'Farewell Pool Party',
+          title: 'Farewell Brunch Pool Party',
           description:
-            'We’re firing up the BBQ, turning on the tunes and inflating the unicorn, to bid farewell to what will have no doubt been our best summer as husband and wife! Clothing optional. Swimwear compulsory. Because it’s not that kind of party.',
+            'We’re firing up the BBQ and inflating the unicorn to bid farewell to what will have no doubt been our best summer as husband and wife! Clothing optional. Swimwear compulsory. Because it’s not that kind of party.',
           location: 'Private Villa, Paros',
-          date: '2020-06-28 11:00'
+          date: '2021-07-25 11:00'
         },
         {
           key: 'island-hop',
@@ -127,7 +127,7 @@ export default {
             'The supermodel of the Greek islands is calling our name – and I think I can hear yours too! Why not extend your trip for a few days and join us in Santorini for our pre-honeymoon? We’ve partied in Paros, now let’s conquer the caldera! No itinerary. No expectations. Just good times.',
           locationPretext: 'ferries depart from Parikia',
           location: 'Santorini',
-          date: '2020-06-30 13:00'
+          date: '2021-07-27 13:00'
         }
       ]
     }
