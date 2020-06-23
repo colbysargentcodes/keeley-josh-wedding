@@ -10,7 +10,7 @@
     >
       <figure @click="openLogin">
         <img src="/images/jk-monogram-thin.svg" />
-        <h2>27.03.21</h2>
+        <h2>23.07.21</h2>
         <div id="enter-button">enter</div>
       </figure>
       <div id="countdown-container">
