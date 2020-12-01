@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=EB+Garamond:400,600|Lato:400,700|Great+Vibes&display=swap');
+@import url('https://fonts.googleapis.com/css?family=EB+Garamond:400,600|Lato:400,700|Great+Vibes|Material+Icons&display=swap');
 
 @mixin heading-font {
   font-family: 'EB Garamond', serif;
@@ -19,4 +19,11 @@
 }
 .font-script {
   @include script-font;
+}
+
+@mixin icon-font {
+  font-family: 'Material Icons', sans-serif;
+}
+.font-icon {
+  @include icon-font;
 }
