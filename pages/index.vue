@@ -10,7 +10,7 @@
     >
       <figure @click="openLogin">
         <img src="/images/jk-monogram-thin.svg" />
-        <h2>23.07.21</h2>
+        <h2>20.07.22</h2>
         <div id="enter-button">enter</div>
       </figure>
       <div id="countdown-container">
@@ -74,7 +74,7 @@
         </p>
         <p>
           WE LOOK FORWARD TO SEEING YOU ON THE BEAUTIFUL PAROS ISLAND IN GREECE
-          IN 2021.
+          IN 2022.
         </p>
         <p>
           GOOD THINGS COME TO THOSE WHO WAIT…
@@ -97,7 +97,7 @@ export default {
   data() {
     return {
       countdown: {
-        date: new Date(Date.UTC(2021, 6, 23, 15)).getTime(),
+        date: new Date(Date.UTC(2022, 6, 20, 15)).getTime(),
         interval: false,
         days: 0,
         hours: 0,
