@@ -219,7 +219,7 @@
               class="form-row form-event-row"
               :class="{ inactive: rsvpResponses.boatTrip === 'No' }"
             >
-              <div class="form-event-date">18<sup>th</sup></div>
+              <div class="form-event-date">19<sup>th</sup></div>
               <div class="form-event-name">
                 <img src="/icons/boat-trip.svg" />
                 <span>Boat Trip</span>
@@ -268,7 +268,7 @@
               class="form-row form-event-row"
               :class="{ inactive: rsvpResponses.welcomeDrinks === 'No' }"
             >
-              <div class="form-event-date">19<sup>th</sup></div>
+              <div class="form-event-date">20<sup>th</sup></div>
               <div class="form-event-name">
                 <img src="/icons/welcome-drinks.svg" />
                 <span>Welcome Drinks</span>
@@ -317,7 +317,7 @@
               class="form-row form-event-row"
               :class="{ inactive: rsvpResponses.wedding === 'No' }"
             >
-              <div class="form-event-date">20<sup>th</sup></div>
+              <div class="form-event-date">21<sup>st</sup></div>
               <div class="form-event-name">
                 <img src="/icons/wedding.svg" />
                 <span>Wedding</span>
@@ -363,7 +363,7 @@
               class="form-row form-event-row"
               :class="{ inactive: rsvpResponses.beachRecovery === 'No' }"
             >
-              <div class="form-event-date">21<sup>st</sup></div>
+              <div class="form-event-date">22<sup>nd</sup></div>
               <div class="form-event-name">
                 <img src="/icons/beach-recovery.svg" />
                 <span>Beach Recovery</span>
@@ -412,7 +412,7 @@
               class="form-row form-event-row"
               :class="{ inactive: rsvpResponses.poolParty === 'No' }"
             >
-              <div class="form-event-date">22<sup>nd</sup></div>
+              <div class="form-event-date">23<sup>rd</sup></div>
               <div class="form-event-name">
                 <img src="/icons/pool-party.svg" />
                 <span>Brunch Pool Party</span>
@@ -475,7 +475,7 @@
               class="form-row form-event-row"
               :class="{ inactive: rsvpResponses.islandHop === 'No' }"
             >
-              <div class="form-event-date">27<sup>th</sup></div>
+              <div class="form-event-date">24<sup>th</sup></div>
               <div class="form-event-name">
                 <img src="/icons/island-hop.svg" />
                 <span>Island Hop</span>
