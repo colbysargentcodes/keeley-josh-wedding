@@ -10,7 +10,7 @@
     >
       <figure @click="openLogin">
         <img src="/images/jk-monogram-thin.svg" />
-        <h2>21.07.22</h2>
+        <h2>20.07.23</h2>
         <div id="enter-button">enter</div>
       </figure>
       <div id="countdown-container">
@@ -40,6 +40,7 @@
       <div>
         <input
           id="login-password"
+          ref="passwordField"
           v-model="enteredPassword"
           type="password"
           @keyup="attemptLogin"
@@ -67,24 +68,22 @@
     >
       <div class="font-heading text-upper text-spaced">
         <p>
-          DUE TO THE CURRENT CIRCUMSTANCES, WE HAVE MADE THE DECISION TO
-          POSTPONE OUR WEDDING TO A DATE WHEN WE CAN CELEBRATE TOGETHER SAFELY.
-          YOUR HEALTH IS OF THE UTMOST IMPORTANCE TO US, AND WE ARE THINKING OF
-          YOU ALL IN THESE UNCERTAIN TIMES.
+          Even after three years, one elopement and a baby later, it still seems
+          like such a shame to let a good wedding (and party) go to waste - so
+          let’s hope the third time’s a charm!
         </p>
         <p>
-          WE LOOK FORWARD TO SEEING YOU ON THE BEAUTIFUL PAROS ISLAND IN GREECE
-          IN 2022.
+          We’re looking forward to <i>finally</i> getting to celebrate our love,
+          and our new family, with you all on the beautiful Paros Island in
+          Greece in 2023.
         </p>
-        <p>
-          GOOD THINGS COME TO THOSE WHO WAIT…
-        </p>
+        <p>Good things come to those who wait… a <i>really</i> long time.</p>
         <p>
           SEE YOU THERE!
         </p>
       </div>
       <p id="sign-off" class="font-script">
-        Keeley & Josh
+        Keeley, Josh & Bear
         <br />
         <span id="sign-off-xoxo">xoxo</span>
       </p>
@@ -97,7 +96,7 @@ export default {
   data() {
     return {
       countdown: {
-        date: new Date(Date.UTC(2022, 6, 21, 15)).getTime(),
+        date: new Date(Date.UTC(2023, 6, 20, 15)).getTime(),
         interval: false,
         days: 0,
         hours: 0,
@@ -140,7 +139,10 @@ export default {
     },
     openLogin() {
       if (this.checkLogin()) this.successfulLogin()
-      else this.loginOpen = true
+      else {
+        this.loginOpen = true
+        this.$refs.passwordField.focus()
+      }
     },
     checkLogin() {
       const lastLogin = localStorage.getItem('lastLogin')
