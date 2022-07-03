@@ -68,9 +68,9 @@
     >
       <div class="font-heading text-upper text-spaced">
         <p>
-          Even after three years, one elopement and a baby later, it still seems
-          like such a shame to let a good wedding (and party) go to waste - so
-          let’s hope the third time’s a charm!
+          Three years, one elopement and a baby later, it still seems like such
+          a shame to let a good wedding (and party) go to waste - so let’s hope
+          the third time’s a charm!
         </p>
         <p>
           We’re looking forward to <i>finally</i> getting to celebrate our love,
