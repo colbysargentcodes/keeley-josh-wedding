@@ -77,7 +77,7 @@
           and our new family, with you all on the beautiful Paros Island in
           Greece in 2023.
         </p>
-        <p>Good things come to those who wait… a <i>really</i> long time.</p>
+        <p>Good things come to those who wait...<br>a <em>really</em> long time.</p>
         <p>
           SEE YOU THERE!
         </p>

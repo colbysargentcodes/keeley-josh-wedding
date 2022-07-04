@@ -22,7 +22,7 @@
               <span class="event-quoted"> - {{ event.quoted }}</span>
             </template>
             <template v-else>
-              <span>{{ event.description }}</span>
+              <span v-html="event.description"></span>
             </template>
           </p>
           <div>
@@ -89,7 +89,7 @@ export default {
           key: 'welcome-drinks',
           title: 'Welcome Drinks',
           description:
-            'You’re all here and we couldn’t be happier! Join us for cocktails and canapes on the harbour of this picturesque fishing village, as we watch the sunset on our final night as ‘Mr & Miss’.',
+            'You’re all here and we couldn’t be happier! Join us for cocktails and canapes on the harbour of this picturesque fishing village, as we watch the sunset on our final night as ‘Mr & Miss’ <em>(kind of)</em>.',
           location: 'Barbarossa Restaurant\n' + 'Naoussa, Paros',
           date: '2023-07-19 18:00'
         },
@@ -98,7 +98,7 @@ export default {
           title: 'Wedding',
           description:
             'It’s time for us to say “I do”, and for you to #MeetTheMcNamaras!\n' +
-            'Two become one. All become drunk.',
+            'Two become one <em>(even though two technically already became three)</em>. All become drunk.',
           locationPretext:
             'transfers will depart from select locations at 4:30pm',
           location: 'Private Villa, Paros',
@@ -116,7 +116,7 @@ export default {
           key: 'pool-party',
           title: 'Farewell Brunch Pool Party',
           description:
-            'We’re firing up the BBQ and inflating the unicorn to bid farewell to what will have no doubt been our best summer as husband and wife! Clothing optional. Swimwear compulsory. Because it’s not that kind of party.',
+            'We’re firing up the BBQ and inflating the unicorn to bid farewell to what will have no doubt been our best summer as husband and wife <em>(bar the first one spent as parents of course)</em>! Clothing optional. Swimwear compulsory. Because it’s not that kind of party.',
           location: 'Private Villa, Paros',
           date: '2023-07-22 11:00'
         },

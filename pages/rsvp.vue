@@ -5,7 +5,7 @@
     </h1>
     <h2 class="page-header">
       We hope you can join us on our new wedding date! Same time. Same place.
-      Less to worry about. More to celebrate.
+      <br>Less to worry about. More to celebrate.
     </h2>
     <form
       name="rsvp"
