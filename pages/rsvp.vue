@@ -1690,23 +1690,23 @@ export default {
       menuChoices: [
         {
           value: 'pig',
-          text: 'Roasted pork fillet with herbs, served with wild greens and a lemon sauce with dill and spring onion'
+          text: 'Herb roasted pork fillet, served with wild greens, in a lemon sauce with dill and spring onion'
         },
         {
           value: 'chicken',
-          text: 'Chicken fillet filled with Parian gruyere, sun dried tomatoes and basil, served with potato puree and spinach saute'
+          text: 'Chicken fillet filled with Parian gruyere, sun dried tomatoes and basil, served with potato puree and sauteed spinach'
         },
         {
           value: 'sheep',
-          text: 'Roasted leg of lamb, with gravy sauce and thyme, served with baby potatoes'
+          text: 'Roasted leg of lamb, served with baby potatoes, in gravy sauce with thyme'
         },
         {
           value: 'fish',
-          text: 'Sea bass on the grill served with steamed vegetables and a citrus fruits dressing'
+          text: 'Grilled sea bass, served with steamed vegetables, in a citrus dressing'
         },
         {
           value: 'vegetarian',
-          text: 'TBC'
+          text: 'We\'ll be in touch shortly to confirm your requirements and offer some suitably delicious options'
         }
       ]
     }
