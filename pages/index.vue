@@ -68,22 +68,25 @@
     >
       <div class="font-heading text-upper text-spaced">
         <p>
-          Three years, one elopement and a baby later, it still seems like such
-          a shame to let a good wedding (and party) go to waste - so let’s hope
-          the third time’s a charm!
+          Three years, one elopement and two babies later, it still seems like
+          such a shame to let a good wedding (and party) go to waste - the third
+          time’s a charm!
         </p>
         <p>
           We’re looking forward to <i>finally</i> getting to celebrate our love,
           and our new family, with you all on the beautiful Paros Island in
           Greece in 2023.
         </p>
-        <p>Good things come to those who wait...<br>a <em>really</em> long time.</p>
+        <p>
+          Good things come to those who wait...<br />a <em>really</em> long
+          time.
+        </p>
         <p>
           SEE YOU THERE!
         </p>
       </div>
       <p id="sign-off" class="font-script">
-        Keeley, Josh & Bear
+        Keeley, Josh, Bear & Sunny
         <br />
         <span id="sign-off-xoxo">xoxo</span>
       </p>
@@ -345,7 +348,7 @@ export default {
 }
 
 #welcome-message {
-  width: 56.25%;
+  width: 65%;
   padding-bottom: 50px;
   font-size: 18px;
 
@@ -355,7 +358,6 @@ export default {
 
   #sign-off {
     margin-top: 1.5em;
-    padding-right: 1em;
     font-size: 42px;
     text-align: right;
     transform: rotate(-2deg) skew(0deg, -7deg);
@@ -370,7 +372,11 @@ export default {
 
 @media only screen and (max-width: 800px) {
   #welcome-message {
-    width: 75%;
+    width: 85%;
+
+    #sign-off {
+      font-size: 32px;
+    }
   }
 }
 
@@ -401,7 +407,7 @@ export default {
     font-size: 16px;
 
     #sign-off {
-      padding-right: 0.75em;
+      padding-right: 0.25em;
       font-size: 32px;
     }
   }
