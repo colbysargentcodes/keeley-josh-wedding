@@ -98,7 +98,7 @@ export default {
           title: 'Wedding',
           description:
             'It’s time for us to say “I do”, and for you to #MeetTheMcNamaras!\n' +
-            'Two become one <em>(even though two already became three)</em>. All become drunk.',
+            'Two become one <em>(even though two already became four)</em>. All become drunk.',
           locationPretext:
             'transfers will depart from select locations at 4:30pm',
           location: 'Private Villa, Paros',
