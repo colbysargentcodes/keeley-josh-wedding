@@ -91,7 +91,7 @@ export default {
           description:
             'You’re all here and we couldn’t be happier! Join us for cocktails and canapes on the harbour of this picturesque fishing village, as we watch the sunset on our final night as ‘Mr & Miss’ <em>(kind of)</em>.',
           location: 'Barbarossa Restaurant\n' + 'Naoussa, Paros',
-          date: '2023-07-19 18:00'
+          date: '2023-07-19 19:00'
         },
         {
           key: 'wedding',
